@@ -1,0 +1,11 @@
+format-version: 1.2
+data-version: fbdv/releases/2019-05-14/fbdv-simple.owl
+ontology: fbdv/fbdv-simple
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license "Unspecified" xsd:string
+
+[Term]
+id: FBDV:00000000
+name: root node
+

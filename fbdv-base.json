@@ -1,0 +1,30 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/FBDV_00000000",
+      "type" : "CLASS",
+      "lbl" : "root node"
+    } ],
+    "edges" : [ ],
+    "id" : "http://purl.obolibrary.org/obo/fbdv/fbdv-base.json",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "FlyBase Developmental Ontology"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "Unspecified"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/fbdv/releases/2019-05-14/fbdv-base.json"
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}
