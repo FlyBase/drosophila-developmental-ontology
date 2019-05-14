@@ -12,7 +12,7 @@
 URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        fbdv
 ONTBASE=                    $(URIBASE)/$(ONT)
-EDIT_FORMAT=                owl
+EDIT_FORMAT=                obo
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 ROBOT=                      robot
 RELEASEDIR=                 ../..

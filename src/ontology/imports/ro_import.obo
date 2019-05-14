@@ -109,6 +109,16 @@ name: transferase activity, transferring phosphorus-containing groups
 is_a: GO:0016740 ! transferase activity
 
 [Term]
+id: GO:0050896
+name: response to stimulus
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051704
+name: multi-organism process
+is_a: GO:0008150 ! biological_process
+
+[Term]
 id: PATO:0000001
 name: quality
 is_a: BFO:0000020 ! specifically dependent continuant
