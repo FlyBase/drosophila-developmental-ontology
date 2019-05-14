@@ -23,17 +23,12 @@ remark: Drosophila temporal ontology. Contains terms imported from http://purl.o
 ontology: fbdv/fbdv-base
 
 [Term]
-id: BFO:0000003
-name: occurrent
-def: "An entity that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants." [BFOC:ANON]
-
-[Term]
 id: FBdv:00000000
 name: Drosophila life
 alt_id: FBdv_root:00000000
 def: "The life of an individual of the species Drosophila melanogaster, from fertilization to death." [FBC:DOS]
 synonym: "Drosophila life cycle" EXACT []
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003
 
 [Term]
 id: FBdv:00000054
@@ -67,7 +62,7 @@ id: FBdv:00005259
 name: developmental stage
 alt_id: FBdv:00007010
 def: "A temporal subdivision of a developmental process." [FBC:DOS]
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003
 created_by: djs93
 creation_date: 2009-10-01T05:56:56Z
 
@@ -1276,9 +1271,7 @@ creation_date: 2008-12-11T01:19:53Z
 [Term]
 id: FBdv:00007008
 name: occurrent
-xref: BFO:0000003
-created_by: djs93
-creation_date: 2009-10-01T05:56:28Z
+is_obsolete: true
 
 [Term]
 id: FBdv:00007009
@@ -1293,7 +1286,7 @@ id: FBdv:00007011
 name: embryonic cycle
 def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant.  Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
 is_a: FBdv:00007024 ! biological process
-is_a: GO:0045448 ! mitotic cell cycle, embryonic
+is_a: GO:0045448
 created_by: djs93
 creation_date: 2009-10-01T05:57:41Z
 
@@ -1311,7 +1304,7 @@ creation_date: 2009-10-01T05:59:22Z
 id: FBdv:00007013
 name: age
 def: "Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion." [FBC:DOS]
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003
 created_by: djs93
 creation_date: 2010-09-29T12:25:36Z
 
@@ -1399,7 +1392,7 @@ id: FBdv:00007022
 name: embryonic cycle interphase
 def: "The interphase (GO:0051325) of an embryonic cycle." [FBC:DOS]
 is_a: FBdv:00007024 ! biological process
-intersection_of: GO:0051325 ! interphase
+intersection_of: GO:0051325
 intersection_of: part_of FBdv:00007011 ! embryonic cycle
 
 [Term]
@@ -1407,14 +1400,14 @@ id: FBdv:00007023
 name: embryonic cycle M-phase
 def: "The M-phase (GO:0000279) of an embryonic cycle." [FBC:DOS]
 is_a: FBdv:00007024 ! biological process
-intersection_of: GO:0000279 ! M phase
+intersection_of: GO:0000279
 intersection_of: part_of FBdv:00007011 ! embryonic cycle
 
 [Term]
 id: FBdv:00007024
 name: biological process
 xref: GO:0008150
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003
 
 [Term]
 id: FBdv:00007025
@@ -2000,565 +1993,39 @@ relationship: immediately_preceded_by FBdv:00005317 ! gastrula stage
 relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: part_of FBdv:00005321 ! extended germ band stage
 
-[Term]
-id: GO:0000003
-name: reproduction
-namespace: biological_process
-alt_id: GO:0019952
-alt_id: GO:0050876
-def: "The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms." [GOC:go_curators, GOC:isa_complete, GOC:jl, ISBN:0198506732]
-subset: goslim_ChEMBL
-subset: goslim_generic
-subset: goslim_pir
-subset: goslim_plant
-subset: gosubset_prok
-synonym: "reproductive physiological process" EXACT []
-xref: Wikipedia:Reproduction
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0000278
-name: mitotic cell cycle
-namespace: biological_process
-alt_id: GO:0007067
-def: "Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent." [GOC:mah, ISBN:0815316194, Reactome:69278]
-subset: goslim_chembl
-subset: goslim_generic
-subset: goslim_yeast
-synonym: "mitosis" RELATED []
-synonym: "mitotic nuclear division" RELATED []
-xref: Reactome:REACT_100451 "Cell Cycle, Mitotic, Taeniopygia guttata"
-xref: Reactome:REACT_104035 "Cell Cycle, Mitotic, Sus scrofa"
-xref: Reactome:REACT_104195 "Cell Cycle, Mitotic, Canis familiaris"
-xref: Reactome:REACT_105856 "Cell Cycle, Mitotic, Danio rerio"
-xref: Reactome:REACT_108233 "Cell Cycle, Mitotic, Saccharomyces cerevisiae"
-xref: Reactome:REACT_152 "Cell Cycle, Mitotic, Homo sapiens"
-xref: Reactome:REACT_28464 "Cell Cycle, Mitotic, Xenopus tropicalis"
-xref: Reactome:REACT_28953 "Cell Cycle, Mitotic, Bos taurus"
-xref: Reactome:REACT_33388 "Cell Cycle, Mitotic, Rattus norvegicus"
-xref: Reactome:REACT_53493 "Cell Cycle, Mitotic, Plasmodium falciparum"
-xref: Reactome:REACT_79085 "Cell Cycle, Mitotic, Schizosaccharomyces pombe"
-xref: Reactome:REACT_84794 "Cell Cycle, Mitotic, Caenorhabditis elegans"
-xref: Reactome:REACT_85137 "Cell Cycle, Mitotic, Gallus gallus"
-xref: Reactome:REACT_85950 "Cell Cycle, Mitotic, Arabidopsis thaliana"
-xref: Reactome:REACT_90332 "Cell Cycle, Mitotic, Mus musculus"
-xref: Reactome:REACT_90846 "Cell Cycle, Mitotic, Oryza sativa"
-xref: Reactome:REACT_96281 "Cell Cycle, Mitotic, Drosophila melanogaster"
-xref: Reactome:REACT_97744 "Cell Cycle, Mitotic, Dictyostelium discoideum"
-xref: Reactome:REACT_98208 "Cell Cycle, Mitotic, Mycobacterium tuberculosis"
-xref: Wikipedia:Mitosis
-is_a: GO:0007049 ! cell cycle
-relationship: has_part GO:0140014
-
-[Term]
-id: GO:0000279
-name: M phase
-namespace: biological_process
-def: "A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase." [GOC:mtg_cell_cycle]
-comment: Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).
-subset: gocheck_do_not_annotate
-synonym: "M-phase" EXACT []
-xref: Wikipedia:M_phase
-is_a: GO:0022403 ! cell cycle phase
-
-[Term]
-id: GO:0000280
-name: nuclear division
-namespace: biological_process
-def: "The division of a cell nucleus into two nuclei, with DNA and other nuclear contents distributed between the daughter nuclei." [GOC:mah]
-subset: goslim_pir
-synonym: "karyokinesis" RELATED []
-is_a: GO:0048285 ! organelle fission
-
-[Term]
-id: GO:0003006
-name: developmental process involved in reproduction
-namespace: biological_process
-def: "A developmental process in which a progressive change in the state of some part of an organism specifically contributes to its ability to form offspring." [GOC:dph, GOC:isa_complete]
-synonym: "puberty" NARROW [GOC:dph]
-synonym: "reproductive developmental process" RELATED [GOC:dph, GOC:tb]
-is_a: GO:0022414 ! reproductive process
-is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0000003 ! reproduction
-
-[Term]
-id: GO:0006996
-name: organelle organization
-namespace: biological_process
-def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of an organelle within a cell. An organelle is an organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:mah]
-subset: goslim_aspergillus
-subset: goslim_candida
-subset: goslim_pir
-subset: gosubset_prok
-synonym: "organelle organisation" EXACT [GOC:curators]
-synonym: "organelle organization and biogenesis" RELATED [GOC:dph, GOC:jl, GOC:mah]
-is_a: GO:0016043 ! cellular component organization
-
-[Term]
-id: GO:0007049
-name: cell cycle
-namespace: biological_process
-def: "The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division." [GOC:go_curators, GOC:mtg_cell_cycle]
-subset: gocheck_do_not_manually_annotate
-subset: goslim_aspergillus
-subset: goslim_candida
-subset: goslim_chembl
-subset: goslim_generic
-subset: goslim_pir
-subset: goslim_plant
-subset: gosubset_prok
-synonym: "cell-division cycle" EXACT []
-xref: Wikipedia:Cell_cycle
-is_a: GO:0044763 ! single-organism cellular process
-
-[Term]
-id: GO:0007275
-name: multicellular organismal development
-namespace: biological_process
-def: "The biological process whose specific outcome is the progression of a multicellular organism over time from an initial condition (e.g. a zygote or a young adult) to a later condition (e.g. a multicellular animal or an aged adult)." [GOC:dph, GOC:ems, GOC:isa_complete, GOC:tb]
-comment: Note that this term was 'developmental process'.
-subset: goslim_ChEMBL
-subset: goslim_plant
-is_a: GO:0044707 ! single-multicellular organism process
-is_a: GO:0044767 ! single-organism developmental process
-is_a: GO:0048856 ! anatomical structure development
-
-[Term]
-id: GO:0007276
-name: gamete generation
-namespace: biological_process
-alt_id: GO:0009552
-def: "The generation and maintenance of gametes in a multicellular organism. A gamete is a haploid reproductive cell." [GOC:ems, GOC:mtg_sensu]
-synonym: "gametogenesis" RELATED []
-is_a: GO:0044702 ! single organism reproductive process
-is_a: GO:0048609 ! multicellular organismal reproductive process
-relationship: part_of GO:0019953 ! sexual reproduction
-
-[Term]
-id: GO:0007281
-name: germ cell development
-namespace: biological_process
-def: "The process whose specific outcome is the progression of an immature germ cell over time, from its formation to the mature structure (gamete). A germ cell is any reproductive cell in a multicellular organism." [GOC:go_curators]
-synonym: "germ-cell development" EXACT []
-synonym: "primordial germ cell development" NARROW []
-is_a: GO:0003006 ! developmental process involved in reproduction
-is_a: GO:0022412 ! cellular process involved in reproduction in multicellular organism
-is_a: GO:0048468 ! cell development
-relationship: part_of GO:0007276 ! gamete generation
-
-[Term]
-id: GO:0007283
-name: spermatogenesis
-namespace: biological_process
-def: "The process of formation of spermatozoa, including spermatocytogenesis and spermiogenesis." [GOC:jid, ISBN:9780878933846]
-synonym: "generation of spermatozoa" EXACT systematic_synonym []
-xref: Wikipedia:Spermatogenesis
-is_a: GO:0048232 ! male gamete generation
-
-[Term]
-id: GO:0007292
-name: female gamete generation
-namespace: biological_process
-def: "Generation of the female gamete; specialised haploid cells produced by meiosis and along with a male gamete takes part in sexual reproduction." [GOC:dph, ISBN:0198506732]
-is_a: GO:0007276 ! gamete generation
-
-[Term]
-id: GO:0008150
-name: biological_process
-namespace: biological_process
-alt_id: GO:0000004
-alt_id: GO:0007582
-def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." [GOC:go_curators, GOC:isa_complete]
-comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
-subset: goslim_aspergillus
-subset: goslim_candida
-subset: goslim_chembl
-subset: goslim_generic
-subset: goslim_metagenomics
-subset: goslim_pir
-subset: goslim_plant
-subset: goslim_pombe
-subset: goslim_yeast
-subset: gosubset_prok
-synonym: "biological process" EXACT []
-synonym: "physiological process" EXACT []
-xref: Wikipedia:Biological_process
-
-[Term]
-id: GO:0009790
-name: embryo development
-namespace: biological_process
-alt_id: GO:0009795
-def: "The process whose specific outcome is the progression of an embryo from its formation until the end of its embryonic life stage. The end of the embryonic stage is organism-specific. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
-subset: gocheck_do_not_manually_annotate
-subset: goslim_ChEMBL
-subset: goslim_generic
-subset: goslim_plant
-synonym: "embryogenesis" EXACT []
-synonym: "embryogenesis and morphogenesis" BROAD []
-synonym: "embryonal development" EXACT []
-xref: Wikipedia:Embryogenesis
-is_a: GO:0007275 ! multicellular organismal development
-
-[Term]
-id: GO:0009987
-name: cellular process
-namespace: biological_process
-alt_id: GO:0008151
-alt_id: GO:0050875
-def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
-subset: goslim_pir
-subset: goslim_plant
-subset: gosubset_prok
-synonym: "cell growth and/or maintenance" NARROW []
-synonym: "cell physiology" EXACT []
-synonym: "cellular physiological process" EXACT []
-is_a: GO:0008150 ! biological_process
-disjoint_from: GO:0044848 ! biological phase
-
-[Term]
-id: GO:0016043
-name: cellular component organization
-namespace: biological_process
-alt_id: GO:0044235
-alt_id: GO:0071842
-def: "A process that results in the assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:ai, GOC:jl, GOC:mah]
-subset: goslim_metagenomics
-subset: goslim_pir
-subset: goslim_plant
-subset: gosubset_prok
-synonym: "cell organisation" EXACT []
-synonym: "cell organization and biogenesis" RELATED [GOC:mah]
-synonym: "cellular component organisation at cellular level" EXACT [GOC:mah]
-synonym: "cellular component organisation in other organism" EXACT [GOC:mah]
-synonym: "cellular component organization at cellular level" EXACT []
-synonym: "cellular component organization in other organism" EXACT []
-is_a: GO:0009987 ! cellular process
-is_a: GO:0071840 ! cellular component organization or biogenesis
-
-[Term]
-id: GO:0019953
-name: sexual reproduction
-namespace: biological_process
-def: "A reproduction process that creates a new organism by combining the genetic material of two organisms. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two different individuals (parents) join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny." [GOC:jl, http://en.wikipedia.org/wiki/Sexual_reproduction, ISBN:0387520546]
-comment: Sexual reproduction may be seen as the regular alternation, in the life cycle of haplontic, diplontic and diplohaplontic organisms, of meiosis and fertilization which provides for the production offspring. In diplontic organisms there is a life cycle in which the products of meiosis behave directly as gametes, fusing to form a zygote from which the diploid, or sexually reproductive polyploid, adult organism will develop. In diplohaplontic organisms a haploid phase (gametophyte) exists in the life cycle between meiosis and fertilization (e.g. higher plants, many algae and Fungi); the products of meiosis are spores that develop as haploid individuals from which haploid gametes develop to form a diploid zygote; diplohaplontic organisms show an alternation of haploid and diploid generations. In haplontic organisms meiosis occurs in the zygote, giving rise to four haploid cells (e.g. many algae and protozoa), only the zygote is diploid and this may form a resistant spore, tiding organisms over hard times.
-xref: Wikipedia:Sexual_reproduction
-is_a: GO:0000003 ! reproduction
-is_a: GO:0044703 ! multi-organism reproductive process
-
-[Term]
-id: GO:0022402
-name: cell cycle process
-namespace: biological_process
-def: "The cellular process that ensures successive accurate and complete genome replication and chromosome segregation." [GOC:isa_complete, GOC:mtg_cell_cycle]
-subset: gocheck_do_not_manually_annotate
-subset: gosubset_prok
-is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0007049 ! cell cycle
-
-[Term]
-id: GO:0022403
-name: cell cycle phase
-namespace: biological_process
-def: "One of the distinct periods or stages into which the cell cycle is divided. Each phase is characterized by the occurrence of specific biochemical and morphological events." [GOC:mtg_cell_cycle]
-subset: gocheck_do_not_annotate
-is_a: GO:0044848 ! biological phase
-
-[Term]
-id: GO:0022412
-name: cellular process involved in reproduction in multicellular organism
-namespace: biological_process
-def: "A process, occurring at the cellular level, that is involved in the reproductive function of a multicellular organism." [GOC:isa_complete]
-synonym: "reproductive cellular process in multicellular organism" EXACT [GOC:curators]
-is_a: GO:0044702 ! single organism reproductive process
-is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0032504 ! multicellular organism reproduction
-
-[Term]
-id: GO:0022414
-name: reproductive process
-namespace: biological_process
-def: "A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents." [GOC:dph, GOC:isa_complete]
-subset: gosubset_prok
-is_a: GO:0008150 ! biological_process
-disjoint_from: GO:0044848 ! biological phase
-
-[Term]
-id: GO:0030154
-name: cell differentiation
-namespace: biological_process
-def: "The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state." [ISBN:0198506732]
-subset: goslim_ChEMBL
-subset: goslim_generic
-subset: goslim_plant
-subset: gosubset_prok
-xref: Wikipedia:Cellular_differentiation
-is_a: GO:0048869 ! cellular developmental process
-
-[Term]
-id: GO:0032501
-name: multicellular organismal process
-namespace: biological_process
-alt_id: GO:0050874
-def: "Any biological process, occurring at the level of a multicellular organism, pertinent to its function." [GOC:curators, GOC:dph, GOC:isa_complete, GOC:tb]
-subset: goslim_pir
-synonym: "organismal physiological process" EXACT []
-is_a: GO:0008150 ! biological_process
-disjoint_from: GO:0044848 ! biological phase
-
-[Term]
-id: GO:0032502
-name: developmental process
-namespace: biological_process
-def: "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition." [GOC:isa_complete]
-subset: goslim_aspergillus
-subset: goslim_pir
-subset: gosubset_prok
-synonym: "development" NARROW []
-is_a: GO:0008150 ! biological_process
-disjoint_from: GO:0044848 ! biological phase
-
-[Term]
-id: GO:0032504
-name: multicellular organism reproduction
-namespace: biological_process
-def: "The biological process in which new individuals are produced by one or two multicellular organisms. The new individuals inherit some proportion of their genetic material from the parent or parents." [GOC:isa_complete, GOC:jid]
-is_a: GO:0000003 ! reproduction
-is_a: GO:0032501 ! multicellular organismal process
-
-[Term]
-id: GO:0044699
-name: single-organism process
-namespace: biological_process
-def: "A biological process that involves only one organism." [GOC:jl]
-synonym: "single organism process" EXACT []
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0044702
-name: single organism reproductive process
-namespace: biological_process
-def: "A biological process that directly contributes to the process of producing new individuals, involving a single organism." [GOC:jl]
-is_a: GO:0022414 ! reproductive process
-is_a: GO:0044699 ! single-organism process
-
-[Term]
-id: GO:0044703
-name: multi-organism reproductive process
-namespace: biological_process
-def: "A biological process that directly contributes to the process of producing new individuals, involving another organism." [GOC:jl]
-is_a: GO:0022414 ! reproductive process
-is_a: GO:0051704 ! multi-organism process
-
-[Term]
-id: GO:0044707
-name: single-multicellular organism process
-namespace: biological_process
-def: "A biological process occurring within a single, multicellular organism." [GOC:jl]
-is_a: GO:0032501 ! multicellular organismal process
-is_a: GO:0044699 ! single-organism process
-
-[Term]
-id: GO:0044763
-name: single-organism cellular process
-namespace: biological_process
-def: "Any process that is carried out at the cellular level, occurring within a single organism." [GOC:jl]
-is_a: GO:0009987 ! cellular process
-is_a: GO:0044699 ! single-organism process
-
-[Term]
-id: GO:0044767
-name: single-organism developmental process
-namespace: biological_process
-def: "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition, involving only one organism." [GOC:jl]
-is_a: GO:0032502 ! developmental process
-is_a: GO:0044699 ! single-organism process
-
-[Term]
-id: GO:0044848
-name: biological phase
-namespace: biological_process
-def: "A distinct period or stage in a biological process or cycle." [GOC:jl]
-comment: Note that phases are is_a disjoint from other biological processes. happens_during relationships can operate between phases and other biological processes e.g. DNA replication happens_during S phase.
-subset: gocheck_do_not_manually_annotate
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0045448
-name: mitotic cell cycle, embryonic
-namespace: biological_process
-def: "The eukaryotic cell cycle in which a cell is duplicated without changing ploidy, occurring in the embryo." [GOC:go_curators]
-is_a: GO:0000278 ! mitotic cell cycle
-relationship: part_of GO:0009790 ! embryo development
-
-[Term]
-id: GO:0048232
-name: male gamete generation
-namespace: biological_process
-def: "Generation of the male gamete; specialised haploid cells produced by meiosis and along with a female gamete takes part in sexual reproduction." [GOC:dph, GOC:jid]
-is_a: GO:0007276 ! gamete generation
-
-[Term]
-id: GO:0048285
-name: organelle fission
-namespace: biological_process
-def: "The creation of two or more organelles by division of one organelle." [GOC:jid]
-subset: goslim_pir
-subset: goslim_yeast
-is_a: GO:0006996 ! organelle organization
-
-[Term]
-id: GO:0048468
-name: cell development
-namespace: biological_process
-def: "The process whose specific outcome is the progression of the cell over time, from its formation to the mature structure. Cell development does not include the steps involved in committing a cell to a specific fate." [GOC:go_curators]
-subset: goslim_candida
-subset: gosubset_prok
-synonym: "terminal differentiation" RELATED [GOC:dph, GOC:tb]
-is_a: GO:0048856 ! anatomical structure development
-is_a: GO:0048869 ! cellular developmental process
-relationship: part_of GO:0030154 ! cell differentiation
-
-[Term]
-id: GO:0048477
-name: oogenesis
-namespace: biological_process
-alt_id: GO:0009993
-alt_id: GO:0048157
-def: "The complete process of formation and maturation of an ovum or female gamete from a primordial female germ cell. Examples of this process are found in Mus musculus and Drosophila melanogaster." [GOC:kmv, GOC:mtg_sensu, GOC:pr]
-synonym: "ovum development" EXACT systematic_synonym []
-xref: Wikipedia:Oogenesis
-is_a: GO:0007281 ! germ cell development
-is_a: GO:0007292 ! female gamete generation
-
-[Term]
-id: GO:0048609
-name: multicellular organismal reproductive process
-namespace: biological_process
-def: "The process, occurring above the cellular level, that is pertinent to the reproductive function of a multicellular organism. This includes the integrated processes at the level of tissues and organs." [GOC:dph, GOC:jid, GOC:tb]
-synonym: "organismal reproductive process" BROAD [GOC:curators]
-synonym: "reproductive process in a multicellular organism" EXACT [GOC:curators]
-is_a: GO:0022414 ! reproductive process
-relationship: part_of GO:0032504 ! multicellular organism reproduction
-
-[Term]
-id: GO:0048856
-name: anatomical structure development
-namespace: biological_process
-def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021, GOC:mtg_15jun06]
-comment: This term was added by GO_REF:0000021.
-subset: goslim_ChEMBL
-subset: goslim_generic
-synonym: "development of an anatomical structure" EXACT []
-is_a: GO:0032502 ! developmental process
-
-[Term]
-id: GO:0048869
-name: cellular developmental process
-namespace: biological_process
-def: "A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition." [GOC:isa_complete]
-subset: gosubset_prok
-is_a: GO:0044763 ! single-organism cellular process
-is_a: GO:0044767 ! single-organism developmental process
-
-[Term]
-id: GO:0051325
-name: interphase
-namespace: biological_process
-def: "The cell cycle phase following cytokinesis which begins with G1 phase, proceeds through S phase and G2 phase and ends when prophase of meiosis or mitosis begins. During interphase the cell readies itself for meiosis or mitosis and the replication of its DNA occurs." [GOC:mtg_cell_cycle]
-comment: Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).
-subset: gocheck_do_not_annotate
-synonym: "karyostasis" EXACT []
-synonym: "resting phase" BROAD []
-xref: Wikipedia:Interphase
-is_a: GO:0022403 ! cell cycle phase
-
-[Term]
-id: GO:0051704
-name: multi-organism process
-namespace: biological_process
-alt_id: GO:0051706
-def: "A biological process which involves another organism of the same or different species." [GOC:jl]
-subset: goslim_pir
-subset: gosubset_prok
-synonym: "interaction between organisms" EXACT []
-synonym: "physiological interaction between organisms" EXACT []
-synonym: "physiological interaction with other organism" EXACT []
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0071840
-name: cellular component organization or biogenesis
-namespace: biological_process
-alt_id: GO:0071841
-def: "A process that results in the biosynthesis of constituent macromolecules, assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:mah]
-synonym: "cellular component organisation or biogenesis" EXACT [GOC:mah]
-synonym: "cellular component organisation or biogenesis at cellular level" EXACT [GOC:mah]
-synonym: "cellular component organization or biogenesis at cellular level" EXACT []
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:1902589
-name: single-organism organelle organization
-namespace: biological_process
-def: "An organelle organization which involves only one organism." [GO_REF:0000089, GOC:jl, GOC:TermGenie]
-synonym: "single organism organelle organization" EXACT [GOC:TermGenie]
-is_a: GO:0006996 ! organelle organization
-is_a: GO:0044763 ! single-organism cellular process
-
-[Term]
-id: GO:1903047
-name: mitotic cell cycle process
-namespace: biological_process
-def: "A process that is part of the mitotic cell cycle." [GO_REF:0000060, GOC:mtg_cell_cycle, GOC:TermGenie]
-is_a: GO:0022402 ! cell cycle process
-relationship: part_of GO:0000278 ! mitotic cell cycle
-
 [Typedef]
 id: ends_at_start_of
-name: ends_at_start_of
 xref: RO:0002090
 
 [Typedef]
 id: has_part
-name: has_part
 namespace: relationship
 xref: BFO:0000051
 xref: OBO_REL:has_part
-is_transitive: true
-is_a: overlaps ! overlaps
 
 [Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
 comment: Same as starts_at_end_of
 xref: RO:0002087
-is_a: preceded_by ! preceded_by
-inverse_of: ends_at_start_of ! ends_at_start_of
 
 [Typedef]
 id: overlaps
 name: overlaps
 xref: RO:0002131
-holds_over_chain: has_part overlaps
-holds_over_chain: has_part part_of
-transitive_over: part_of ! part_of
-expand_expression_to: "BFO_0000051 some (BFO_0000050 some ?Y)" []
 
 [Typedef]
 id: part_of
-name: part_of
-xref: BFO:0000050
-xref: OBO_REL:part_of
+name: substage of
+comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
+xref: FBdv:00018001
 is_transitive: true
-inverse_of: has_part ! has_part
+is_a: RO:0002012
+is_a: RO:0002092
 
 [Typedef]
 id: preceded_by
 name: preceded_by
 xref: BFO:0000062
 xref: OBO_REL:preceded_by
-is_transitive: true
-created_by: djs93
-creation_date: 2009-10-09T10:00:53Z
 

@@ -180,6 +180,8 @@ property_value: IAO:0000118 "preceded_by" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 holds_over_chain: BFO:0000050 BFO:0000062
+holds_over_chain: RO:0002091 BFO:0000062
+holds_over_chain: RO:0002092 BFO:0000062
 is_transitive: true
 is_a: RO:0002086 ! ends after
 inverse_of: BFO:0000063 ! precedes
@@ -193,6 +195,7 @@ property_value: IAO:0000111 "precedes" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 holds_over_chain: BFO:0000050 BFO:0000063
+holds_over_chain: RO:0002092 BFO:0000063
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
 
@@ -247,6 +250,15 @@ property_value: IAO:0000118 "has_participant" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000002 ! continuant
 holds_over_chain: BFO:0000051 RO:0000057
+
+[Typedef]
+id: RO:0002012
+name: occurent part of
+def: "A part of relation that applies only between occurents." []
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+is_a: BFO:0000050 ! part of
+is_a: RO:0002418 ! causally upstream of or within
 
 [Typedef]
 id: RO:0002013
@@ -343,11 +355,31 @@ created_by: dos
 creation_date: 2017-09-22T14:14:36Z
 
 [Typedef]
+id: RO:0002084
+name: during which ends
+comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+is_a: RO:0002222 ! temporally related to
+inverse_of: RO:0002093 ! ends during
+
+[Typedef]
+id: RO:0002085
+name: encompasses
+comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002124 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "di" xsd:string
+is_transitive: true
+is_a: RO:0002088 ! during which starts
+inverse_of: RO:0002092 ! happens during
+
+[Typedef]
 id: RO:0002086
 name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+holds_over_chain: RO:0002093 BFO:0000062
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
 
@@ -361,6 +393,15 @@ is_a: BFO:0000062 ! preceded by
 inverse_of: RO:0002090 ! immediately precedes
 
 [Typedef]
+id: RO:0002088
+name: during which starts
+comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002123 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+is_a: RO:0002222 ! temporally related to
+inverse_of: RO:0002091 ! starts during
+
+[Typedef]
 id: RO:0002090
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
@@ -370,6 +411,38 @@ property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
 property_value: RO:0002575 BFO:0000063
 is_a: BFO:0000063 ! precedes
+
+[Typedef]
+id: RO:0002091
+name: starts during
+comment: X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "io" xsd:string
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+is_a: RO:0002222 ! temporally related to
+
+[Typedef]
+id: RO:0002092
+name: happens during
+comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "d" xsd:string
+property_value: IAO:0000118 "during" xsd:string
+is_transitive: true
+is_a: RO:0002093 ! ends during
+
+[Typedef]
+id: RO:0002093
+name: ends during
+comment: X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). 
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "o" xsd:string
+property_value: IAO:0000118 "overlaps" xsd:string
+is_a: RO:0002222 ! temporally related to
 
 [Typedef]
 id: RO:0002131

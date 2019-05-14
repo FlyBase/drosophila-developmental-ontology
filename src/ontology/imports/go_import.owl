@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/fbdv/imports/go_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/fbdv/imports/go_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -50,6 +51,127 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct annotation</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct manual annotation</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_agr -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_agr">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AGR slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_aspergillus -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_aspergillus">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspergillus GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_candida -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_candida">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candida GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_chembl -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_chembl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEMBL protein targets summary</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase Drosophila GO ribbon slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_generic -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_generic">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_metagenomics -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_metagenomics">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metagenomics GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_mouse -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_mouse">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouse GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_pir -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pir">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIR GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_plant -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_plant">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_pombe -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pombe">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fission yeast GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_yeast -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast GO slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#systematic_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#systematic_synonym">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systematic synonym</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -268,6 +390,44 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002091 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002091">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002091</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_during</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_during</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002093"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002092</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">happens_during</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">happens_during</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">happens during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002093 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002093">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002093</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_during</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_during</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002211 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002211">
@@ -361,6 +521,40 @@
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000087">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0000279"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0000278"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000279"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098763"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase and occurs as part of a mitotic cell cycle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M phase of mitotic cell cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M-phase of mitotic cell cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0000087</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is &apos;regulation of x/y phase transition&apos; or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitotic M phase</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000087"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase and occurs as part of a mitotic cell cycle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -6103,6 +6297,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0051329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051329">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051325"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0000278"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098763"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The cell cycle phase following cytokinesis which begins with G1 phase, proceeds through S phase and G2 phase and ends when mitotic prophase begins. During interphase the cell readies itself for mitosis and the replication of its DNA occurs.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interphase of mitotic cell cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0051329</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is &apos;regulation of x/y phase transition&apos; or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitotic interphase</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051329"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The cell cycle phase following cytokinesis which begins with G1 phase, proceeds through S phase and G2 phase and ends when mitotic prophase begins. During interphase the cell readies itself for mitosis and the replication of its DNA occurs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0051338 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051338">
@@ -6683,6 +6910,43 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that increases the rate, frequency or extent of a cellular process that is involved in the progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098763 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098763">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0022403"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0000278"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022403"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0000278"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the distinct periods or stages into which the mitotic cell cycle is divided. Each phase is characterized by the occurrence of specific biochemical and morphological events.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0098763</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation should be to &apos;regulation of x/y phase transition&apos; or to a process which occurs during the reported phase (e.g. mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitotic cell cycle phase</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098763"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the distinct periods or stages into which the mitotic cell cycle is divided. Each phase is characterized by the occurrence of specific biochemical and morphological events.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

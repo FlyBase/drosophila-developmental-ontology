@@ -33,7 +33,6 @@ relationship: part_of BFO:0000002 ! continuant
 id: BFO:0000003
 name: occurrent
 def: "An entity that has temporal parts and that happens, unfolds or develops through time." []
-def: "An entity that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants." [BFOC:ANON]
 relationship: part_of BFO:0000003 ! occurrent
 
 [Term]
@@ -103,7 +102,7 @@ name: Drosophila life
 alt_id: FBdv_root:00000000
 def: "The life of an individual of the species Drosophila melanogaster, from fertilization to death." [FBC:DOS]
 synonym: "Drosophila life cycle" EXACT []
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003 ! occurrent
 
 [Term]
 id: FBdv:00000054
@@ -137,7 +136,7 @@ id: FBdv:00005259
 name: developmental stage
 alt_id: FBdv:00007010
 def: "A temporal subdivision of a developmental process." [FBC:DOS]
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003 ! occurrent
 created_by: djs93
 creation_date: 2009-10-01T05:56:56Z
 
@@ -1346,9 +1345,7 @@ creation_date: 2008-12-11T01:19:53Z
 [Term]
 id: FBdv:00007008
 name: occurrent
-xref: BFO:0000003
-created_by: djs93
-creation_date: 2009-10-01T05:56:28Z
+is_obsolete: true
 
 [Term]
 id: FBdv:00007009
@@ -1381,7 +1378,7 @@ creation_date: 2009-10-01T05:59:22Z
 id: FBdv:00007013
 name: age
 def: "Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion." [FBC:DOS]
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003 ! occurrent
 created_by: djs93
 creation_date: 2010-09-29T12:25:36Z
 
@@ -1484,7 +1481,7 @@ intersection_of: part_of FBdv:00007011 ! embryonic cycle
 id: FBdv:00007024
 name: biological process
 xref: GO:0008150
-is_a: FBdv:00007008 ! occurrent
+is_a: BFO:0000003 ! occurrent
 
 [Term]
 id: FBdv:00007025
@@ -2078,17 +2075,29 @@ alt_id: GO:0019952
 alt_id: GO:0050876
 def: "The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms." [GOC:go_curators, GOC:isa_complete, GOC:jl, ISBN:0198506732]
 subset: goslim_agr
-subset: goslim_ChEMBL
 subset: goslim_chembl
 subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_pir
 subset: goslim_plant
-subset: gosubset_prok
 synonym: "reproductive physiological process" EXACT []
 xref: Wikipedia:Reproduction
 is_a: GO:0008150 ! biological_process
 disjoint_from: GO:0044848 ! biological phase
+
+[Term]
+id: GO:0000087
+name: mitotic M phase
+namespace: biological_process
+def: "A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase and occurs as part of a mitotic cell cycle." [GOC:mtg_cell_cycle]
+comment: Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).
+subset: gocheck_do_not_annotate
+synonym: "M phase of mitotic cell cycle" EXACT []
+synonym: "M-phase of mitotic cell cycle" EXACT []
+is_a: GO:0000279 ! M phase
+is_a: GO:0098763 ! mitotic cell cycle phase
+intersection_of: GO:0000279 ! M phase
+intersection_of: happens_during GO:0000278 ! mitotic cell cycle
 
 [Term]
 id: GO:0000278
@@ -2100,28 +2109,8 @@ subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_yeast
 synonym: "mitosis" RELATED []
-synonym: "mitotic nuclear division" RELATED []
 xref: MIPS_funcat:10.03.01
 xref: MIPS_funcat:10.03.01.01
-xref: Reactome:REACT_100451 "Cell Cycle, Mitotic, Taeniopygia guttata"
-xref: Reactome:REACT_104035 "Cell Cycle, Mitotic, Sus scrofa"
-xref: Reactome:REACT_104195 "Cell Cycle, Mitotic, Canis familiaris"
-xref: Reactome:REACT_105856 "Cell Cycle, Mitotic, Danio rerio"
-xref: Reactome:REACT_108233 "Cell Cycle, Mitotic, Saccharomyces cerevisiae"
-xref: Reactome:REACT_152 "Cell Cycle, Mitotic, Homo sapiens"
-xref: Reactome:REACT_28464 "Cell Cycle, Mitotic, Xenopus tropicalis"
-xref: Reactome:REACT_28953 "Cell Cycle, Mitotic, Bos taurus"
-xref: Reactome:REACT_33388 "Cell Cycle, Mitotic, Rattus norvegicus"
-xref: Reactome:REACT_53493 "Cell Cycle, Mitotic, Plasmodium falciparum"
-xref: Reactome:REACT_79085 "Cell Cycle, Mitotic, Schizosaccharomyces pombe"
-xref: Reactome:REACT_84794 "Cell Cycle, Mitotic, Caenorhabditis elegans"
-xref: Reactome:REACT_85137 "Cell Cycle, Mitotic, Gallus gallus"
-xref: Reactome:REACT_85950 "Cell Cycle, Mitotic, Arabidopsis thaliana"
-xref: Reactome:REACT_90332 "Cell Cycle, Mitotic, Mus musculus"
-xref: Reactome:REACT_90846 "Cell Cycle, Mitotic, Oryza sativa"
-xref: Reactome:REACT_96281 "Cell Cycle, Mitotic, Drosophila melanogaster"
-xref: Reactome:REACT_97744 "Cell Cycle, Mitotic, Dictyostelium discoideum"
-xref: Reactome:REACT_98208 "Cell Cycle, Mitotic, Mycobacterium tuberculosis"
 xref: Wikipedia:Mitosis
 is_a: GO:0007049 ! cell cycle
 intersection_of: GO:0007049 ! cell cycle
@@ -2161,7 +2150,6 @@ is_a: GO:0022414 ! reproductive process
 is_a: GO:0032502 ! developmental process
 intersection_of: GO:0032502 ! developmental process
 intersection_of: part_of GO:0000003 ! reproduction
-relationship: part_of GO:0000003 ! reproduction
 
 [Term]
 id: GO:0003674
@@ -2275,7 +2263,6 @@ def: "A process that is carried out at the cellular level which results in the a
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_pir
-subset: gosubset_prok
 synonym: "organelle organisation" EXACT [GOC:curators]
 synonym: "organelle organization and biogenesis" RELATED [GOC:dph, GOC:jl, GOC:mah]
 synonym: "single organism organelle organization" EXACT [GOC:TermGenie]
@@ -2298,13 +2285,11 @@ subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_pir
 subset: goslim_plant
-subset: gosubset_prok
 synonym: "cell-division cycle" EXACT []
 xref: MIPS_funcat:10
 xref: MIPS_funcat:10.03
 xref: Wikipedia:Cell_cycle
 is_a: GO:0009987 ! cellular process
-is_a: GO:0044763
 
 [Term]
 id: GO:0007088
@@ -2357,17 +2342,13 @@ relationship: part_of GO:0051716 ! cellular response to stimulus
 [Term]
 id: GO:0007275
 name: multicellular organism development
-name: multicellular organismal development
 namespace: biological_process
 def: "The biological process whose specific outcome is the progression of a multicellular organism over time from an initial condition (e.g. a zygote or a young adult) to a later condition (e.g. a multicellular animal or an aged adult)." [GOC:dph, GOC:ems, GOC:isa_complete, GOC:tb]
 comment: Note that this term was 'developmental process'.
-subset: goslim_ChEMBL
 subset: goslim_chembl
 subset: goslim_plant
 xref: MIPS_funcat:41
 is_a: GO:0032501 ! multicellular organismal process
-is_a: GO:0044707
-is_a: GO:0044767
 is_a: GO:0048856 ! anatomical structure development
 
 [Term]
@@ -2378,7 +2359,6 @@ alt_id: GO:0009552
 def: "The generation and maintenance of gametes in a multicellular organism. A gamete is a haploid reproductive cell." [GOC:ems, GOC:mtg_sensu]
 synonym: "gametogenesis" RELATED []
 xref: MIPS_funcat:41.05.25
-is_a: GO:0044702
 is_a: GO:0048609 ! multicellular organismal reproductive process
 relationship: part_of GO:0019953 ! sexual reproduction
 
@@ -2435,8 +2415,6 @@ alt_id: GO:0000004
 alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
-def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." [GOC:go_curators, GOC:isa_complete]
-comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code "no data" (ND), is used to indicate this.
 subset: goslim_aspergillus
 subset: goslim_candida
@@ -2447,7 +2425,6 @@ subset: goslim_pir
 subset: goslim_plant
 subset: goslim_pombe
 subset: goslim_yeast
-subset: gosubset_prok
 synonym: "biological process" EXACT []
 synonym: "physiological process" EXACT []
 synonym: "single organism process" RELATED []
@@ -2489,7 +2466,6 @@ namespace: biological_process
 alt_id: GO:0009795
 def: "The process whose specific outcome is the progression of an embryo from its formation until the end of its embryonic life stage. The end of the embryonic stage is organism-specific. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
 subset: gocheck_do_not_manually_annotate
-subset: goslim_ChEMBL
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_plant
@@ -2497,7 +2473,7 @@ synonym: "embryogenesis" EXACT []
 synonym: "embryogenesis and morphogenesis" BROAD []
 synonym: "embryonal development" EXACT []
 xref: Wikipedia:Embryogenesis
-is_a: GO:0007275 ! multicellular organismal development
+is_a: GO:0007275 ! multicellular organism development
 
 [Term]
 id: GO:0009794
@@ -2623,9 +2599,7 @@ alt_id: GO:0008151
 alt_id: GO:0044763
 alt_id: GO:0050875
 def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
-subset: goslim_pir
 subset: goslim_plant
-subset: gosubset_prok
 synonym: "cell growth and/or maintenance" NARROW []
 synonym: "cell physiology" EXACT []
 synonym: "cellular physiological process" EXACT []
@@ -2780,11 +2754,9 @@ alt_id: GO:0044235
 alt_id: GO:0071842
 def: "A process that results in the assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:ai, GOC:jl, GOC:mah]
 subset: goslim_agr
-subset: goslim_metagenomics
 subset: goslim_mouse
 subset: goslim_pir
 subset: goslim_plant
-subset: gosubset_prok
 synonym: "cell organisation" EXACT []
 synonym: "cell organization and biogenesis" RELATED [GOC:mah]
 synonym: "cellular component organisation at cellular level" EXACT [GOC:mah]
@@ -2885,7 +2857,6 @@ id: GO:0019953
 name: sexual reproduction
 namespace: biological_process
 def: "A reproduction process that creates a new organism by combining the genetic material of two gametes, which may come from two organisms or from a single organism, in the case of self-fertilizing hermaphrodites, e.g. C. elegans, or self-fertilization in plants. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two gametes join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny." [GOC:jl, GOC:kmv, GOC:krc, GOC:tb, http://en.wikipedia.org/wiki/Sexual_reproduction, ISBN:0387520546]
-def: "A reproduction process that creates a new organism by combining the genetic material of two organisms. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two different individuals (parents) join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny." [GOC:jl, http://en.wikipedia.org/wiki/Sexual_reproduction, ISBN:0387520546]
 comment: Sexual reproduction may be seen as the regular alternation, in the life cycle of haplontic, diplontic and diplohaplontic organisms, of meiosis and fertilization which provides for the production offspring. In diplontic organisms there is a life cycle in which the products of meiosis behave directly as gametes, fusing to form a zygote from which the diploid, or sexually reproductive polyploid, adult organism will develop. In diplohaplontic organisms a haploid phase (gametophyte) exists in the life cycle between meiosis and fertilization (e.g. higher plants, many algae and Fungi); the products of meiosis are spores that develop as haploid individuals from which haploid gametes develop to form a diploid zygote; diplohaplontic organisms show an alternation of haploid and diploid generations. In haplontic organisms meiosis occurs in the zygote, giving rise to four haploid cells (e.g. many algae and protozoa), only the zygote is diploid and this may form a resistant spore, tiding organisms over hard times.
 xref: Wikipedia:Sexual_reproduction
 is_a: GO:0000003 ! reproduction
@@ -2897,10 +2868,7 @@ name: cell cycle process
 namespace: biological_process
 def: "The cellular process that ensures successive accurate and complete genome replication and chromosome segregation." [GOC:isa_complete, GOC:mtg_cell_cycle]
 subset: gocheck_do_not_annotate
-subset: gocheck_do_not_manually_annotate
-subset: gosubset_prok
 is_a: GO:0009987 ! cellular process
-is_a: GO:0044763
 intersection_of: GO:0009987 ! cellular process
 intersection_of: part_of GO:0007049 ! cell cycle
 relationship: part_of GO:0007049 ! cell cycle
@@ -2921,8 +2889,6 @@ def: "A process, occurring at the cellular level, that is involved in the reprod
 synonym: "reproductive cellular process in multicellular organism" EXACT [GOC:curators]
 is_a: GO:0009987 ! cellular process
 is_a: GO:0022414 ! reproductive process
-is_a: GO:0044702
-is_a: GO:0044763
 intersection_of: GO:0009987 ! cellular process
 intersection_of: part_of GO:0032504 ! multicellular organism reproduction
 relationship: part_of GO:0032504 ! multicellular organism reproduction
@@ -2933,7 +2899,6 @@ name: reproductive process
 namespace: biological_process
 alt_id: GO:0044702
 def: "A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents." [GOC:dph, GOC:isa_complete]
-subset: gosubset_prok
 synonym: "single organism reproductive process" RELATED []
 is_a: GO:0008150 ! biological_process
 intersection_of: GO:0008150 ! biological_process
@@ -3013,12 +2978,10 @@ name: cell differentiation
 namespace: biological_process
 def: "The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state." [ISBN:0198506732]
 subset: goslim_agr
-subset: goslim_ChEMBL
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_mouse
 subset: goslim_plant
-subset: gosubset_prok
 xref: MIPS_funcat:40.02
 xref: Wikipedia:Cellular_differentiation
 is_a: GO:0048869 ! cellular developmental process
@@ -3142,7 +3105,6 @@ subset: goslim_agr
 subset: goslim_aspergillus
 subset: goslim_flybase_ribbon
 subset: goslim_pir
-subset: gosubset_prok
 synonym: "development" NARROW []
 synonym: "single-organism developmental process" RELATED []
 is_a: GO:0008150 ! biological_process
@@ -3419,15 +3381,6 @@ is_a: GO:0008152 ! metabolic process
 is_a: GO:0009987 ! cellular process
 
 [Term]
-id: GO:0044699
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0044702
-is_a: GO:0022414 ! reproductive process
-is_a: GO:0044699
-
-[Term]
 id: GO:0044703
 name: multi-organism reproductive process
 namespace: biological_process
@@ -3436,21 +3389,6 @@ is_a: GO:0022414 ! reproductive process
 is_a: GO:0051704 ! multi-organism process
 created_by: janelomax
 creation_date: 2012-09-19T15:56:30Z
-
-[Term]
-id: GO:0044707
-is_a: GO:0032501 ! multicellular organismal process
-is_a: GO:0044699
-
-[Term]
-id: GO:0044763
-is_a: GO:0009987 ! cellular process
-is_a: GO:0044699
-
-[Term]
-id: GO:0044767
-is_a: GO:0032502 ! developmental process
-is_a: GO:0044699
 
 [Term]
 id: GO:0044848
@@ -3764,7 +3702,6 @@ name: cell development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the cell over time, from its formation to the mature structure. Cell development does not include the steps involved in committing a cell to a specific fate." [GOC:go_curators]
 subset: goslim_candida
-subset: gosubset_prok
 synonym: "terminal differentiation" RELATED [GOC:dph, GOC:tb]
 is_a: GO:0048856 ! anatomical structure development
 is_a: GO:0048869 ! cellular developmental process
@@ -3915,7 +3852,6 @@ name: anatomical structure development
 namespace: biological_process
 def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021, GOC:mtg_15jun06]
 comment: This term was added by GO_REF:0000021.
-subset: goslim_ChEMBL
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_plant
@@ -3927,11 +3863,8 @@ id: GO:0048869
 name: cellular developmental process
 namespace: biological_process
 def: "A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition." [GOC:isa_complete]
-subset: gosubset_prok
 is_a: GO:0009987 ! cellular process
 is_a: GO:0032502 ! developmental process
-is_a: GO:0044763
-is_a: GO:0044767
 
 [Term]
 id: GO:0050789
@@ -4189,6 +4122,19 @@ xref: Wikipedia:Interphase
 is_a: GO:0022403 ! cell cycle phase
 
 [Term]
+id: GO:0051329
+name: mitotic interphase
+namespace: biological_process
+def: "The cell cycle phase following cytokinesis which begins with G1 phase, proceeds through S phase and G2 phase and ends when mitotic prophase begins. During interphase the cell readies itself for mitosis and the replication of its DNA occurs." [GOC:mtg_cell_cycle]
+comment: Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).
+subset: gocheck_do_not_annotate
+synonym: "interphase of mitotic cell cycle" EXACT []
+is_a: GO:0051325 ! interphase
+is_a: GO:0098763 ! mitotic cell cycle phase
+intersection_of: GO:0051325 ! interphase
+intersection_of: happens_during GO:0000278 ! mitotic cell cycle
+
+[Term]
 id: GO:0051338
 name: regulation of transferase activity
 namespace: biological_process
@@ -4246,7 +4192,6 @@ alt_id: GO:0051706
 def: "A biological process which involves another organism of the same or different species." [GOC:jl]
 subset: gocheck_do_not_annotate
 subset: goslim_pir
-subset: gosubset_prok
 synonym: "interaction between organisms" EXACT []
 synonym: "physiological interaction between organisms" EXACT []
 synonym: "physiological interaction with other organism" EXACT []
@@ -4396,6 +4341,18 @@ created_by: tanyaberardini
 creation_date: 2009-09-09T11:39:52Z
 
 [Term]
+id: GO:0098763
+name: mitotic cell cycle phase
+namespace: biological_process
+def: "One of the distinct periods or stages into which the mitotic cell cycle is divided. Each phase is characterized by the occurrence of specific biochemical and morphological events." [GOC:dos]
+comment: This term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation should be to 'regulation of x/y phase transition' or to a process which occurs during the reported phase (e.g. mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during).
+subset: gocheck_do_not_annotate
+is_a: GO:0022403 ! cell cycle phase
+intersection_of: GO:0022403 ! cell cycle phase
+intersection_of: happens_during GO:0000278 ! mitotic cell cycle
+relationship: happens_during GO:0000278 ! mitotic cell cycle
+
+[Term]
 id: GO:0098772
 name: molecular function regulator
 namespace: molecular_function
@@ -4465,11 +4422,6 @@ intersection_of: positively_regulates GO:0005102 ! signaling receptor binding
 relationship: positively_regulates GO:0005102 ! signaling receptor binding
 created_by: bf
 creation_date: 2012-02-22T11:41:00Z
-
-[Term]
-id: GO:1902589
-is_a: GO:0006996 ! organelle organization
-is_a: GO:0044763
 
 [Term]
 id: GO:1903047
@@ -4558,8 +4510,8 @@ def: "Any process that modulates the frequency, rate or extent of multicellular 
 is_a: GO:0050793 ! regulation of developmental process
 is_a: GO:0051239 ! regulation of multicellular organismal process
 intersection_of: GO:0008150 ! biological_process
-intersection_of: regulates GO:0007275 ! multicellular organismal development
-relationship: regulates GO:0007275 ! multicellular organismal development
+intersection_of: regulates GO:0007275 ! multicellular organism development
+relationship: regulates GO:0007275 ! multicellular organism development
 created_by: tanyaberardini
 creation_date: 2010-08-05T11:25:59Z
 
@@ -4642,6 +4594,7 @@ subset: ro-eco
 property_value: IAO:0000111 "precedes" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
+holds_over_chain: happens_during BFO:0000063
 holds_over_chain: part_of BFO:0000063
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
@@ -4681,6 +4634,15 @@ property_value: IAO:0000118 "has_participant" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000002 ! continuant
 holds_over_chain: has_part RO:0000057
+
+[Typedef]
+id: RO:0002012
+name: occurent part of
+def: "A part of relation that applies only between occurents." []
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+is_a: part_of ! part of
+is_a: RO:0002418 ! causally upstream of or within
 
 [Typedef]
 id: RO:0002013
@@ -4777,13 +4739,42 @@ created_by: dos
 creation_date: 2017-09-22T14:14:36Z
 
 [Typedef]
+id: RO:0002084
+name: during which ends
+comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+is_a: RO:0002222 ! temporally related to
+inverse_of: ends_during ! ends_during
+
+[Typedef]
+id: RO:0002085
+name: encompasses
+comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002124 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "di" xsd:string
+is_transitive: true
+is_a: RO:0002088 ! during which starts
+inverse_of: happens_during ! happens during
+
+[Typedef]
 id: RO:0002086
 name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+holds_over_chain: ends_during preceded_by
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
+
+[Typedef]
+id: RO:0002088
+name: during which starts
+comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002123 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+is_a: RO:0002222 ! temporally related to
+inverse_of: starts_during ! starts_during
 
 [Typedef]
 id: RO:0002180
@@ -4997,7 +4988,7 @@ property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso "defining-property-chains-involving-reflexivity"
 is_a: RO:0002502 ! depends on
-transitive_over: part_of ! part_of
+transitive_over: part_of ! part of
 
 [Typedef]
 id: RO:0002323
@@ -5058,7 +5049,7 @@ property_value: seeAlso Involved:in
 holds_over_chain: RO:0002327 part_of
 is_a: RO:0002217 ! actively participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
-transitive_over: part_of ! part_of
+transitive_over: part_of ! part of
 
 [Typedef]
 id: RO:0002333
@@ -5582,7 +5573,6 @@ creation_date: 2018-03-13T23:55:19Z
 
 [Typedef]
 id: ends_at_start_of
-name: ends_at_start_of
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
 subset: ro-eco
@@ -5594,9 +5584,34 @@ property_value: RO:0002575 BFO:0000063
 is_a: BFO:0000063 ! precedes
 
 [Typedef]
+id: ends_during
+name: ends during
+name: ends_during
+namespace: external
+comment: X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). 
+subset: ro-eco
+xref: RO:0002093
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "o" xsd:string
+property_value: IAO:0000118 "overlaps" xsd:string
+is_a: RO:0002222 ! temporally related to
+
+[Typedef]
+id: happens_during
+name: happens during
+namespace: external
+comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
+subset: ro-eco
+xref: RO:0002092
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "d" xsd:string
+property_value: IAO:0000118 "during" xsd:string
+is_transitive: true
+is_a: ends_during ! ends_during
+
+[Typedef]
 id: has_part
 name: has part
-name: has_part
 namespace: external
 namespace: relationship
 def: "a core relation that holds between a whole and its part" []
@@ -5656,7 +5671,7 @@ domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
 holds_over_chain: part_of occurs_in
 inverse_of: BFO:0000067 ! contains process
-transitive_over: part_of ! part_of
+transitive_over: part_of ! part of
 
 [Typedef]
 id: overlaps
@@ -5670,18 +5685,17 @@ holds_over_chain: has_part overlaps
 holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 holds_over_chain: part_of part_of
 is_a: RO:0002323 ! mereotopologically related to
-transitive_over: part_of ! part_of
-expand_expression_to: "BFO_0000051 some (BFO_0000050 some ?Y)" []
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
 [Typedef]
 id: part_of
 name: part of
-name: part_of
+name: substage of
 namespace: external
 def: "a core relation that holds between a part and its whole" []
+comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
 xref: BFO:0000050
-xref: OBO_REL:part_of
+xref: FBdv:00018001
 property_value: IAO:0000111 "is part of" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
@@ -5702,7 +5716,10 @@ property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_a
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
 property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
+is_transitive: true
+is_a: happens_during ! happens during
 is_a: overlaps ! overlaps
+is_a: RO:0002012 ! occurent part of
 inverse_of: has_part ! has part
 
 [Typedef]
@@ -5736,12 +5753,12 @@ property_value: IAO:0000118 "is preceded by" xsd:string
 property_value: IAO:0000118 "preceded_by" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
+holds_over_chain: happens_during preceded_by
 holds_over_chain: part_of preceded_by
+holds_over_chain: starts_during preceded_by
 is_transitive: true
 is_a: RO:0002086 ! ends after
 inverse_of: BFO:0000063 ! precedes
-created_by: djs93
-creation_date: 2009-10-09T10:00:53Z
 
 [Typedef]
 id: regulates
@@ -5765,4 +5782,18 @@ holds_over_chain: RO:0002578 RO:0002578
 is_transitive: true
 is_a: RO:0002411 ! causally upstream of
 inverse_of: RO:0002334 ! regulated by
+
+[Typedef]
+id: starts_during
+name: starts during
+name: starts_during
+namespace: external
+comment: X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))
+subset: ro-eco
+xref: RO:0002091
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "io" xsd:string
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+is_a: RO:0002222 ! temporally related to
 
