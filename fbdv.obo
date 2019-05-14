@@ -5319,7 +5319,7 @@ id: RO:0002405
 name: immediately causally downstream of
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: immediately_preceded_by ! immediately_preceded_by
+is_a: immediately_preceded_by ! immediately preceded by
 is_a: RO:0002404 ! causally downstream of
 inverse_of: RO:0002412 ! immediately causally upstream of
 
