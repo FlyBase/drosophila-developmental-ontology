@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-05-14/imports/go_import.owl
+data-version: fbdv/releases/2019-06-08/imports/go_import.owl
 ontology: fbdv/imports/go_import
 
 [Term]
