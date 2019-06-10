@@ -856,6 +856,32 @@
       "type" : "CLASS",
       "lbl" : "third instar larval stage"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0000279",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase.",
+          "xrefs" : [ "GOC:mtg_cell_cycle" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate" ],
+        "xrefs" : [ {
+          "val" : "Wikipedia:M_phase"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "M-phase",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "M phase"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00007078",
       "meta" : {
         "definition" : {
@@ -1166,6 +1192,16 @@
       "type" : "CLASS",
       "lbl" : "embryonic cycle interphase"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002012",
+      "meta" : {
+        "definition" : {
+          "val" : "A part of relation that applies only between occurents.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "occurent part of"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00007021",
       "meta" : {
         "definition" : {
@@ -1243,6 +1279,36 @@
       "type" : "CLASS",
       "lbl" : "immature adult stage"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002131",
+      "meta" : {
+        "definition" : {
+          "val" : "x overlaps y if and only if there exists some z such that x has part z and z part of y",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "xrefs" : [ {
+          "val" : "RO:0002131"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase_development_CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "overlaps"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000424",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "overlaps"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00007024",
       "meta" : {
         "xrefs" : [ {
@@ -1296,6 +1362,10 @@
       "type" : "CLASS",
       "lbl" : "embryonic stage 17(iv)"
     }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty",
+      "type" : "PROPERTY",
+      "lbl" : "synonym_type_property"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00007017",
       "meta" : {
         "definition" : {
@@ -1318,6 +1388,59 @@
       },
       "type" : "CLASS",
       "lbl" : "embryonic stage 17(iii)"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0051325",
+      "meta" : {
+        "definition" : {
+          "val" : "The cell cycle phase following cytokinesis which begins with G1 phase, proceeds through S phase and G2 phase and ends when prophase of meiosis or mitosis begins. During interphase the cell readies itself for meiosis or mitosis and the replication of its DNA occurs.",
+          "xrefs" : [ "GOC:mtg_cell_cycle" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate" ],
+        "xrefs" : [ {
+          "val" : "Wikipedia:Interphase"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "karyostasis",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasBroadSynonym",
+          "val" : "resting phase",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "interphase"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0051329",
+      "meta" : {
+        "definition" : {
+          "val" : "The cell cycle phase following cytokinesis which begins with G1 phase, proceeds through S phase and G2 phase and ends when mitotic prophase begins. During interphase the cell readies itself for mitosis and the replication of its DNA occurs.",
+          "xrefs" : [ "GOC:mtg_cell_cycle" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "interphase of mitotic cell cycle",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during)."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "mitotic interphase"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00007012",
       "meta" : {
@@ -1713,6 +1836,20 @@
       "type" : "CLASS",
       "lbl" : "oogenesis stage S13E"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0045448",
+      "meta" : {
+        "definition" : {
+          "val" : "The eukaryotic cell cycle in which a cell is duplicated without changing ploidy, occurring in the embryo.",
+          "xrefs" : [ "GOC:go_curators" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "mitotic cell cycle, embryonic"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00004450",
       "meta" : {
         "definition" : {
@@ -2069,6 +2206,26 @@
       "type" : "CLASS",
       "lbl" : "oogenesis stage S13A"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002323",
+      "meta" : {
+        "definition" : {
+          "val" : "A mereological relationship or a topological relationship",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "mereotopologically related to"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "meta" : {
         "xrefs" : [ {
@@ -2087,6 +2244,58 @@
       },
       "type" : "PROPERTY",
       "lbl" : "substage of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "meta" : {
+        "definition" : {
+          "val" : "a core relation that holds between a whole and its part",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "OBO_REL:has_part"
+        }, {
+          "val" : "BFO:0000051"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "relationship"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_part"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_part"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this year has part this day (occurrent parthood)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my body has part my brain (continuant parthood, two material entities)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has part"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has part"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00005270",
       "meta" : {
@@ -2993,6 +3202,147 @@
       "type" : "CLASS",
       "lbl" : "day 34 of adulthood"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "meta" : {
+        "definition" : {
+          "val" : "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "xrefs" : [ {
+          "val" : "OBO_REL:preceded_by"
+        }, {
+          "val" : "BFO:0000062"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "is preceded by"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "http://www.obofoundry.org/ro/#OBO_REL:preceded_by"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "preceded by"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "preceded_by"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "preceded_by"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase_development_CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "preceded_by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "meta" : {
+        "definition" : {
+          "val" : "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "precedes"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "precedes"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002092",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "xrefs" : [ {
+          "val" : "RO:0002092"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "happens_during"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "d"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "during"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "happens during"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0000087",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase and occurs as part of a mitotic cell cycle.",
+          "xrefs" : [ "GOC:mtg_cell_cycle" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "M phase of mitotic cell cycle",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "M-phase of mitotic cell cycle",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Note that this term should not be used for direct annotation. If you are trying to make an annotation to x phase, it is likely that the correct annotation is 'regulation of x/y phase transition' or to a process which occurs during the reported phase (i.e mitotic DNA replication for mitotic S-phase). To capture the phase when a specific location or process is observed, the phase term can be used in an annotation extension (PMID:24885854) applied to a cellular component term (with the relation exists_during) or a biological process term (with the relation happens_during)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "mitotic M phase"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002090",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "xrefs" : [ {
+          "val" : "RO:0002090"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0002575",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000063"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase_development_CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "ends_at_start_of"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "ends_at_start_of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "meets"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "immediately precedes"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00005361",
       "meta" : {
         "definition" : {
@@ -3561,6 +3911,20 @@
       "type" : "CLASS",
       "lbl" : "pupal stage P5(ii)"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002086",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "ends after"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00005353",
       "meta" : {
         "definition" : {
@@ -3582,6 +3946,34 @@
       },
       "type" : "CLASS",
       "lbl" : "pupal stage P6"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "RO:0002087"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "starts_at_end_of"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase_development_CV"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Same as starts_at_end_of"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "immediately_preceded_by"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "immediately_preceded_by"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00005347",
       "meta" : {
@@ -3708,6 +4100,16 @@
       },
       "type" : "CLASS",
       "lbl" : "pupal stage"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000003",
+      "meta" : {
+        "definition" : {
+          "val" : "An entity that has temporal parts and that happens, unfolds or develops through time.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "occurrent"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBdv_00005262",
       "meta" : {
@@ -4036,6 +4438,10 @@
       },
       "type" : "CLASS",
       "lbl" : "pharate adult stage P15(ii)"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
+      "type" : "PROPERTY",
+      "lbl" : "subset_property"
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005328",
@@ -4078,13 +4484,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005367",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005366",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00006011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005367",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005348",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -4114,13 +4520,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005294",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00007011"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005299",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005293"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005294",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00007011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005345",
       "pred" : "is_a",
@@ -4145,6 +4551,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005308",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002131",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002323"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005279",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -4318,6 +4728,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002090"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005273",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00004886"
@@ -4333,6 +4747,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007022",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000063"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005344",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -4562,13 +4980,13 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005351"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007088",
-      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005299",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007088",
+      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005344",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -4610,13 +5028,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007012"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005287",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005285"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007007",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005287",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005285"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007079",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -4714,13 +5132,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007110",
-      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005337",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005335"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007110",
+      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005369",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -4834,13 +5252,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007011"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007091",
-      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005331",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007091",
+      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005369",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -5006,13 +5424,13 @@
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00004886"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005349",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005342"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005317",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005311"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005349",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005342"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005264",
       "pred" : "is_a",
@@ -5030,11 +5448,15 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005342"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007096",
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002090",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000063"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007106",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007106",
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007096",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
     }, {
@@ -5126,13 +5548,13 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007020"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007114",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00007113"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007019",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005340"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007114",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00007113"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005350",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -5178,6 +5600,10 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007133"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002131"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007133",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
@@ -5206,13 +5632,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005291",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005353",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005352"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005291",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005276",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -5221,6 +5647,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007111",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GO_0051329",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0051325"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005358",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -5370,13 +5800,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005306",
-      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005304"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005318",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005317"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005306",
+      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005304"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005338",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -5417,6 +5847,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005321",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005289"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000062"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005356",
       "pred" : "is_a",
@@ -5590,13 +6024,13 @@
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005369"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005350",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005348"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005352",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005350",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005348"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007117",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -5778,13 +6212,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007009"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007132",
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000003",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005272",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005270"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007132",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005351",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -5806,13 +6244,13 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007015"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005351",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005346"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007011",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007024"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005351",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005346"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007101",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -6034,25 +6472,25 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005312"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_root_00000000",
-      "pred" : "is_a",
-      "obj" : "http://www.w3.org/2002/07/owl#Thing"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005355",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005259"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_root_00000000",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007021",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005341"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005359",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005357"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005342",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00005359",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005357"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005263",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -6137,6 +6575,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00014201",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005322"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GO_0000087",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0000279"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007112",
       "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
@@ -6470,13 +6912,13 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007123"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00004450",
-      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005321"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00007091",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007090"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00004450",
+      "pred" : "http://purl.obolibrary.org/obo/FBdv_00018001",
+      "obj" : "http://purl.obolibrary.org/obo/FBdv_00005321"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005298",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
@@ -6510,11 +6952,11 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005354"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007135",
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007090",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007090",
+      "sub" : "http://purl.obolibrary.org/obo/FBdv_00007135",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00007014"
     }, {
@@ -6590,6 +7032,10 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005261"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002086"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBdv_00005304",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002087",
       "obj" : "http://purl.obolibrary.org/obo/FBdv_00005290"
@@ -6628,25 +7074,32 @@
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/fbdv/releases/2019-05-14/fbdv-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/fbdv/releases/2019-06-08/fbdv-simple.json"
     },
     "equivalentNodesSets" : [ ],
-    "logicalDefinitionAxioms" : [ {
-      "definedClassId" : "http://purl.obolibrary.org/obo/FBdv_00007022",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GO_0051325" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-        "fillerId" : "http://purl.obolibrary.org/obo/FBdv_00007011"
-      } ]
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002012",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
     }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/FBdv_00007023",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GO_0000279" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/FBdv_00018001",
-        "fillerId" : "http://purl.obolibrary.org/obo/FBdv_00007011"
-      } ]
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
     } ],
-    "domainRangeAxioms" : [ ],
-    "propertyChainAxioms" : [ ]
+    "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002092", "http://purl.obolibrary.org/obo/BFO_0000063" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002131",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/RO_0002131" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002092", "http://purl.obolibrary.org/obo/BFO_0000062" ]
+    } ]
   } ]
 }
