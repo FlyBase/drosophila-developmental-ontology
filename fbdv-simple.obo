@@ -1,8 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-07-06/fbdv-simple.owl
-date: 14:10:2016 17:30
-saved-by: mmc46
-auto-generated-by: OBO-Edit 2.3
+data-version: fbdv/releases/2019-07-25/fbdv-simple.owl
+date: 25:07:2019 12:12
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 remark: Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo

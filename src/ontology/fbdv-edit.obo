@@ -1,8 +1,5 @@
 format-version: 1.2
 data-version: 2016-10-14
-date: 14:10:2016 17:30
-saved-by: mmc46
-auto-generated-by: OBO-Edit 2.3
 import: http://purl.obolibrary.org/obo/fbdv/imports/go_import.owl
 import: http://purl.obolibrary.org/obo/fbdv/imports/ro_import.owl
 import: http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl
