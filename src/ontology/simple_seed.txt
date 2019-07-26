@@ -214,8 +214,10 @@ http://purl.obolibrary.org/obo/FBdv_00007135
 http://purl.obolibrary.org/obo/FBdv_00014201
 http://purl.obolibrary.org/obo/FBdv_00018001
 http://purl.obolibrary.org/obo/FBdv_root_00000000
+http://purl.obolibrary.org/obo/RO_0002012
 http://purl.obolibrary.org/obo/RO_0002087
 http://purl.obolibrary.org/obo/RO_0002090
+http://purl.obolibrary.org/obo/RO_0002092
 http://purl.obolibrary.org/obo/RO_0002131
 term
 http://www.geneontology.org/formats/oboInOwl#SubsetProperty

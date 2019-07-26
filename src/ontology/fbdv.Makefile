@@ -4,6 +4,25 @@
 ## changes here rather than in the main Makefile
 
 ######################################################
+### Overwriting some default aretfacts ###
+######################################################
+
+# Simple is overwritten to strip out duplicate names and definitions.
+$(ONT)-simple.obo: $(ONT)-simple.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\nname[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+
+# We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbbt.owl) are annotated.
+$(ONT).obo: $(ONT)-simple.owl
+	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
+	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\nname[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+
+######################################################
 ### Code for generating additional FlyBase reports ###
 ######################################################
 
