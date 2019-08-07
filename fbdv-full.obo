@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-07-25/fbdv-full.owl
-date: 25:07:2019 12:10
+data-version: fbdv/releases/2019-08-07/fbdv-full.owl
+date: 07:08:2019 13:01
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -38,6 +38,8 @@ id: BFO:0000004
 name: independent continuant
 def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 is_a: BFO:0000002 ! continuant
+disjoint_from: BFO:0000020 ! specifically dependent continuant
+disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: part_of BFO:0000004 ! independent continuant
 
 [Term]
@@ -45,6 +47,35 @@ id: BFO:0000015
 name: process
 def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
 is_a: BFO:0000003 ! occurrent
+
+[Term]
+id: BFO:0000017
+name: realizable entity
+def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
+is_a: BFO:0000020 ! specifically dependent continuant
+disjoint_from: BFO:0000019 ! quality
+relationship: part_of BFO:0000017 ! realizable entity
+
+[Term]
+id: BFO:0000019
+name: quality
+is_a: BFO:0000020 ! specifically dependent continuant
+relationship: part_of BFO:0000019 ! quality
+
+[Term]
+id: BFO:0000020
+name: specifically dependent continuant
+def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
+is_a: BFO:0000002 ! continuant
+disjoint_from: BFO:0000031 ! generically dependent continuant
+relationship: part_of BFO:0000020 ! specifically dependent continuant
+
+[Term]
+id: BFO:0000031
+name: generically dependent continuant
+def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
+is_a: BFO:0000002 ! continuant
+relationship: part_of BFO:0000031 ! generically dependent continuant
 
 [Term]
 id: BFO:0000040
@@ -2511,6 +2542,18 @@ created_by: janelomax
 creation_date: 2012-12-11T16:56:55Z
 
 [Term]
+id: GO:0010469
+name: regulation of signaling receptor activity
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a signaling receptor activity. Receptor activity is when a molecule combines with an extracellular or intracellular messenger to initiate a change in cell activity." [GOC:dph, GOC:tb]
+synonym: "regulation of receptor activity" BROAD []
+is_a: GO:0009966 ! regulation of signal transduction
+is_a: GO:0065009 ! regulation of molecular function
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0038023 ! signaling receptor activity
+relationship: regulates GO:0038023 ! signaling receptor activity
+
+[Term]
 id: GO:0010562
 name: positive regulation of phosphorus metabolic process
 namespace: biological_process
@@ -2977,7 +3020,23 @@ relationship: positively_regulates GO:0016301 ! kinase activity
 
 [Term]
 id: GO:0038023
+name: signaling receptor activity
+namespace: molecular_function
 alt_id: GO:0004872
+alt_id: GO:0019041
+def: "Receiving a signal and transmitting it in the cell to initiate a change in cell activity. A signal is a physical entity or change in state that is used to transfer information in order to trigger a response." [GOC:bf, GOC:signaling]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+synonym: "receptor activity" BROAD []
+synonym: "receptor activity involved in signal transduction" EXACT [GOC:bf]
+is_a: GO:0060089 ! molecular transducer activity
+created_by: rfoulger
+creation_date: 2011-08-01T02:45:27Z
 
 [Term]
 id: GO:0040019
@@ -3913,6 +3972,15 @@ intersection_of: positively_regulates GO:0000280 ! nuclear division
 relationship: positively_regulates GO:0000280 ! nuclear division
 
 [Term]
+id: GO:0060089
+name: molecular transducer activity
+namespace: molecular_function
+def: "A compound molecular function in which an effector function is controlled by one or more regulatory components." [GOC:dos, GOC:pdt]
+subset: gocheck_do_not_manually_annotate
+subset: goslim_pir
+is_a: GO:0003674 ! molecular_function
+
+[Term]
 id: GO:0065007
 name: biological regulation
 namespace: biological_process
@@ -4075,6 +4143,33 @@ created_by: tanyaberardini
 creation_date: 2010-08-05T11:25:59Z
 
 [Term]
+id: GO:2000272
+name: negative regulation of signaling receptor activity
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of a signaling receptor activity." [GOC:obol]
+synonym: "negative regulation of receptor activity" BROAD []
+is_a: GO:0010469 ! regulation of signaling receptor activity
+is_a: GO:0044092 ! negative regulation of molecular function
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0038023 ! signaling receptor activity
+relationship: negatively_regulates GO:0038023 ! signaling receptor activity
+created_by: rfoulger
+creation_date: 2010-12-02T09:28:47Z
+
+[Term]
+id: GO:2000273
+name: positive regulation of signaling receptor activity
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of signaling receptor activity." [GOC:obol]
+is_a: GO:0010469 ! regulation of signaling receptor activity
+is_a: GO:0044093 ! positive regulation of molecular function
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0038023 ! signaling receptor activity
+relationship: positively_regulates GO:0038023 ! signaling receptor activity
+created_by: rfoulger
+creation_date: 2010-12-02T09:28:50Z
+
+[Term]
 id: RO:0002532
 name: sequentially ordered entity
 def: "Any entity that is ordered in discrete units along a linear axis." []
@@ -4101,22 +4196,6 @@ holds_over_chain: happens_during BFO:0000063
 holds_over_chain: part_of BFO:0000063
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
-
-[Typedef]
-id: BFO:0000066
-name: occurs in
-def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
-comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
-property_value: IAO:0000111 "occurs in" xsd:string
-property_value: IAO:0000118 "occurs_in" xsd:string
-property_value: IAO:0000118 "unfolds in" xsd:string
-property_value: IAO:0000118 "unfolds_in" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-domain: BFO:0000003 ! occurrent
-range: BFO:0000004 ! independent continuant
-holds_over_chain: part_of BFO:0000066
-inverse_of: BFO:0000067 ! contains process
-transitive_over: part_of ! part of
 
 [Typedef]
 id: BFO:0000067
@@ -4800,7 +4879,7 @@ synonym: "enables activity in" EXACT []
 property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "executes activity in" xsd:string
-holds_over_chain: RO:0002327 BFO:0000066 {http://purl.obolibrary.org/obo/RO_0002581="true"}
+holds_over_chain: RO:0002327 occurs_in {http://purl.obolibrary.org/obo/RO_0002581="true"}
 is_a: overlaps ! overlaps
 is_a: RO:0002328 ! functionally related to
 
@@ -4881,7 +4960,7 @@ subset: ro-eco
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
-holds_over_chain: has_part BFO:0000066 {http://purl.obolibrary.org/obo/RO_0002581="true"}
+holds_over_chain: has_part occurs_in {http://purl.obolibrary.org/obo/RO_0002581="true"}
 
 [Typedef]
 id: RO:0002481
@@ -5288,6 +5367,24 @@ property_value: RO:0004050 RO:0002211
 is_a: regulates ! regulates
 is_a: RO:0002305 ! causally upstream of, negative effect
 inverse_of: RO:0002335 ! negatively regulated by
+
+[Typedef]
+id: occurs_in
+name: occurs in
+namespace: external
+def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
+comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
+xref: BFO:0000066
+property_value: IAO:0000111 "occurs in" xsd:string
+property_value: IAO:0000118 "occurs_in" xsd:string
+property_value: IAO:0000118 "unfolds in" xsd:string
+property_value: IAO:0000118 "unfolds_in" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+domain: BFO:0000003 ! occurrent
+range: BFO:0000004 ! independent continuant
+holds_over_chain: part_of occurs_in
+inverse_of: BFO:0000067 ! contains process
+transitive_over: part_of ! part of
 
 [Typedef]
 id: overlaps

@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-07-26
-date: 26:07:2019 11:01
+data-version: fbdv/releases/2019-08-07
+date: 07:08:2019 13:01
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 remark: Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo
@@ -1974,6 +1974,7 @@ relationship: part_of FBdv:00005321 ! extended germ band stage
 id: RO:0002012
 name: occurent part of
 def: "A part of relation that applies only between occurents." []
+is_a: happens_during ! happens during
 is_a: overlaps ! overlaps
 
 [Typedef]
@@ -1998,7 +1999,6 @@ property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "d" xsd:string
 property_value: IAO:0000118 "during" xsd:string
 is_transitive: true
-is_a: RO:0002012 ! occurent part of
 
 [Typedef]
 id: has_part
