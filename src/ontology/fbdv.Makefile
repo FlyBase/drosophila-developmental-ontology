@@ -144,19 +144,11 @@ fly-stage.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	$(ROBOT) remove -vv -i tmp/fbdv-simple-stripped.obo --select "owl:deprecated='true'^^xsd:boolean" --trim true \
 		merge --collapse-import-closure false --input tmp/fbdv-obj.obo \
 		remove --term-file rem_flybase.txt --trim false \
-		query --update ../sparql/force-obo.ru -o $@.tmp.obo
-	cat $@.tmp.obo | sed 's/^xref: OBO_REL:part_of/xref_analog: OBO_REL:part_of/' | sed 's/^xref: OBO_REL:has_part/xref_analog: OBO_REL:has_part/' | grep -v property_value: | grep -v ^owl-axioms | sed s'/^default-namespace: fly_anatomy.ontology/default-namespace: FlyBase anatomy CV/' | grep -v ^expand_expression_to > $@  && rm $@.tmp.obo
+		query --update ../sparql/force-obo.ru \
+		convert -f obo --check false -o $@.tmp.obo
+	cat $@.tmp.obo | sed 's/^xref: OBO_REL:part_of/xref_analog: OBO_REL:part_of/' | sed 's/^xref: OBO_REL:has_part/xref_analog: OBO_REL:has_part/' | grep -v property_value: | grep -v ^owl-axioms | sed s'/^default-namespace: fly_anatomy.ontology/default-namespace: FlyBase anatomy CV/' | grep -v ^expand_expression_to > $@  
+	rm $@.tmp.obo
 
 post_release: fly-stage.obo
-	cp fly-anatomy.obo ../..
+	cp fly-stage.obo ../..
 
-flybase_sparql_test: $(ont)-simple.owl
-	$(ROBOT) verify -i $< --queries $(SPARQL_VALIDATION_QUERIES) -O reports/	
-
-flybase_all_reports_onestep: $(ont)-simple.owl
-		$(ROBOT) query -f tsv -i $< $(SPARQL_EXPORTS_ARGS)
-
-# Run his with OBO_REPORT=fbdv-simple.owl IMP=false
-
-flybase_test: odkversion flybase_sparql_test flybase_all_reports_onestep $(REPORT_FILES)
-		$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"

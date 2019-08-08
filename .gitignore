@@ -22,3 +22,5 @@ src/ontology/ed_definitions_merged.owl
 src/ontology/patterns 
 *.tmp.obo
 *.tmp.owl
+src/ontology/fly-stage.obo
+src/ontology/fbdv-edit-release.owl
