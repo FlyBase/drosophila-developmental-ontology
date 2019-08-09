@@ -1,6 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	BFO:0000051	rdfs:label		
-ERROR	missing_label	RO:0002090	rdfs:label		
 ERROR	missing_ontology_description	fbdv.owl	dc11:description		
 ERROR	missing_ontology_license	fbdv.owl	dc:license		
 ERROR	missing_ontology_title	fbdv.owl	dc11:title		
@@ -15,6 +13,7 @@ WARN	missing_definition	FBdv:00007024	IAO:0000115
 WARN	missing_definition	FBdv:00018001	IAO:0000115		
 WARN	missing_definition	IAO:0000115	IAO:0000115		
 WARN	missing_definition	IAO:0100001	IAO:0000115		
+WARN	missing_definition	RO:0002012	IAO:0000115		
 WARN	missing_definition	RO:0002087	IAO:0000115		
 WARN	missing_definition	RO:0002090	IAO:0000115		
 WARN	missing_definition	RO:0002131	IAO:0000115		

@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-08-07
-date: 07:08:2019 13:01
+data-version: fbdv/releases/2019-08-09
+date: 09:08:2019 13:47
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 remark: Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo
@@ -1971,17 +1971,9 @@ relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: part_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
-id: RO:0002012
-name: occurent part of
-def: "A part of relation that applies only between occurents." []
-is_a: happens_during ! happens during
-is_a: overlaps ! overlaps
-
-[Typedef]
 id: ends_at_start_of
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
-subset: ro-eco
 xref: RO:0002090
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
@@ -1991,9 +1983,7 @@ property_value: RO:0002575 BFO:0000063
 [Typedef]
 id: happens_during
 name: happens during
-namespace: external
 comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
-subset: ro-eco
 xref: RO:0002092
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "d" xsd:string
@@ -2002,8 +1992,7 @@ is_transitive: true
 
 [Typedef]
 id: has_part
-name: has part
-namespace: external
+name: has_part
 namespace: relationship
 def: "a core relation that holds between a whole and its part" []
 xref: BFO:0000051
@@ -2023,7 +2012,6 @@ is_a: overlaps ! overlaps
 [Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
-comment: Same as starts_at_end_of
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
 xref: RO:0002087
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
@@ -2032,10 +2020,17 @@ is_a: preceded_by ! preceded_by
 inverse_of: ends_at_start_of ! immediately precedes
 
 [Typedef]
+id: occurent_part_of
+name: occurent_part_of
+def: "A part of relation that applies only between occurents." []
+xref: RO:0002012
+is_a: happens_during ! happens during
+is_a: overlaps ! overlaps
+
+[Typedef]
 id: overlaps
 name: overlaps
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
-subset: ro-eco
 xref: RO:0002131
 property_value: IAO:0000114 IAO:0000125
 property_value: RO:0001900 RO:0001901
@@ -2045,17 +2040,18 @@ expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://p
 [Typedef]
 id: part_of
 name: substage of
+namespace: relationship
 comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: RO:0002012 ! occurent part of
+is_a: occurent_part_of ! occurent part of
 
 [Typedef]
 id: preceded_by
 name: preceded_by
+namespace: relationship
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-subset: ro-eco
 xref: BFO:0000062
 xref: OBO_REL:preceded_by
 property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:preceded_by xsd:string

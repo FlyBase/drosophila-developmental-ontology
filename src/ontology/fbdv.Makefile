@@ -62,7 +62,8 @@ $(ONT)-simple.obo: $(ONT)-simple.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
 	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
 	sed -i '/subset[:] ro[-]eco/d' $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	sed -i '/namespace[:][ ]external/d' $@
 	rm -f $@.tmp.obo $@.tmp
 
 # We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbdv.owl) are annotated.
@@ -71,9 +72,10 @@ $(ONT).obo: $(ONT)-simple.owl
 	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
 	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
 	sed -i '/subset[:] ro[-]eco/d' $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	sed -i '/namespace[:][ ]external/d' $@
 	rm -f $@.tmp.obo $@.tmp
-	
+
 #ont.obo:
 #	$(ROBOT) annotate --input $(ONT)-simple.owl --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
 #	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
@@ -126,7 +128,7 @@ tmp/remove_dot_defs.txt: tmp/auto_generated_definitions_seed_dot.txt
 
 pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl tmp/remove_dot_defs.txt
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
-	$(ROBOT) -vvv query -i tmp/$(ONT)-edit-release.obo --update ../sparql/remove-dot-definitions.ru convert -f obo --check false -o tmp/$(ONT)-edit-release.obo
+	$(ROBOT) query -i tmp/$(ONT)-edit-release.obo --update ../sparql/remove-dot-definitions.ru convert -f obo --check false -o tmp/$(ONT)-edit-release.obo
 	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
@@ -146,7 +148,7 @@ fly-stage.obo: tmp/fbdv-obj.obo rem_flybase.txt
 		remove --term-file rem_flybase.txt --trim false \
 		query --update ../sparql/force-obo.ru \
 		convert -f obo --check false -o $@.tmp.obo
-	cat $@.tmp.obo | sed 's/^xref: OBO_REL:part_of/xref_analog: OBO_REL:part_of/' | sed 's/^xref: OBO_REL:has_part/xref_analog: OBO_REL:has_part/' | grep -v property_value: | grep -v ^owl-axioms | sed s'/^default-namespace: fly_anatomy.ontology/default-namespace: FlyBase anatomy CV/' | grep -v ^expand_expression_to > $@  
+	cat $@.tmp.obo | sed 's/^xref: OBO_REL:part_of/xref_analog: OBO_REL:part_of/' | sed 's/^xref: OBO_REL:has_part/xref_analog: OBO_REL:has_part/' | sed 's/^xref: OBO_REL:preceded_by/xref_analog: OBO_REL:preceded_by/' | grep -v property_value: | grep -v ^owl-axioms | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to > $@  
 	rm $@.tmp.obo
 
 post_release: fly-stage.obo

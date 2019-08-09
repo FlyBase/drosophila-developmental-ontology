@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-08-08/fbdv-non-classified.owl
-date: 08:08:2019 12:43
+data-version: fbdv/releases/2019-08-09/fbdv-non-classified.owl
+date: 09:08:2019 13:48
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -4236,15 +4236,6 @@ range: BFO:0000002 ! continuant
 holds_over_chain: has_part RO:0000057
 
 [Typedef]
-id: RO:0002012
-name: occurent part of
-def: "A part of relation that applies only between occurents." []
-domain: BFO:0000003 ! occurrent
-range: BFO:0000003 ! occurrent
-is_a: part_of ! part of
-is_a: RO:0002418 ! causally upstream of or within
-
-[Typedef]
 id: RO:0002013
 name: has regulatory component activity
 def: "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B." []
@@ -5288,6 +5279,7 @@ creation_date: 2018-03-13T23:55:19Z
 
 [Typedef]
 id: ends_at_start_of
+name: ends_at_start_of
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
 subset: ro-eco
@@ -5327,6 +5319,7 @@ is_a: ends_during ! ends_during
 [Typedef]
 id: has_part
 name: has part
+name: has_part
 namespace: external
 namespace: relationship
 def: "a core relation that holds between a whole and its part" []
@@ -5348,7 +5341,6 @@ is_a: overlaps ! overlaps
 id: immediately_preceded_by
 name: immediately preceded by
 name: immediately_preceded_by
-comment: Same as starts_at_end_of
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
 xref: RO:0002087
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
@@ -5369,6 +5361,17 @@ property_value: RO:0004050 RO:0002211
 is_a: regulates ! regulates
 is_a: RO:0002305 ! causally upstream of, negative effect
 inverse_of: RO:0002335 ! negatively regulated by
+
+[Typedef]
+id: occurent_part_of
+name: occurent part of
+name: occurent_part_of
+def: "A part of relation that applies only between occurents." []
+xref: RO:0002012
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+is_a: part_of ! part of
+is_a: RO:0002418 ! causally upstream of or within
 
 [Typedef]
 id: occurs_in
@@ -5407,6 +5410,7 @@ id: part_of
 name: part of
 name: substage of
 namespace: external
+namespace: relationship
 def: "a core relation that holds between a part and its whole" []
 comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
 xref: BFO:0000050
@@ -5433,8 +5437,8 @@ property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
 is_transitive: true
 is_a: happens_during ! happens during
+is_a: occurent_part_of ! occurent part of
 is_a: overlaps ! overlaps
-is_a: RO:0002012 ! occurent part of
 inverse_of: has_part ! has part
 
 [Typedef]
@@ -5457,6 +5461,7 @@ inverse_of: RO:0002336 ! positively regulated by
 id: preceded_by
 name: preceded by
 name: preceded_by
+namespace: relationship
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
 subset: ro-eco
 xref: BFO:0000062

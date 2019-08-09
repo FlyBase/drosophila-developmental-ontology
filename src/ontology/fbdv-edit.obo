@@ -1995,10 +1995,12 @@ relationship: part_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
 id: ends_at_start_of
+name: ends_at_start_of
 xref: RO:0002090
 
 [Typedef]
 id: has_part
+name: has_part
 namespace: relationship
 xref: BFO:0000051
 xref: OBO_REL:has_part
@@ -2006,8 +2008,12 @@ xref: OBO_REL:has_part
 [Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
-comment: Same as starts_at_end_of
 xref: RO:0002087
+
+[Typedef]
+id: occurent_part_of
+name: occurent_part_of
+xref: RO:0002012
 
 [Typedef]
 id: overlaps
@@ -2017,6 +2023,7 @@ xref: RO:0002131
 [Typedef]
 id: part_of
 name: substage of
+namespace: relationship
 comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
 xref: FBdv:00018001
 is_transitive: true
@@ -2026,6 +2033,7 @@ is_a: RO:0002092
 [Typedef]
 id: preceded_by
 name: preceded_by
+namespace: relationship
 xref: BFO:0000062
 xref: OBO_REL:preceded_by
 
