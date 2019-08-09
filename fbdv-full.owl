@@ -20,7 +20,7 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbdv/fbdv-full.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2019-08-09/fbdv-full.owl"/>
         <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* FBdv:$sequence(8,7000,10000)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:08:2019 12:52</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:08:2019 13:47</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo</rdfs:comment>
@@ -785,6 +785,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:shorthand>
         <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -817,7 +818,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</dc:source>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000062</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO_REL:preceded_by</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:shorthand>
@@ -900,7 +901,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBdv:00018001</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO</rdfs:comment>
@@ -956,7 +957,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>A part of relation that applies only between occurents.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002012</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurent_part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurent_part_of</oboInOwl:shorthand>
         <rdfs:label>occurent part of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurent_part_of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1174,7 +1180,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immediately_preceded_by</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immediately_preceded_by</oboInOwl:shorthand>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same as starts_at_end_of</rdfs:comment>
         <rdfs:comment xml:lang="en">X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <rdfs:label xml:lang="en">immediately preceded by</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immediately_preceded_by</rdfs:label>
@@ -1209,6 +1214,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>ends_at_start_of</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
+        <rdfs:label>ends_at_start_of</rdfs:label>
         <rdfs:label xml:lang="en">immediately precedes</rdfs:label>
     </owl:ObjectProperty>
     
