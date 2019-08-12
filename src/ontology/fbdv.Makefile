@@ -150,6 +150,9 @@ fly-stage.obo: tmp/fbdv-obj.obo rem_flybase.txt
 		convert -f obo --check false -o $@.tmp.obo
 	cat $@.tmp.obo | sed 's/^xref: OBO_REL:part_of/xref_analog: OBO_REL:part_of/' | sed 's/^xref: OBO_REL:has_part/xref_analog: OBO_REL:has_part/' | sed 's/^xref: OBO_REL:preceded_by/xref_analog: OBO_REL:preceded_by/' | grep -v property_value: | grep -v ^owl-axioms | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to > $@  
 	rm $@.tmp.obo
+	sed -i '/^date[:]/c\date: $(OBODATE)' $@
+	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
+	sed -i '/FlyBase_miscellaneous_CV/d' $@
 
 post_release: fly-stage.obo
 	cp fly-stage.obo ../..
