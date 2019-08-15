@@ -156,4 +156,16 @@ fly-stage.obo: tmp/fbdv-obj.obo rem_flybase.txt
 
 post_release: fly-stage.obo
 	cp fly-stage.obo ../..
+	
+########################
+##    TRAVIS       #####
+########################
+
+obo_qc_%:
+	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
+
+obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
+
+flybase_qc: odkversion obo_qc
+	$(ROBOT) reason --input $(ONT)-full.owl --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
 

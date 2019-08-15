@@ -1,0 +1,237 @@
+Level	Rule Name	Subject	Property	Value
+WARN	missing_definition	BFO:0000019	IAO:0000115		
+WARN	missing_definition	CARO:0000000	IAO:0000115		
+WARN	missing_definition	CARO:0030000	IAO:0000115		
+WARN	missing_definition	FBdv:00004886	IAO:0000115		
+WARN	missing_definition	FBdv:00005287	IAO:0000115		
+WARN	missing_definition	FBdv:00005288	IAO:0000115		
+WARN	missing_definition	FBdv:00007000	IAO:0000115		
+WARN	missing_definition	FBdv:00007009	IAO:0000115		
+WARN	missing_definition	FBdv:00007024	IAO:0000115		
+WARN	missing_definition	FBdv:00018001	IAO:0000115		
+WARN	missing_definition	IAO:0000111	IAO:0000115		
+WARN	missing_definition	IAO:0000112	IAO:0000115		
+WARN	missing_definition	IAO:0000114	IAO:0000115		
+WARN	missing_definition	IAO:0000115	IAO:0000115		
+WARN	missing_definition	IAO:0000116	IAO:0000115		
+WARN	missing_definition	IAO:0000117	IAO:0000115		
+WARN	missing_definition	IAO:0000118	IAO:0000115		
+WARN	missing_definition	IAO:0000119	IAO:0000115		
+WARN	missing_definition	IAO:0000232	IAO:0000115		
+WARN	missing_definition	IAO:0000412	IAO:0000115		
+WARN	missing_definition	IAO:0000424	IAO:0000115		
+WARN	missing_definition	IAO:0000589	IAO:0000115		
+WARN	missing_definition	IAO:0000600	IAO:0000115		
+WARN	missing_definition	IAO:0100001	IAO:0000115		
+WARN	missing_definition	RO:0002017	IAO:0000115		
+WARN	missing_definition	RO:0002022	IAO:0000115		
+WARN	missing_definition	RO:0002084	IAO:0000115		
+WARN	missing_definition	RO:0002085	IAO:0000115		
+WARN	missing_definition	RO:0002086	IAO:0000115		
+WARN	missing_definition	RO:0002087	IAO:0000115		
+WARN	missing_definition	RO:0002088	IAO:0000115		
+WARN	missing_definition	RO:0002090	IAO:0000115		
+WARN	missing_definition	RO:0002091	IAO:0000115		
+WARN	missing_definition	RO:0002092	IAO:0000115		
+WARN	missing_definition	RO:0002093	IAO:0000115		
+WARN	missing_definition	RO:0002222	IAO:0000115		
+WARN	missing_definition	RO:0002304	IAO:0000115		
+WARN	missing_definition	RO:0002305	IAO:0000115		
+WARN	missing_definition	RO:0002327	IAO:0000115		
+WARN	missing_definition	RO:0002405	IAO:0000115		
+WARN	missing_definition	RO:0002423	IAO:0000115		
+WARN	missing_definition	RO:0002447	IAO:0000115		
+WARN	missing_definition	RO:0002464	IAO:0000115		
+WARN	missing_definition	RO:0002481	IAO:0000115		
+WARN	missing_definition	RO:0002506	IAO:0000115		
+WARN	missing_definition	RO:0002559	IAO:0000115		
+WARN	missing_definition	RO:0002563	IAO:0000115		
+WARN	missing_definition	RO:0002564	IAO:0000115		
+WARN	missing_definition	RO:0004032	IAO:0000115		
+WARN	missing_definition	RO:0004033	IAO:0000115		
+WARN	missing_definition	RO:0004046	IAO:0000115		
+WARN	missing_definition	RO:0004047	IAO:0000115		
+WARN	missing_definition	RO:0004049	IAO:0000115		
+WARN	missing_definition	RO:0004050	IAO:0000115		
+WARN	missing_definition	http://purl.obolibrary.org/obo/fbdv#systematic_synonym	IAO:0000115		
+WARN	missing_definition	oboInOwl:NamespaceIdRule	IAO:0000115		
+WARN	missing_definition	oboInOwl:SubsetProperty	IAO:0000115		
+WARN	missing_definition	oboInOwl:SynonymTypeProperty	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasAlternativeId	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasBroadSynonym	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasDbXref	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasExactSynonym	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasOBOFormatVersion	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasOBONamespace	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115		
+WARN	missing_definition	oboInOwl:hasScope	IAO:0000115		
+WARN	missing_definition	oboInOwl:inSubset	IAO:0000115		
+WARN	missing_definition	oboInOwl:shorthand	IAO:0000115		
+WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en	
+WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 	
+WARN	annotation_whitespace	RO:0002514	IAO:0000115	A relation that holds between two entities that have the property of being sequences or having sequences. 	
+WARN	missing_ontology_description	fbdv.owl	dc11:description		
+WARN	duplicate_label	FBdv:00007009	rdfs:label	developmental process	
+WARN	duplicate_label	GO:0032502	rdfs:label	developmental process	
+WARN	missing_ontology_license	fbdv.owl	dc:license		
+WARN	missing_ontology_title	fbdv.owl	dc11:title		
+WARN	multiple_labels	BFO:0000050	rdfs:label	part of	
+WARN	multiple_labels	BFO:0000050	rdfs:label	part of@en	
+WARN	multiple_labels	BFO:0000051	rdfs:label	has part	
+WARN	multiple_labels	BFO:0000051	rdfs:label	has part@en	
+WARN	multiple_labels	BFO:0000051	rdfs:label	has_part	
+WARN	multiple_labels	BFO:0000062	rdfs:label	preceded by@en	
+WARN	multiple_labels	BFO:0000062	rdfs:label	preceded_by	
+WARN	multiple_labels	BFO:0000066	rdfs:label	occurs in	
+WARN	multiple_labels	BFO:0000066	rdfs:label	occurs in@en	
+WARN	multiple_labels	IAO:0000115	rdfs:label	definition	
+WARN	multiple_labels	IAO:0000115	rdfs:label	definition@en	
+WARN	multiple_labels	RO:0002012	rdfs:label	occurent part of	
+WARN	multiple_labels	RO:0002012	rdfs:label	occurent_part_of	
+WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en	
+WARN	multiple_labels	RO:0002087	rdfs:label	immediately_preceded_by	
+WARN	multiple_labels	RO:0002090	rdfs:label	ends_at_start_of	
+WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes@en	
+WARN	multiple_labels	RO:0002091	rdfs:label	starts during@en	
+WARN	multiple_labels	RO:0002091	rdfs:label	starts_during	
+WARN	multiple_labels	RO:0002092	rdfs:label	happens during	
+WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en	
+WARN	multiple_labels	RO:0002093	rdfs:label	ends during@en	
+WARN	multiple_labels	RO:0002093	rdfs:label	ends_during	
+WARN	multiple_labels	RO:0002131	rdfs:label	overlaps	
+WARN	multiple_labels	RO:0002131	rdfs:label	overlaps@en	
+WARN	multiple_labels	RO:0002211	rdfs:label	regulates	
+WARN	multiple_labels	RO:0002211	rdfs:label	regulates@en	
+WARN	multiple_labels	RO:0002212	rdfs:label	negatively regulates	
+WARN	multiple_labels	RO:0002212	rdfs:label	negatively regulates@en	
+WARN	multiple_labels	RO:0002213	rdfs:label	positively regulates	
+WARN	multiple_labels	RO:0002213	rdfs:label	positively regulates@en	
+WARN	missing_obsolete_label	FBdv:00005305	rdfs:label	syncytial blastoderm stage	
+WARN	missing_obsolete_label	FBdv:00005310	rdfs:label	cellular blastoderm stage	
+WARN	missing_obsolete_label	FBdv:00005320	rdfs:label	germ band stage	
+WARN	missing_obsolete_label	FBdv:00005326	rdfs:label	contracted germ band stage	
+WARN	missing_obsolete_label	FBdv:00005329	rdfs:label	head involution stage	
+WARN	missing_obsolete_label	FBdv:00005412	rdfs:label	gamete	
+WARN	missing_obsolete_label	FBdv:00007008	rdfs:label	occurrent	
+INFO	lowercase_definition	BFO:0000050	IAO:0000115	a core relation that holds between a part and its whole@en	
+INFO	lowercase_definition	BFO:0000051	IAO:0000115	a core relation that holds between a whole and its part@en	
+INFO	lowercase_definition	BFO:0000062	IAO:0000115	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en	
+INFO	lowercase_definition	BFO:0000063	IAO:0000115	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en	
+INFO	lowercase_definition	BFO:0000066	IAO:0000115	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en	
+INFO	lowercase_definition	BFO:0000067	IAO:0000115	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en	
+INFO	lowercase_definition	FBdv:00007076	IAO:0000115	1st day after eclosion.	
+INFO	lowercase_definition	FBdv:00007077	IAO:0000115	2nd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007078	IAO:0000115	3rd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007079	IAO:0000115	4th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007080	IAO:0000115	5th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007081	IAO:0000115	6th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007082	IAO:0000115	7th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007083	IAO:0000115	8th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007084	IAO:0000115	9th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007085	IAO:0000115	10th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007086	IAO:0000115	11th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007087	IAO:0000115	12th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007088	IAO:0000115	13th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007089	IAO:0000115	14th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007090	IAO:0000115	15th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007091	IAO:0000115	16th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007092	IAO:0000115	17th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007093	IAO:0000115	18th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007094	IAO:0000115	19th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007095	IAO:0000115	20th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007096	IAO:0000115	21st day after eclosion.	
+INFO	lowercase_definition	FBdv:00007097	IAO:0000115	22nd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007098	IAO:0000115	23rd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007099	IAO:0000115	24th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007100	IAO:0000115	25th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007101	IAO:0000115	26th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007102	IAO:0000115	27th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007103	IAO:0000115	28th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007104	IAO:0000115	29th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007105	IAO:0000115	30th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007106	IAO:0000115	31st day after eclosion.	
+INFO	lowercase_definition	FBdv:00007107	IAO:0000115	32nd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007108	IAO:0000115	33rd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007109	IAO:0000115	34th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007110	IAO:0000115	35th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007111	IAO:0000115	36th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007112	IAO:0000115	37th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007113	IAO:0000115	38th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007114	IAO:0000115	39th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007115	IAO:0000115	40th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007116	IAO:0000115	41st day after eclosion.	
+INFO	lowercase_definition	FBdv:00007117	IAO:0000115	42nd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007118	IAO:0000115	43rd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007119	IAO:0000115	44th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007120	IAO:0000115	45th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007121	IAO:0000115	46th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007122	IAO:0000115	47th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007123	IAO:0000115	48th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007124	IAO:0000115	49th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007125	IAO:0000115	50th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007126	IAO:0000115	51st day after eclosion.	
+INFO	lowercase_definition	FBdv:00007127	IAO:0000115	52nd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007128	IAO:0000115	53rd day after eclosion.	
+INFO	lowercase_definition	FBdv:00007129	IAO:0000115	54th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007130	IAO:0000115	55th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007131	IAO:0000115	56th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007132	IAO:0000115	57th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007133	IAO:0000115	58th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007134	IAO:0000115	59th day after eclosion.	
+INFO	lowercase_definition	FBdv:00007135	IAO:0000115	60th day after eclosion.	
+INFO	lowercase_definition	RO:0000056	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en	
+INFO	lowercase_definition	RO:0000057	IAO:0000115	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en	
+INFO	lowercase_definition	RO:0001901	IAO:0000115	        ## Elucidation        This is used when the statement/axiom is assumed to hold true 'eternally'        ## How to interpret (informal)        First the \"atemporal\" FOL is derived from the OWL using the standard    interpretation. This axiom is temporalized by embedding the axiom    within a for-all-times quantified sentence. The t argument is added to    all instantiation predicates and predicates that use this relation.        ## Example            Class: nucleus        SubClassOf: part_of some cell            forall t :          forall n :            instance_of(n,Nucleus,t)             implies            exists c :              instance_of(c,Cell,t)              part_of(n,c,t)        ## Notes        This interpretation is *not* the same as an at-all-times relation        	
+INFO	lowercase_definition	RO:0002018	IAO:0000115	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.	
+INFO	lowercase_definition	RO:0002131	IAO:0000115	x overlaps y if and only if there exists some z such that x has part z and z part of y	
+INFO	lowercase_definition	RO:0002180	IAO:0000115	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.	
+INFO	lowercase_definition	RO:0002202	IAO:0000115	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y	
+INFO	lowercase_definition	RO:0002203	IAO:0000115	inverse of develops from	
+INFO	lowercase_definition	RO:0002211	IAO:0000115	process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.	
+INFO	lowercase_definition	RO:0002216	IAO:0000115	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.	
+INFO	lowercase_definition	RO:0002217	IAO:0000115	x actively participates in y if and only if x participates in y and x realizes some active role	
+INFO	lowercase_definition	RO:0002218	IAO:0000115	x has participant y if and only if x realizes some active role that inheres in y	
+INFO	lowercase_definition	RO:0002233	IAO:0000115	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.	
+INFO	lowercase_definition	RO:0002234	IAO:0000115	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.	
+INFO	lowercase_definition	RO:0002254	IAO:0000115	x has developmental contribution from y iff x has some part z such that z develops from y@en	
+INFO	lowercase_definition	RO:0002255	IAO:0000115	inverse of has developmental contribution from	
+INFO	lowercase_definition	RO:0002263	IAO:0000115	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.	
+INFO	lowercase_definition	RO:0002264	IAO:0000115	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.	
+INFO	lowercase_definition	RO:0002329	IAO:0000115	this relation holds between c and p when c is part of some c', and c' is capable of p.	
+INFO	lowercase_definition	RO:0002331	IAO:0000115	c involved_in p if and only if c enables some process p', and p' is part of p	
+INFO	lowercase_definition	RO:0002333	IAO:0000115	inverse of enables	
+INFO	lowercase_definition	RO:0002334	IAO:0000115	inverse of regulates	
+INFO	lowercase_definition	RO:0002335	IAO:0000115	inverse of negatively regulates	
+INFO	lowercase_definition	RO:0002336	IAO:0000115	inverse of positively regulates	
+INFO	lowercase_definition	RO:0002352	IAO:0000115	inverse of has input	
+INFO	lowercase_definition	RO:0002353	IAO:0000115	inverse of has output	
+INFO	lowercase_definition	RO:0002384	IAO:0000115	x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction).@en	
+INFO	lowercase_definition	RO:0002385	IAO:0000115	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en	
+INFO	lowercase_definition	RO:0002387	IAO:0000115	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en	
+INFO	lowercase_definition	RO:0002388	IAO:0000115	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en	
+INFO	lowercase_definition	RO:0002404	IAO:0000115	inverse of upstream of	
+INFO	lowercase_definition	RO:0002411	IAO:0000115	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain	
+INFO	lowercase_definition	RO:0002412	IAO:0000115	p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.	
+INFO	lowercase_definition	RO:0002414	IAO:0000115	transitive form of directly_provides_input_for	
+INFO	lowercase_definition	RO:0002418	IAO:0000115	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.	
+INFO	lowercase_definition	RO:0002427	IAO:0000115	inverse of causally upstream of or within	
+INFO	lowercase_definition	RO:0002428	IAO:0000115	c involved in regulation of p if c is involved in some p' and p' regulates some p	
+INFO	lowercase_definition	RO:0002429	IAO:0000115	c involved in regulation of p if c is involved in some p' and p' positively regulates some p	
+INFO	lowercase_definition	RO:0002430	IAO:0000115	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p	
+INFO	lowercase_definition	RO:0002431	IAO:0000115	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p	
+INFO	lowercase_definition	RO:0002432	IAO:0000115	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.	
+INFO	lowercase_definition	RO:0002479	IAO:0000115	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.	
+INFO	lowercase_definition	RO:0002501	IAO:0000115	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.	
+INFO	lowercase_definition	RO:0002522	IAO:0000115	x bounds the sequence of y iff the upstream-most part of x is upstream of or coincident with the upstream-most part of y, and the downstream-most part of x is downstream of or coincident with the downstream-most part of y	
+INFO	lowercase_definition	RO:0002523	IAO:0000115	inverse of bounds sequence of	
+INFO	lowercase_definition	RO:0002524	IAO:0000115	x has subsequence y iff all of the sequence parts of x are sequence parts of y	
+INFO	lowercase_definition	RO:0002525	IAO:0000115	inverse of has subsequence	
+INFO	lowercase_definition	RO:0002526	IAO:0000115	x overlaps the sequence of x if and only if x has a subsequence z and z is a subsequence of y.	
+INFO	lowercase_definition	RO:0002575	IAO:0000115	relation p is the direct form of relation q iff p is a subPropertyOf q, p does not have the Transitive characteristic, q does have the Transitive characteristic, and for all x, y: x q y -> exists z1, z2, ..., zn such that x p z1 ... z2n y	
+INFO	lowercase_definition	RO:0002584	IAO:0000115	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p	
+INFO	lowercase_definition	RO:0003000	IAO:0000115	a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.	
+INFO	lowercase_definition	RO:0003001	IAO:0000115	a produced_by b iff some process that occurs_in b has_output a.	
+INFO	lowercase_definition	RO:0004007	IAO:0000115	p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c.	
+INFO	lowercase_definition	RO:0004034	IAO:0000115	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive	
+INFO	lowercase_definition	RO:0004035	IAO:0000115	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative	
