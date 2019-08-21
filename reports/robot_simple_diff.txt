@@ -1,13 +1,9 @@
-5 axioms in Ontology 1 but not in Ontology 2:
-- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "14:08:2019 11:00"^^xsd:string)
-- AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBdv_00018001> "substage_of"^^xsd:string)
-- AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#shorthand> <http://purl.obolibrary.org/obo/FBdv_00018001> "substage_of"^^xsd:string)
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-08-14/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
-- SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/RO_0002012>)
+3 axioms in Ontology 1 but not in Ontology 2:
+- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "21:08:2019 08:54"^^xsd:string)
+- Annotation(rdfs:comment "Drosophila temporal ontology."^^xsd:string)
+- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-08-21/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
 
-5 axioms in Ontology 2 but not in Ontology 1:
-+ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "12:08:2019 12:14"^^xsd:string)
-+ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBdv_00018001> "part_of"^^xsd:string)
-+ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#shorthand> <http://purl.obolibrary.org/obo/FBdv_00018001> "part_of"^^xsd:string)
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-08-12/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
-+ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obolibrary.org/obo/RO_0002092>)
+3 axioms in Ontology 2 but not in Ontology 1:
++ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "14:08:2019 11:00"^^xsd:string)
++ Annotation(rdfs:comment "Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo"^^xsd:string)
++ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-08-14/fbdv-simple.owl/fbdv/fbdv-simple.owl>))

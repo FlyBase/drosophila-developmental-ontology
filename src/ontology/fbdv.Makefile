@@ -140,7 +140,7 @@ pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_gen
 tmp/fbdv-obj.obo:
 	$(ROBOT) remove -i fbdv-simple.obo --select object-properties --trim true -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 
-fly-stage.obo: tmp/fbdv-obj.obo rem_flybase.txt
+fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	cp fbdv-simple.obo tmp/fbdv-simple-stripped.obo
 	#cat fbdv-simple.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > tmp/fbdv-simple-stripped.obo &&\
 	$(ROBOT) remove -vv -i tmp/fbdv-simple-stripped.obo --select "owl:deprecated='true'^^xsd:boolean" --trim true \
@@ -154,8 +154,8 @@ fly-stage.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
 	sed -i '/FlyBase_miscellaneous_CV/d' $@
 
-post_release: fly-stage.obo
-	cp fly-stage.obo ../..
+post_release: fly_development.obo
+	cp fly_development.obo ../..
 	
 ########################
 ##    TRAVIS       #####
