@@ -19,7 +19,7 @@ subsetdef: goslim_pombe "Fission yeast GO slim"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
-remark: Drosophila temporal ontology. Contains terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-13/go-simple.obo
+remark: Drosophila temporal ontology.
 ontology: fbdv
 
 [Term]
