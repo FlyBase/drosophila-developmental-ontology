@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2019-08-21
-date: 21:08:2019 08:55
+data-version: 2019-09-05
+date: 05:09:2019 09:16
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 remark: Drosophila temporal ontology.
@@ -1982,7 +1982,6 @@ name: happens during
 comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
 xref: RO:0002092
 is_transitive: true
-is_a: occurent_part_of ! occurent_part_of
 
 [Typedef]
 id: has_part
@@ -2007,6 +2006,7 @@ id: occurent_part_of
 name: occurent_part_of
 def: "A part of relation that applies only between occurents." []
 xref: RO:0002012
+is_a: happens_during ! happens during
 is_a: overlaps ! overlaps
 
 [Typedef]
