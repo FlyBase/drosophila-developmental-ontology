@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/FlyBase/flybase-developmental-ontology.svg?branch=master)](https://travis-ci.org/FlyBase/flybase-developmental-ontology)
-[![DOI](https://zenodo.org/badge/13996/FlyBase/flybase-developmental-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/FlyBase/flybase-developmental-ontology)
+[![Build Status](https://travis-ci.com/FlyBase/drosophila-developmental-ontology.svg?branch=master)](https://travis-ci.com/FlyBase/drosophila-developmental-ontology)
 
 # FlyBase Developmental Ontology
 
