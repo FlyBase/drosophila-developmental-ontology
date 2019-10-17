@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-09-05/fbdv-simple.owl
-date: 05:09:2019 09:15
+data-version: fbdv/releases/2019-10-16/fbdv-simple.owl
+date: 16:10:2019 10:02
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 remark: Drosophila temporal ontology.
@@ -1989,6 +1989,7 @@ property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "d" xsd:string
 property_value: IAO:0000118 "during" xsd:string
 is_transitive: true
+is_a: occurent_part_of ! occurent part of
 
 [Typedef]
 id: has_part
@@ -2024,7 +2025,6 @@ id: occurent_part_of
 name: occurent_part_of
 def: "A part of relation that applies only between occurents." []
 xref: RO:0002012
-is_a: happens_during ! happens during
 is_a: overlaps ! overlaps
 
 [Typedef]
@@ -2060,5 +2060,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurent_part_of
+is_a: occurent_part_of ! occurent part of
 
