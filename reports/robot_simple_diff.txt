@@ -1,9 +1,9 @@
 3 axioms in Ontology 1 but not in Ontology 2:
-- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "16:10:2019 10:02"^^xsd:string)
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-10-16/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
-- SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/RO_0002012>)
+- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "21:10:2019 12:48"^^xsd:string)
+- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-10-21/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+- SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obolibrary.org/obo/RO_0002092>)
 
 3 axioms in Ontology 2 but not in Ontology 1:
-+ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "05:09:2019 09:15"^^xsd:string)
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-09-05/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
-+ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obolibrary.org/obo/RO_0002092>)
++ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "16:10:2019 10:02"^^xsd:string)
++ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2019-10-16/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
++ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/RO_0002012>)

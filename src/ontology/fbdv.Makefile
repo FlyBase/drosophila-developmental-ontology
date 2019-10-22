@@ -153,75 +153,12 @@ fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	sed -i '/^date[:]/c\date: $(OBODATE)' $@
 	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
 	sed -i '/FlyBase_miscellaneous_CV/d' $@
-	# temporary retention of part_of and removes and puts back typedefs from simple without substage_of
-	sed -i 's/substage_of/part_of/' $@
-	sed -i '/\[Typedef\]/,$$d' $@
-	echo "[Typedef]" >> $@
-	echo "id: ends_at_start_of" >> $@
-	echo "name: ends_at_start_of" >> $@
-	echo "comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)" >> $@
-	echo "xref: RO:0002090" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: happens_during" >> $@
-	echo "name: happens_during" >> $@
-	echo "comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))" >> $@
-	echo "xref: RO:0002092" >> $@
-	echo "is_transitive: true" >> $@
-	echo "is_a: occurent_part_of ! occurent_part_of" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: has_part" >> $@
-	echo "name: has_part" >> $@
-	echo "namespace: relationship" >> $@
-	echo "def: \"a core relation that holds between a whole and its part\" []" >> $@
-	echo "xref: BFO:0000051" >> $@
-	echo "xref_analog: OBO_REL:has_part" >> $@
-	echo "is_transitive: true" >> $@
-	echo "is_a: overlaps ! overlaps" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: immediately_preceded_by" >> $@
-	echo "name: immediately_preceded_by" >> $@
-	echo "comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)" >> $@
-	echo "xref: RO:0002087" >> $@
-	echo "is_a: preceded_by ! preceded_by" >> $@
-	echo "inverse_of: ends_at_start_of ! ends_at_start_of" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: occurent_part_of" >> $@
-	echo "name: occurent_part_of" >> $@
-	echo "def: \"A part of relation that applies only between occurents.\" []" >> $@
-	echo "xref: RO:0002012" >> $@
-	echo "is_a: overlaps ! overlaps" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: overlaps" >> $@
-	echo "name: overlaps" >> $@
-	echo "def: \"x overlaps y if and only if there exists some z such that x has part z and z part of y\" []" >> $@
-	echo "xref: RO:0002131" >> $@
-	echo "holds_over_chain: has_part overlaps" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: part_of" >> $@
-	echo "name: part_of" >> $@
-	echo "namespace: relationship" >> $@
-	echo "xref: BFO:0000050" >> $@
-	echo "xref_analog: OBO_REL:part_of" >> $@
-	echo "is_transitive: true" >> $@
-	echo "" >> $@
-	echo "[Typedef]" >> $@
-	echo "id: preceded_by" >> $@
-	echo "name: preceded_by" >> $@
-	echo "namespace: relationship" >> $@
-	echo "def: \"x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.\" []" >> $@
-	echo "xref: BFO:0000062" >> $@
-	echo "xref_analog: OBO_REL:preceded_by" >> $@
-	echo "is_transitive: true" >> $@
-	echo "holds_over_chain: happens_during preceded_by" >> $@
-	echo "is_transitive: true" >> $@
-	echo "" >> $@
-
+	sed -i '/^name[:][ ]immediately[ ]precedes/c\name: ends_at_start_of' $@
+	sed -i 's/\![ ]immediately[ ]precedes/! ends_at_start_of/' $@
+	sed -i '/^name[:][ ]happens[ ]during/c\name: happens_during' $@
+	sed -i 's/\![ ]happens[ ]during/! happens_during/' $@
+	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
+	
 post_release: fly_development.obo reports/chado_load_check_simple.txt
 	cp fly_development.obo ../..
 	
