@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-10-21/fbdv-base.owl
-date: 21:10:2019 12:48
+data-version: fbdv/releases/2019-11-11/fbdv-base.owl
+date: 11:11:2019 10:21
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -2027,7 +2027,7 @@ xref: OBO_REL:preceded_by
 
 [Typedef]
 id: substage_of
-name: substage of
+name: substage_of
 namespace: relationship
 comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
 xref: FBdv:00018001
