@@ -2,7 +2,7 @@
 
 # FlyBase Developmental Ontology
 
-This ontology organises the domain of Drosophila stages. It was previously maintained in the same repository as the FlyBase Anatomy Ontology (FBBT), but has been officially releases as a separate project since 25 July 2019. Older releases can still be accessed [here](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/tree/master/fbdv/releases). 
+This ontology organises the domain of Drosophila stages. It was previously maintained in the same repository as the FlyBase Anatomy Ontology (FBbt), but has been officially released as a separate project since 25 July 2019. Older releases can still be accessed [here](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/tree/master/fbdv/releases). 
 
 More information can be found at http://obofoundry.org/ontology/fbdv
 
