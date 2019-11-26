@@ -1,9 +1,8 @@
 format-version: 1.2
-data-version: 2019-11-11
-date: 11:11:2019 10:22
+data-version: 2019-11-26
+date: 26:11:2019 08:44
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
-remark: Drosophila temporal ontology.
 ontology: fbdv/fbdv-simple
 
 [Term]
@@ -2015,6 +2014,7 @@ name: overlaps
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
 xref: RO:0002131
 holds_over_chain: has_part overlaps
+is_a: happens_during ! happens_during
 
 [Typedef]
 id: preceded_by

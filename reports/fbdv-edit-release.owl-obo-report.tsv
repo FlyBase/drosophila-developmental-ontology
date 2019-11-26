@@ -1,7 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	fbdv.owl	dc11:description		
-ERROR	missing_ontology_license	fbdv.owl	dc:license		
-ERROR	missing_ontology_title	fbdv.owl	dc11:title		
 WARN	missing_definition	BFO:0000051	IAO:0000115		
 WARN	missing_definition	BFO:0000062	IAO:0000115		
 WARN	missing_definition	FBdv:00004886	IAO:0000115		

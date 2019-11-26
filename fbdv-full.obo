@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-11-11/fbdv-full.owl
-date: 11:11:2019 10:21
+data-version: fbdv/releases/2019-11-26/fbdv-full.owl
+date: 26:11:2019 08:43
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -23,8 +23,14 @@ subsetdef: RO:0002259 ""
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
-remark: Drosophila temporal ontology.
 ontology: fbdv/fbdv-full
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-7073-9172 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
 
 [Term]
 id: BFO:0000002
@@ -5521,5 +5527,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurent part of
+is_a: occurent_part_of ! occurent_part_of
 
