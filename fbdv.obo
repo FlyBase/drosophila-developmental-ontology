@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2019-11-26
-date: 26:11:2019 08:43
+data-version: fbdv/releases/2020-02-19
+date: 19:02:2020 10:33
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv.obo
@@ -174,7 +174,7 @@ relationship: substage_of FBdv:00004886 ! oogenesis
 [Term]
 id: FBdv:00005274
 name: oogenesis stage S12
-def: "Oogenesis stage that begins when dying nurse cells form an anterior cap to the oocyte. Shortly after this, nurse cell dumping and growth of the oocyte are complete. Elongation of the dorsal appendages and formation of the innermost chorionic layer and endochondrion begins during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0043885, FlyBase:FBrf0064777]
+def: "Oogenesis stage that begins when dying nurse cells form an anterior cap to the oocyte. Shortly after this, nurse cell dumping and growth of the oocyte are complete. Elongation of the dorsal appendages and formation of the innermost chorionic layer and endochorion begins during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0043885, FlyBase:FBrf0064777]
 comment: Temporal ordering number - 10160.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005273 ! oogenesis stage S11
@@ -183,7 +183,7 @@ relationship: substage_of FBdv:00004886 ! oogenesis
 [Term]
 id: FBdv:00005275
 name: oogenesis stage S12A
-def: "Innermost chorionic layer and endochondrion begin to form in the anterior of the follicle." [FlyBase:FBrf0043885]
+def: "Innermost chorionic layer and endochorion begin to form in the anterior of the follicle." [FlyBase:FBrf0043885]
 comment: Temporal ordering number - 10170.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005273 ! oogenesis stage S11
@@ -192,7 +192,7 @@ relationship: substage_of FBdv:00005274 ! oogenesis stage S12
 [Term]
 id: FBdv:00005276
 name: oogenesis stage S12B
-def: "Secretion of innermost chorionic layer and endochondrion begins in the main follicle cells." [FlyBase:FBrf0043885]
+def: "Secretion of innermost chorionic layer and endochorion begins in the main follicle cells." [FlyBase:FBrf0043885]
 comment: Temporal ordering number - 10180.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005275 ! oogenesis stage S12A
@@ -201,7 +201,7 @@ relationship: substage_of FBdv:00005274 ! oogenesis stage S12
 [Term]
 id: FBdv:00005277
 name: oogenesis stage S12C
-def: "Formation of specialized endochondrion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochondrion lacking the pillars seen in the rest of the follicle." [FlyBase:FBrf0021038]
+def: "Formation of specialized endochorion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochorion lacking the pillars seen in the rest of the follicle." [FlyBase:FBrf0021038]
 comment: Temporal ordering number - 10190.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005276 ! oogenesis stage S12B
@@ -210,7 +210,7 @@ relationship: substage_of FBdv:00005274 ! oogenesis stage S12
 [Term]
 id: FBdv:00005278
 name: oogenesis stage S13
-def: "Oogenesis stage that begins when the micropile begins to form. At the beginning of this stage, about 12-15 nurse cell nuclei remain at the anterior of the oocyte. By the end of this stage, none of these nuclei remain. Oocyte meiosis up to arrest at full metaphase I occurs during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0029744, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
+def: "Oogenesis stage that begins when the micropyle begins to form. At the beginning of this stage, about 12-15 nurse cell nuclei remain at the anterior of the oocyte. By the end of this stage, none of these nuclei remain. Oocyte meiosis up to arrest at full metaphase I occurs during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0029744, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
 comment: Temporal ordering number - 10200.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005274 ! oogenesis stage S12
@@ -326,7 +326,7 @@ relationship: substage_of FBdv:00000054 ! cleavage stage
 [Term]
 id: FBdv:00005291
 name: embryonic stage 1
-def: "The embryonic stage that lasts from the end of fertilization to the end of the second nuclear division. Duration at 25 degrees C\\: approximately 25 minutes (0-25 minutes after egg laying)." [FlyBase:FBrf0064779, FlyBase:FBrf0089570]
+def: "The embryonic stage that lasts from the end of fertilization to the end of the second nuclear division. Duration at 25 degrees C: approximately 25 minutes (0-25 minutes after egg laying)." [FlyBase:FBrf0064779, FlyBase:FBrf0089570]
 comment: Temporal ordering number - 40.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005288 ! fertilized egg stage
@@ -463,7 +463,7 @@ is_obsolete: true
 [Term]
 id: FBdv:00005306
 name: embryonic stage 4
-def: "Nuclear division 10-13. Polar buds divide twice and become tightly grouped at the posterior pole by the end of this stage. Nuclei visible at the rim of the embryo. Stage 4 ends with the beginning of cellularization. Duration at 25 degrees C: approx. 50 minutes (80-130 minutes after egg laying)." [FlyBase:FBrf0089570]
+def: "Nuclear division 10-13. Polar buds divide twice and become tightly grouped at the posterior pole by the end of this stage. Nuclei visible at the rim of the embryo. Stage 4 ends with the beginning of cellularization. Duration at 25 degrees C: approximately 50 minutes (80-130 minutes after egg laying)." [FlyBase:FBrf0089570]
 comment: Temporal ordering number - 170.
 synonym: "syncytial blastoderm" EXACT []
 synonym: "syncytial blastoderm stage" EXACT []
@@ -529,7 +529,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 [Term]
 id: FBdv:00005313
 name: embryonic cycle 14A
-def: "The interphase of embryonic cycle 14.  This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [[FlyBase:FBrf0039741]
+def: "The interphase of embryonic cycle 14. This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [[FlyBase:FBrf0039741]
 comment: Temporal ordering number - 256.
 synonym: "embryonic cycle 14 interphase" EXACT [FBC:DOS]
 is_a: FBdv:00007022 ! embryonic cycle interphase
@@ -539,7 +539,7 @@ relationship: substage_of FBdv:00005312 ! embryonic cycle 14
 id: FBdv:00005314
 name: embryonic cycle 14B
 def: "The M-phase of embryonic cycle 14. This is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [FlyBase:FBrf0039741]
-comment: Temporal ordering number - 257.  Not to be confused with mitotic domain 14B, which is a domain of cells in the dorsal midline of the head that don't undergo a 14th division (Foe, 1989). The asynchronous nature of cycle 14 divisions means that this is not very useful for annotating stage.  If possible a standard embryonic stage should be used instead.
+comment: Temporal ordering number - 257. Not to be confused with mitotic domain 14B, which is a domain of cells in the dorsal midline of the head that don't undergo a 14th division (Foe, 1989). The asynchronous nature of cycle 14 divisions means that this is not very useful for annotating stage. If possible a standard embryonic stage should be used instead.
 synonym: "embryonic cycle 14 M-phase" EXACT [FBC:DOS]
 is_a: FBdv:00007023 ! embryonic cycle M-phase
 relationship: substage_of FBdv:00005312 ! embryonic cycle 14
@@ -548,7 +548,7 @@ relationship: substage_of FBdv:00005312 ! embryonic cycle 14
 id: FBdv:00005315
 name: embryonic cycle 15
 def: "The 15th cell cycle of embryogenesis. Asynchronous." [FlyBase:FBrf0089570]
-comment: Temporal ordering number - 285. The asynchronous nature of cycle 15 divisions means that this is not very useful for annotating stage.  If possible a standard embryonic stage should be used instead.
+comment: Temporal ordering number - 285. The asynchronous nature of cycle 15 divisions means that this is not very useful for annotating stage. If possible a standard embryonic stage should be used instead.
 synonym: "second blastoderm mitosis" EXACT [FlyBase:FBrf0089570]
 is_a: FBdv:00007011 ! embryonic cycle
 relationship: immediately_preceded_by FBdv:00005312 ! embryonic cycle 14
@@ -558,7 +558,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 id: FBdv:00005316
 name: embryonic cycle 16
 def: "The 16th cell cycle division of embryogenesis. Asynchronous." [FlyBase:FBrf0089570]
-comment: Temporal ordering number - 295. The asynchronous nature of cycle 16 divisions means that this is not very useful for annotating stage.  If possible a standard embryonic stage should be used instead.
+comment: Temporal ordering number - 295. The asynchronous nature of cycle 16 divisions means that this is not very useful for annotating stage. If possible a standard embryonic stage should be used instead.
 synonym: "third blastoderm mitosis" EXACT [FlyBase:FBrf0089570]
 is_a: FBdv:00007011 ! embryonic cycle
 relationship: immediately_preceded_by FBdv:00005315 ! embryonic cycle 15
@@ -734,7 +734,7 @@ relationship: substage_of FBdv:00005333 ! late embryonic stage
 [Term]
 id: FBdv:00005335
 name: embryonic stage 17
-def: "Stage 17 begins when the dorsal ridge (frontal sac) has overgrown the tip of the clypeolabrum, which is thereby enclosed in the atrium. It lasts until hatching of the embryo (approximately 24 hours after egg laying), during which time much terminal differentiation occurs, the tracheal tree fills with air, so becoming completely visible, and the ventral cord continues to retract. Duration at 25 degrees C: approximately  8 hours (16-24 hours after egg laying)." [FlyBase:FBrf0089570]
+def: "Stage 17 begins when the dorsal ridge (frontal sac) has overgrown the tip of the clypeolabrum, which is thereby enclosed in the atrium. It lasts until hatching of the embryo (approximately 24 hours after egg laying), during which time much terminal differentiation occurs, the tracheal tree fills with air, so becoming completely visible, and the ventral cord continues to retract. Duration at 25 degrees C: approximately 8 hours (16-24 hours after egg laying)." [FlyBase:FBrf0089570]
 comment: Temporal ordering number - 390.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005334 ! embryonic stage 16
@@ -1128,7 +1128,7 @@ id: FBdv:00005370
 name: adult stage A1
 alt_id: FBdv:00005373
 def: "Newly eclosed adult stage. Animal free of pupal case. Runs rapidly to find site for wing expansion. Wings are folded back and black against a very pale abdomen." [FlyBase:FBrf0049147]
-comment: Temporal ordering number - 785.  The time at which eclosed flies settle down for wing expansion can vary greatly.  If they fail to find a suitable site then expansion can be delayed by several hours.
+comment: Temporal ordering number - 785. The time at which eclosed flies settle down for wing expansion can vary greatly. If they fail to find a suitable site then expansion can be delayed by several hours.
 synonym: "adult stage I" RELATED []
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005368 ! pharate adult stage P15(ii)
@@ -1150,7 +1150,7 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 [Term]
 id: FBdv:00005412
 name: gamete
-comment: This should be considered as a type of cell rather than as a stage.  Please use FBbt:00005412.
+comment: This should be considered as a type of cell rather than as a stage. Please use FBbt:00005412.
 is_obsolete: true
 
 [Term]
@@ -1187,7 +1187,7 @@ creation_date: 2008-06-05T04:51:08Z
 id: FBdv:00007001
 name: P-stage
 def: "The stage of the Drosophila life-cycle from the formation of the puparium (beginning of the prepupal stage) to eclosion." [FBC:DOS]
-comment: Temporal ordering number - 490. DISAMBIGUATION: In Drosophila lab vernacular, the term 'pupal stage' is often used to refer to the entire period from formation of the puparium to eclosion. However, this does not correspond to the standard usage of 'pupal stage' for Cyclorrhaphous flies (for discussion see: FBrf0087128). Briefly: formation of the puparium (hardening of the larval cuticle) marks the beginning of the pre-pupal stage. The pupal stage begins following pupal/larval apolysis - detachment of the larval epidermis from the puparium. In Drosophila, the outward sign of the completion of apolysis is the eversion of the head an expulsion of the larval mouthparts (FBrf0036849). We use P-stage to refer to the stage from pupariation to eclosion, and restrict pupal stage to its standard usage.
+comment: Temporal ordering number - 490. DISAMBIGUATION: In Drosophila lab vernacular, the term 'pupal stage' is often used to refer to the entire period from formation of the puparium to eclosion. However, this does not correspond to the standard usage of 'pupal stage' for cyclorrhaphous flies (for discussion see: FBrf0087128). Briefly: formation of the puparium (hardening of the larval cuticle) marks the beginning of the pre-pupal stage. The pupal stage begins following pupal/larval apolysis - detachment of the larval epidermis from the puparium. In Drosophila, the outward sign of the completion of apolysis is the eversion of the head an expulsion of the larval mouthparts (FBrf0036849). We use P-stage to refer to the stage from pupariation to eclosion, and restrict pupal stage to its standard usage.
 synonym: "metamorphosis" BROAD []
 synonym: "pupal stage" RELATED []
 is_a: FBdv:00007012 ! life stage
@@ -1272,7 +1272,7 @@ creation_date: 2009-10-01T05:56:42Z
 [Term]
 id: FBdv:00007011
 name: embryonic cycle
-def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant.  Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
+def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
 is_a: FBdv:00007024 ! biological process
 created_by: djs93
 creation_date: 2009-10-01T05:57:41Z
@@ -2030,7 +2030,6 @@ id: occurent_part_of
 name: occurent_part_of
 def: "A part of relation that applies only between occurents." []
 xref: RO:0002012
-is_a: happens_during ! happens during
 is_a: overlaps ! overlaps
 
 [Typedef]
