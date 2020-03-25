@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: fbdv/releases/2020-02-19/imports/go_import.owl
+data-version: fbdv/releases/2020-03-25/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -898,6 +898,8 @@ synonym: "organismal physiological process" EXACT []
 synonym: "single-multicellular organism process" RELATED []
 is_a: GO:0008150 ! biological_process
 disjoint_from: GO:0044848 ! biological phase
+property_value: RO:0002161 NCBITaxon:4896
+property_value: RO:0002161 NCBITaxon:4932
 created_by: janelomax
 creation_date: 2012-09-19T16:07:47Z
 
@@ -1523,8 +1525,7 @@ relationship: negatively_regulates GO:0050896 ! response to stimulus
 id: GO:0048856
 name: anatomical structure development
 namespace: biological_process
-def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021, GOC:mtg_15jun06]
-comment: This term was added by GO_REF:0000021.
+def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021]
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_plant
