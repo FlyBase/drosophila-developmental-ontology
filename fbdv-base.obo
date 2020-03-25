@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2020-02-19/fbdv-base.owl
-date: 19:02:2020 10:33
+data-version: fbdv/releases/2020-03-25/fbdv-base.owl
+date: 25:03:2020 09:11
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
