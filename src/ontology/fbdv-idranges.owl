@@ -15,8 +15,8 @@ Ontology: <http://purl.obolibrary.org/obo/fbdv/fbdv-idranges.owl>
 
 
 Annotations: 
-    idsfor: "FBDV",
-    idprefix: "http://purl.obolibrary.org/obo/FBDV_",
+    idsfor: "FBdv",
+    idprefix: "http://purl.obolibrary.org/obo/FBdv_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
@@ -33,19 +33,19 @@ AnnotationProperty: allocatedto:
 Datatype: idrange:1
 
     Annotations: 
-        allocatedto: "ONTOLOGY-CREATOR"
+        allocatedto: "RD"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
+        xsd:integer[>= 0000000 , <= 0001000]
 
     
 Datatype: idrange:2
 
     Annotations: 
-        allocatedto: "ADDITIONAL EDITOR"
+        allocatedto: "DOS"
     
     EquivalentTo: 
-        xsd:integer[>= 1000000 , <= 1999999]
+        xsd:integer[>= 0007000 , <= 0010000]
     
     
 Datatype: xsd:integer
