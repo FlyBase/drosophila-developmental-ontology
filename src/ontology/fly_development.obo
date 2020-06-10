@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2020-03-25
-date: 25:03:2020 09:12
+data-version: 2020-06-10
+date: 10:06:2020 09:01
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv/fbdv-simple

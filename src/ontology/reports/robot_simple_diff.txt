@@ -1,7 +1,11 @@
-2 axioms in Ontology 1 but not in Ontology 2:
-- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "25:03:2020 09:11"^^xsd:string)
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2020-03-25/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+6 axioms in Ontology 1 but not in Ontology 2:
+- Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/FBdv_00000000>)
+- Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/FBdv_00005259>)
+- Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/FBdv_00007013>)
+- Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/FBdv_00007024>)
+- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "10:06:2020 09:00"^^xsd:string)
+- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2020-06-10/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
 
 2 axioms in Ontology 2 but not in Ontology 1:
-+ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "19:02:2020 10:33"^^xsd:string)
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2020-02-19/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
++ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "25:03:2020 09:11"^^xsd:string)
++ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2020-03-25/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
