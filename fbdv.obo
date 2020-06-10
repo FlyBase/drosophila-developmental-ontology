@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2020-03-25
-date: 25:03:2020 09:11
+data-version: fbdv/releases/2020-06-10
+date: 10:06:2020 09:00
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv.obo
@@ -11,6 +11,10 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
+property_value: IAO:0000700 FBdv:00000000
+property_value: IAO:0000700 FBdv:00005259
+property_value: IAO:0000700 FBdv:00007013
+property_value: IAO:0000700 FBdv:00007024
 
 [Term]
 id: FBdv:00000000
