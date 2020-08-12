@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2020-06-10
-date: 10:06:2020 09:00
+data-version: fbdv/releases/2020-08-12
+date: 12:08:2020 14:08
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv.obo

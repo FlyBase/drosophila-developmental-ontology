@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2020-06-10/fbdv-simple.owl
-date: 10:06:2020 09:00
+data-version: fbdv/releases/2020-08-12/fbdv-simple.owl
+date: 12:08:2020 14:08
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv/fbdv-simple
@@ -2069,5 +2069,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurent part of
+is_a: occurent_part_of ! occurent_part_of
 
