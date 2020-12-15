@@ -54,26 +54,22 @@ prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 
 
 ######################################################
-### Overwriting some default aretfacts ###
+### Overwriting some default artefacts ###
 ######################################################
 
 # Simple is overwritten to strip out duplicate names and definitions.
 $(ONT)-simple.obo: $(ONT)-simple.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
-	sed -i '/subset[:] ro[-]eco/d' $@.tmp &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'subset[:][ ]ro[-]eco' | grep -v 'namespace[:][ ]external' > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	sed -i '/namespace[:][ ]external/d' $@
 	rm -f $@.tmp.obo $@.tmp
 
 # We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbdv.owl) are annotated.
 $(ONT).obo: $(ONT)-simple.owl
 	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
 	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
-	sed -i '/subset[:] ro[-]eco/d' $@.tmp &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'subset[:][ ]ro[-]eco' | grep -v 'namespace[:][ ]external' > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	sed -i '/namespace[:][ ]external/d' $@
 	rm -f $@.tmp.obo $@.tmp
 
 #ont.obo:
@@ -129,7 +125,8 @@ tmp/remove_dot_defs.txt: tmp/auto_generated_definitions_seed_dot.txt
 pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl tmp/remove_dot_defs.txt
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
 	$(ROBOT) query -i tmp/$(ONT)-edit-release.obo --update ../sparql/remove-dot-definitions.ru convert -f obo --check false -o tmp/$(ONT)-edit-release.obo
-	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
+	#commenting out sub_ removal as sub_ not used in FBdv
+	#sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 
@@ -148,15 +145,10 @@ fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 		remove --term-file rem_flybase.txt --trim false \
 		query --update ../sparql/force-obo.ru \
 		convert -f obo --check false -o $@.tmp.obo
-	cat $@.tmp.obo | sed 's/^xref: OBO_REL:part_of/xref_analog: OBO_REL:part_of/' | sed 's/^xref: OBO_REL:has_part/xref_analog: OBO_REL:has_part/' | sed 's/^xref: OBO_REL:preceded_by/xref_analog: OBO_REL:preceded_by/' | grep -v property_value: | grep -v ^owl-axioms | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to > $@  
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:lower:][:punct:]]*\n\)\(name:[ ]\)\([[:lower:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@  
 	rm $@.tmp.obo
-	sed -i '/^date[:]/c\date: $(OBODATE)' $@
-	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
-	sed -i '/FlyBase_miscellaneous_CV/d' $@
-	sed -i '/^name[:][ ]immediately[ ]precedes/c\name: ends_at_start_of' $@
-	sed -i 's/\![ ]immediately[ ]precedes/! ends_at_start_of/' $@
-	sed -i '/^name[:][ ]happens[ ]during/c\name: happens_during' $@
-	sed -i 's/\![ ]happens[ ]during/! happens_during/' $@
+	$(ROBOT) convert --input $@ -f obo --output $@
+	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
 	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
 	
 post_release: fly_development.obo reports/chado_load_check_simple.txt
