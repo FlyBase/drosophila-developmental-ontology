@@ -1,0 +1,28 @@
+id: fbdv
+title: "Drosophila Developmental Ontology"
+github_org: FlyBase
+repo: drosophila-developmental-ontology
+report_fail_on: none
+use_dosdps: TRUE
+dosdp_tools_options: "--obo-prefixes=true --restrict-axioms-to=logical"
+namespaces: 
+  - http://purl.obolibrary.org/obo/FBdv_
+  - http://purl.obolibrary.org/obo/fbdv_
+release_artefacts: 
+  - base
+  - simple
+  - non-classified
+  - full
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: go
+    - id: ro
+edit_format: obo
+robot_java_args: '-Xmx8G'
+allow_equivalents: asserted-only
+release_date: TRUE
