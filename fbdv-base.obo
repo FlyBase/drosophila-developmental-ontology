@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2020-10-15/fbdv-base.owl
-date: 15:10:2020 11:31
+data-version: fbdv/releases/2021-01-13/fbdv-base.owl
+date: 13:01:2021 12:25
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -24,11 +24,13 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
+property_value: owl:versionInfo "2021-01-13" xsd:string
 
 [Term]
 id: FBdv:00000000
@@ -2039,7 +2041,7 @@ xref: OBO_REL:preceded_by
 id: substage_of
 name: substage_of
 namespace: relationship
-comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
+comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
 is_a: occurent_part_of ! occurent_part_of
