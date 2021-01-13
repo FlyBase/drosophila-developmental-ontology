@@ -1,6 +1,24 @@
 format-version: 1.2
-data-version: 2020-10-15
-date: 15:10:2020 11:32
+data-version: 2021-01-13
+date: 13:01:2021 12:26
+subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
+subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
+subsetdef: goslim_aspergillus "Aspergillus GO slim"
+subsetdef: goslim_candida "Candida GO slim"
+subsetdef: goslim_ChEMBL "ChEMBL GO slim"
+subsetdef: goslim_chembl "ChEMBL GO slim"
+subsetdef: goslim_generic "Generic GO slim"
+subsetdef: goslim_metagenomics "Metagenomics GO slim"
+subsetdef: goslim_pir "PIR GO slim"
+subsetdef: goslim_plant "Plant GO slim"
+subsetdef: goslim_pombe "Fission yeast GO slim"
+subsetdef: goslim_yeast "Yeast GO slim"
+subsetdef: gosubset_prok "Prokaryotic GO subset"
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: ro-eco ""
+synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv/fbdv-simple
@@ -1979,6 +1997,9 @@ xref: RO:0002090
 id: happens_during
 name: happens_during
 comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002092
 is_transitive: true
 
@@ -1987,6 +2008,9 @@ id: has_part
 name: has_part
 namespace: relationship
 def: "a core relation that holds between a whole and its part" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: BFO:0000051
 xref_analog: OBO_REL:has_part
 is_transitive: true
@@ -2011,6 +2035,8 @@ is_a: overlaps ! overlaps
 id: overlaps
 name: overlaps
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002131
 holds_over_chain: has_part overlaps
 
@@ -2028,7 +2054,7 @@ is_transitive: true
 id: substage_of
 name: substage_of
 namespace: relationship
-comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
+comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens_during

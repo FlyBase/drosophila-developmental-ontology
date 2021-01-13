@@ -1,0 +1,197 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_label	developmental process	rdfs:label	developmental process
+ERROR	duplicate_label	developmental process	rdfs:label	developmental process
+ERROR	multiple_labels	part of	rdfs:label	part of
+ERROR	multiple_labels	part of	rdfs:label	part of@en
+ERROR	multiple_labels	has part	rdfs:label	has part
+ERROR	multiple_labels	has part	rdfs:label	has part@en
+ERROR	multiple_labels	has part	rdfs:label	has_part
+ERROR	multiple_labels	preceded_by	rdfs:label	preceded by@en
+ERROR	multiple_labels	preceded_by	rdfs:label	preceded_by
+ERROR	multiple_labels	occurent_part_of	rdfs:label	occurent part of
+ERROR	multiple_labels	occurent_part_of	rdfs:label	occurent_part_of
+ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by@en
+ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
+ERROR	multiple_labels	immediately precedes	rdfs:label	ends_at_start_of
+ERROR	multiple_labels	immediately precedes	rdfs:label	immediately precedes@en
+ERROR	multiple_labels	happens during	rdfs:label	happens during
+ERROR	multiple_labels	happens during	rdfs:label	happens during@en
+ERROR	multiple_labels	ends_during	rdfs:label	ends during@en
+ERROR	multiple_labels	ends_during	rdfs:label	ends_during
+ERROR	multiple_labels	overlaps	rdfs:label	overlaps
+ERROR	multiple_labels	overlaps	rdfs:label	overlaps@en
+WARN	annotation_whitespace	ends_during	rdfs:comment	<X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en>
+WARN	annotation_whitespace	capable of	definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	missing_definition	anatomical entity	definition	
+WARN	missing_definition	biological entity	definition	
+WARN	missing_definition	oogenesis	definition	
+WARN	missing_definition	unfertilized egg stage	definition	
+WARN	missing_definition	fertilized egg stage	definition	
+WARN	missing_definition	spermatogenesis	definition	
+WARN	missing_definition	developmental process	definition	
+WARN	missing_definition	biological process	definition	
+WARN	missing_definition	substage_of	definition	
+WARN	missing_definition	molecular_function	definition	
+WARN	missing_definition	catalytic activity	definition	
+WARN	missing_definition	kinase activity	definition	
+WARN	missing_definition	transferase activity	definition	
+WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	definition	
+WARN	missing_definition	definition	definition	
+WARN	missing_definition	term replaced by	definition	
+WARN	missing_definition	quality	definition	
+WARN	missing_definition	has component activity	definition	
+WARN	missing_definition	directly regulated by	definition	
+WARN	missing_definition	during which ends	definition	
+WARN	missing_definition	encompasses	definition	
+WARN	missing_definition	ends after	definition	
+WARN	missing_definition	immediately preceded by	definition	
+WARN	missing_definition	during which starts	definition	
+WARN	missing_definition	immediately precedes	definition	
+WARN	missing_definition	starts during	definition	
+WARN	missing_definition	happens during	definition	
+WARN	missing_definition	ends_during	definition	
+WARN	missing_definition	temporally related to	definition	
+WARN	missing_definition	causally upstream of, positive effect	definition	
+WARN	missing_definition	causally upstream of, negative effect	definition	
+WARN	missing_definition	enables	definition	
+WARN	missing_definition	immediately causally downstream of	definition	
+WARN	missing_definition	phosphorylates	definition	
+WARN	missing_definition	helper property (not for use in curation)	definition	
+WARN	missing_definition	is kinase activity	definition	
+WARN	missing_definition	depends on	definition	
+WARN	missing_definition	causal relation between entities	definition	
+WARN	missing_definition	causally influenced by	definition	
+WARN	missing_definition	interaction relation helper property	definition	
+WARN	missing_definition	molecular interaction relation helper property	definition	
+WARN	missing_definition	acts upstream of or within, positive effect	definition	
+WARN	missing_definition	acts upstream of or within, negative effect	definition	
+WARN	missing_definition	causally upstream of or within, negative effect	definition	
+WARN	missing_definition	causally upstream of or within, positive effect	definition	
+WARN	missing_definition	Systematic synonym	definition	
+WARN	missing_definition	namespace-id-rule	definition	
+WARN	missing_definition	subset_property	definition	
+WARN	missing_definition	synonym_type_property	definition	
+WARN	missing_definition	has_alternative_id	definition	
+WARN	missing_definition	has_broad_synonym	definition	
+WARN	missing_definition	database_cross_reference	definition	
+WARN	missing_definition	has_exact_synonym	definition	
+WARN	missing_definition	has_narrow_synonym	definition	
+WARN	missing_definition	has_obo_format_version	definition	
+WARN	missing_definition	has_obo_namespace	definition	
+WARN	missing_definition	has_related_synonym	definition	
+WARN	missing_definition	has_scope	definition	
+WARN	missing_definition	shorthand	definition	
+WARN	missing_obsolete_label	syncytial blastoderm stage	rdfs:label	syncytial blastoderm stage
+WARN	missing_obsolete_label	cellular blastoderm stage	rdfs:label	cellular blastoderm stage
+WARN	missing_obsolete_label	germ band stage	rdfs:label	germ band stage
+WARN	missing_obsolete_label	contracted germ band stage	rdfs:label	contracted germ band stage
+WARN	missing_obsolete_label	head involution stage	rdfs:label	head involution stage
+WARN	missing_obsolete_label	gamete	rdfs:label	gamete
+WARN	missing_obsolete_label	occurrent	rdfs:label	occurrent
+INFO	lowercase_definition	part of	definition	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has part	definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	preceded_by	definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	precedes	definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	occurs in	definition	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	contains process	definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	day 1 of adulthood	definition	1st day after eclosion.
+INFO	lowercase_definition	day 2 of adulthood	definition	2nd day after eclosion.
+INFO	lowercase_definition	day 3 of adulthood	definition	3rd day after eclosion.
+INFO	lowercase_definition	day 4 of adulthood	definition	4th day after eclosion.
+INFO	lowercase_definition	day 5 of adulthood	definition	5th day after eclosion.
+INFO	lowercase_definition	day 6 of adulthood	definition	6th day after eclosion.
+INFO	lowercase_definition	day 7 of adulthood	definition	7th day after eclosion.
+INFO	lowercase_definition	day 8 of adulthood	definition	8th day after eclosion.
+INFO	lowercase_definition	day 9 of adulthood	definition	9th day after eclosion.
+INFO	lowercase_definition	day 10 of adulthood	definition	10th day after eclosion.
+INFO	lowercase_definition	day 11 of adulthood	definition	11th day after eclosion.
+INFO	lowercase_definition	day 12 of adulthood	definition	12th day after eclosion.
+INFO	lowercase_definition	day 13 of adulthood	definition	13th day after eclosion.
+INFO	lowercase_definition	day 14 of adulthood	definition	14th day after eclosion.
+INFO	lowercase_definition	day 15 of adulthood	definition	15th day after eclosion.
+INFO	lowercase_definition	day 16 of adulthood	definition	16th day after eclosion.
+INFO	lowercase_definition	day 17 of adulthood	definition	17th day after eclosion.
+INFO	lowercase_definition	day 18 of adulthood	definition	18th day after eclosion.
+INFO	lowercase_definition	day 19 of adulthood	definition	19th day after eclosion.
+INFO	lowercase_definition	day 20 of adulthood	definition	20th day after eclosion.
+INFO	lowercase_definition	day 21 of adulthood	definition	21st day after eclosion.
+INFO	lowercase_definition	day 22 of adulthood	definition	22nd day after eclosion.
+INFO	lowercase_definition	day 23 of adulthood	definition	23rd day after eclosion.
+INFO	lowercase_definition	day 24 of adulthood	definition	24th day after eclosion.
+INFO	lowercase_definition	day 25 of adulthood	definition	25th day after eclosion.
+INFO	lowercase_definition	day 26 of adulthood	definition	26th day after eclosion.
+INFO	lowercase_definition	day 27 of adulthood	definition	27th day after eclosion.
+INFO	lowercase_definition	day 28 of adulthood	definition	28th day after eclosion.
+INFO	lowercase_definition	day 29 of adulthood	definition	29th day after eclosion.
+INFO	lowercase_definition	day 30 of adulthood	definition	30th day after eclosion.
+INFO	lowercase_definition	day 31 of adulthood	definition	31st day after eclosion.
+INFO	lowercase_definition	day 32 of adulthood	definition	32nd day after eclosion.
+INFO	lowercase_definition	day 33 of adulthood	definition	33rd day after eclosion.
+INFO	lowercase_definition	day 34 of adulthood	definition	34th day after eclosion.
+INFO	lowercase_definition	day 35 of adulthood	definition	35th day after eclosion.
+INFO	lowercase_definition	day 36 of adulthood	definition	36th day after eclosion.
+INFO	lowercase_definition	day 37 of adulthood	definition	37th day after eclosion.
+INFO	lowercase_definition	day 38 of adulthood	definition	38th day after eclosion.
+INFO	lowercase_definition	day 39 of adulthood	definition	39th day after eclosion.
+INFO	lowercase_definition	day 40 of adulthood	definition	40th day after eclosion.
+INFO	lowercase_definition	day 41 of adulthood	definition	41st day after eclosion.
+INFO	lowercase_definition	day 42 of adulthood	definition	42nd day after eclosion.
+INFO	lowercase_definition	day 43 of adulthood	definition	43rd day after eclosion.
+INFO	lowercase_definition	day 44 of adulthood	definition	44th day after eclosion.
+INFO	lowercase_definition	day 45 of adulthood	definition	45th day after eclosion.
+INFO	lowercase_definition	day 46 of adulthood	definition	46th day after eclosion.
+INFO	lowercase_definition	day 47 of adulthood	definition	47th day after eclosion.
+INFO	lowercase_definition	day 48 of adulthood	definition	48th day after eclosion.
+INFO	lowercase_definition	day 49 of adulthood	definition	49th day after eclosion.
+INFO	lowercase_definition	day 50 of adulthood	definition	50th day after eclosion.
+INFO	lowercase_definition	day 51 of adulthood	definition	51st day after eclosion.
+INFO	lowercase_definition	day 52 of adulthood	definition	52nd day after eclosion.
+INFO	lowercase_definition	day 53 of adulthood	definition	53rd day after eclosion.
+INFO	lowercase_definition	day 54 of adulthood	definition	54th day after eclosion.
+INFO	lowercase_definition	day 55 of adulthood	definition	55th day after eclosion.
+INFO	lowercase_definition	day 56 of adulthood	definition	56th day after eclosion.
+INFO	lowercase_definition	day 57 of adulthood	definition	57th day after eclosion.
+INFO	lowercase_definition	day 58 of adulthood	definition	58th day after eclosion.
+INFO	lowercase_definition	day 59 of adulthood	definition	59th day after eclosion.
+INFO	lowercase_definition	day 60 of adulthood	definition	60th day after eclosion.
+INFO	lowercase_definition	participates in	definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has participant	definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has component process	definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	overlaps	definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+INFO	lowercase_definition	has component	definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	develops from	definition	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
+INFO	lowercase_definition	develops into	definition	inverse of develops from
+INFO	lowercase_definition	regulates	definition	<process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.>
+INFO	lowercase_definition	capable of part of	definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
+INFO	lowercase_definition	has input	definition	<p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.>
+INFO	lowercase_definition	has developmental contribution from	definition	x has developmental contribution from y iff x has some part z such that z develops from y@en
+INFO	lowercase_definition	developmentally contributes to	definition	inverse of has developmental contribution from
+INFO	lowercase_definition	acts upstream of	definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
+INFO	lowercase_definition	acts upstream of or within	definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+INFO	lowercase_definition	inheres in part of	definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	part of structure that is capable of	definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
+INFO	lowercase_definition	involved in	definition	c involved_in p if and only if c enables some process p', and p' is part of p
+INFO	lowercase_definition	enabled by	definition	inverse of enables
+INFO	lowercase_definition	regulated by	definition	inverse of regulates
+INFO	lowercase_definition	negatively regulated by	definition	inverse of negatively regulates
+INFO	lowercase_definition	positively regulated by	definition	inverse of positively regulates
+INFO	lowercase_definition	input of	definition	inverse of has input
+INFO	lowercase_definition	has developmental potential involving	definition	x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction).@en
+INFO	lowercase_definition	has potential to developmentally contribute to	definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en
+INFO	lowercase_definition	has potential to develop into	definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
+INFO	lowercase_definition	has potential to directly develop into	definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en
+INFO	lowercase_definition	causally downstream of	definition	inverse of upstream of
+INFO	lowercase_definition	causally upstream of	definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
+INFO	lowercase_definition	immediately causally upstream of	definition	p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.
+INFO	lowercase_definition	causally upstream of or within	definition	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.
+INFO	lowercase_definition	causally downstream of or within	definition	inverse of causally upstream of or within
+INFO	lowercase_definition	involved in regulation of	definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
+INFO	lowercase_definition	involved in positive regulation of	definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
+INFO	lowercase_definition	involved in negative regulation of	definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
+INFO	lowercase_definition	involved in or involved in regulation of	definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
+INFO	lowercase_definition	is active in	definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
+INFO	lowercase_definition	has part that occurs in	definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
+INFO	lowercase_definition	causal relation between processes	definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
+INFO	lowercase_definition	has part structure that is capable of	definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+INFO	lowercase_definition	acts upstream of, positive effect	definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
+INFO	lowercase_definition	acts upstream of, negative effect	definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
