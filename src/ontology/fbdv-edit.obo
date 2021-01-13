@@ -2034,7 +2034,7 @@ xref: RO:0002131
 id: substage_of
 name: substage_of
 namespace: relationship
-comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
+comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
 is_a: RO:0002012
