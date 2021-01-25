@@ -14,15 +14,13 @@ The latest version of the ontology can always be found at:
 
 http://purl.obolibrary.org/obo/fbdv.owl
 
-(note this will not show up until the request has been approved by obofoundry.org)
-
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/fbdv-edit.owl](src/ontology/fbdv-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/fbdv-edit.owl](src/ontology/fbdv-edit.obo)
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/FlyBase/flybase-developmental-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/FlyBase/drosophila-developmental-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
