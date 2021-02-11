@@ -1,36 +1,36 @@
 format-version: 1.2
 data-version: 2016-10-14
-import: http://purl.obolibrary.org/obo/fbdv/imports/go_import.owl
-import: http://purl.obolibrary.org/obo/fbdv/imports/ro_import.owl
-import: http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl
-subsetdef: goslim_yeast "Yeast GO slim"
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
 subsetdef: goslim_candida "Candida GO slim"
-subsetdef: goslim_chembl "ChEMBL GO slim"
 subsetdef: goslim_ChEMBL "ChEMBL GO slim"
+subsetdef: goslim_chembl "ChEMBL GO slim"
 subsetdef: goslim_generic "Generic GO slim"
+subsetdef: goslim_metagenomics "Metagenomics GO slim"
 subsetdef: goslim_pir "PIR GO slim"
 subsetdef: goslim_plant "Plant GO slim"
-subsetdef: gosubset_prok "Prokaryotic GO subset"
-subsetdef: goslim_metagenomics "Metagenomics GO slim"
 subsetdef: goslim_pombe "Fission yeast GO slim"
+subsetdef: goslim_yeast "Yeast GO slim"
+subsetdef: gosubset_prok "Prokaryotic GO subset"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
+import: http://purl.obolibrary.org/obo/fbdv/imports/go_import.owl
+import: http://purl.obolibrary.org/obo/fbdv/imports/ro_import.owl
+import: http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl
 ontology: fbdv
-property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-7073-9172 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
+property_value: IAO:0000700 FBdv:00000000
+property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: IAO:0000700 FBdv:00005259
-property_value: IAO:0000700 FBdv:00000000
 
 [Term]
 id: FBdv:00000000
@@ -779,6 +779,7 @@ def: "The first larval instar begins at hatching and ends at the first larval mo
 comment: Temporal ordering number - 410.
 synonym: "first instar larva" EXACT []
 synonym: "L1" EXACT []
+xref: UBERON:8000000
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005289 ! embryonic stage
 relationship: immediately_preceded_by FBdv:00005333 ! late embryonic stage
@@ -793,6 +794,7 @@ def: "The second larval instar begins at the first larval molt and ends at the s
 comment: Temporal ordering number - 420.
 synonym: "L2" EXACT []
 synonym: "second instar larva" EXACT []
+xref: UBERON:8000001
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005337 ! first instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
@@ -804,6 +806,7 @@ def: "The third larval instar begins at the second larval molt and ends at pupar
 comment: Temporal ordering number - 430.
 synonym: "L3" EXACT []
 synonym: "third instar larva" RELATED []
+xref: UBERON:8000002
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
@@ -2031,20 +2034,19 @@ name: overlaps
 xref: RO:0002131
 
 [Typedef]
-id: substage_of
-name: substage_of
-namespace: relationship
-comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
-xref: FBdv:00018001
-is_transitive: true
-is_a: RO:0002012
-is_a: RO:0002092
-
-[Typedef]
 id: preceded_by
 name: preceded_by
 namespace: relationship
 xref: BFO:0000062
 xref: OBO_REL:preceded_by
 
+[Typedef]
+id: substage_of
+name: substage_of
+namespace: relationship
+comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
+xref: FBdv:00018001
+is_transitive: true
+is_a: occurent_part_of ! occurent_part_of
+is_a: RO:0002092 ! happens during
 
