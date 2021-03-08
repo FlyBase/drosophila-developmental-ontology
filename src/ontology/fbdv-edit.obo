@@ -326,6 +326,7 @@ comment: Temporal ordering number - 10.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
 relationship: substage_of FBdv:00005286 ! egg stage
+relationship: substage_of FBdv:00005289 ! embryonic stage
 
 [Term]
 id: FBdv:00005289
@@ -333,7 +334,7 @@ name: embryonic stage
 def: "The stage of the Drosophila life-cycle from fertilization to hatching." [FBC:DOS]
 comment: Temporal ordering number - 20.
 is_a: FBdv:00007012 ! life stage
-relationship: immediately_preceded_by FBdv:00005288 ! fertilized egg stage
+relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
 
 [Term]
 id: FBdv:00005290
