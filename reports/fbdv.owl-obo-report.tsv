@@ -8,8 +8,8 @@ ERROR	multiple_labels	has part	rdfs:label	has part@en
 ERROR	multiple_labels	has part	rdfs:label	has_part
 ERROR	multiple_labels	preceded_by	rdfs:label	preceded by@en
 ERROR	multiple_labels	preceded_by	rdfs:label	preceded_by
-ERROR	multiple_labels	occurent_part_of	rdfs:label	occurent part of
-ERROR	multiple_labels	occurent_part_of	rdfs:label	occurent_part_of
+ERROR	multiple_labels	occurent part of	rdfs:label	occurent part of
+ERROR	multiple_labels	occurent part of	rdfs:label	occurent_part_of
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by@en
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
 ERROR	multiple_labels	immediately precedes	rdfs:label	ends_at_start_of
