@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2021-01-13/fbdv-simple.owl
-date: 13:01:2021 12:25
+data-version: fbdv/releases/2021-03-10/fbdv-simple.owl
+date: 10:03:2021 10:38
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -33,7 +33,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2021-01-13" xsd:string
+property_value: owl:versionInfo "2021-03-10" xsd:string
 
 [Term]
 id: FBdv:00000000
@@ -327,6 +327,7 @@ comment: Temporal ordering number - 10.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
 relationship: substage_of FBdv:00005286 ! egg stage
+relationship: substage_of FBdv:00005289 ! embryonic stage
 
 [Term]
 id: FBdv:00005289
@@ -334,7 +335,7 @@ name: embryonic stage
 def: "The stage of the Drosophila life-cycle from fertilization to hatching." [FBC:DOS]
 comment: Temporal ordering number - 20.
 is_a: FBdv:00007012 ! life stage
-relationship: immediately_preceded_by FBdv:00005288 ! fertilized egg stage
+relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
 
 [Term]
 id: FBdv:00005290
@@ -780,6 +781,7 @@ def: "The first larval instar begins at hatching and ends at the first larval mo
 comment: Temporal ordering number - 410.
 synonym: "first instar larva" EXACT []
 synonym: "L1" EXACT []
+xref: UBERON:8000000
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005289 ! embryonic stage
 relationship: immediately_preceded_by FBdv:00005333 ! late embryonic stage
@@ -794,6 +796,7 @@ def: "The second larval instar begins at the first larval molt and ends at the s
 comment: Temporal ordering number - 420.
 synonym: "L2" EXACT []
 synonym: "second instar larva" EXACT []
+xref: UBERON:8000001
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005337 ! first instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
@@ -805,6 +808,7 @@ def: "The third larval instar begins at the second larval molt and ends at pupar
 comment: Temporal ordering number - 430.
 synonym: "L3" EXACT []
 synonym: "third instar larva" RELATED []
+xref: UBERON:8000002
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
@@ -2003,6 +2007,7 @@ relationship: substage_of FBdv:00005321 ! extended germ band stage
 id: ends_at_start_of
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
+subset: ro-eco
 xref: RO:0002090
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
@@ -2016,6 +2021,7 @@ comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X))
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
+subset: ro-eco
 xref: RO:0002092
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "d" xsd:string
@@ -2067,6 +2073,7 @@ name: overlaps
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
+subset: ro-eco
 xref: RO:0002131
 property_value: IAO:0000114 IAO:0000125
 property_value: RO:0001900 RO:0001901
@@ -2078,6 +2085,7 @@ id: preceded_by
 name: preceded_by
 namespace: relationship
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
 xref: BFO:0000062
 xref: OBO_REL:preceded_by
 property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:preceded_by xsd:string
@@ -2096,5 +2104,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurent_part_of
+is_a: occurent_part_of ! occurent part of
 
