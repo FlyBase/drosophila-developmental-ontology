@@ -109,7 +109,7 @@ To release:
 
 6. When travis checks have passed, merge the PR and IMMEDIATELY make a new release on GitHub:
 
- * https://github.com/FlyBase/flybase-controlled-vocabulary/releases/new
+ * https://github.com/FlyBase/drosophila-developmental-ontology/releases/new
 
 __IMPORTANT__: The value of the "Tag version" field MUST be `vYYYY-MM-DD`
 
