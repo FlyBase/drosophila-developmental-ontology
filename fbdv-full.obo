@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2021-03-10/fbdv-full.owl
-date: 10:03:2021 10:38
+data-version: fbdv/releases/2021-05-10/fbdv-full.owl
+date: 10:05:2021 12:44
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -50,7 +50,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2021-03-10" xsd:string
+property_value: owl:versionInfo "2021-05-10" xsd:string
 
 [Term]
 id: BFO:0000002
