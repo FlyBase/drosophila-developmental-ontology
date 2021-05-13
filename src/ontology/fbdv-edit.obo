@@ -645,7 +645,7 @@ relationship: substage_of FBdv:00005317 ! gastrula stage
 [Term]
 id: FBdv:00005323
 name: embryonic stage 9
-def: "Stage 9 begins when mesodermal segmentation becomes (transiently) visible\\, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)." [FlyBase:FBrf0089570]
+def: "Stage 9 begins when mesodermal segmentation becomes (transiently) visible, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)." [FlyBase:FBrf0089570]
 comment: Temporal ordering number - 280.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005317 ! gastrula stage
