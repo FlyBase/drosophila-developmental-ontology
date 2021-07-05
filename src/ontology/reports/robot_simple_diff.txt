@@ -1,9 +1,13 @@
-3 axioms in left ontology but not in right ontology:
-- Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-05-10"^^xsd:string)
-- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "10:05:2021 12:44"^^xsd:string)
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-05-10/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+5 axioms in left ontology but not in right ontology:
+- Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-07-05"^^xsd:string)
+- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "05:07:2021 10:41"^^xsd:string)
+- AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000051> "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"^^xsd:string)
+- AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0089570"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBdv_00005323> "Stage 9 begins when mesodermal segmentation becomes (transiently) visible, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)."^^xsd:string)
+- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-07-05/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
 
-3 axioms in right ontology but not in left ontology:
-+ Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-03-10"^^xsd:string)
-+ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "10:03:2021 10:38"^^xsd:string)
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-03-10/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+5 axioms in right ontology but not in left ontology:
++ Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-05-10"^^xsd:string)
++ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "10:05:2021 12:44"^^xsd:string)
++ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000051> "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"^^xsd:string)
++ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0089570"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBdv_00005323> "Stage 9 begins when mesodermal segmentation becomes (transiently) visible\\, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)."^^xsd:string)
++ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-05-10/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
