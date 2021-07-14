@@ -2008,18 +2008,6 @@ relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: substage_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
-id: ends_at_start_of
-name: ends_at_start_of
-xref: RO:0002090
-
-[Typedef]
-id: has_part
-name: has_part
-namespace: relationship
-xref: BFO:0000051
-xref: OBO_REL:has_part
-
-[Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
 xref: RO:0002087
@@ -2028,18 +2016,6 @@ xref: RO:0002087
 id: occurent_part_of
 name: occurent_part_of
 xref: RO:0002012
-
-[Typedef]
-id: overlaps
-name: overlaps
-xref: RO:0002131
-
-[Typedef]
-id: preceded_by
-name: preceded_by
-namespace: relationship
-xref: BFO:0000062
-xref: OBO_REL:preceded_by
 
 [Typedef]
 id: substage_of
