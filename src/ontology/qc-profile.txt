@@ -20,4 +20,4 @@ WARN	missing_superclass
 WARN	misused_obsolete_label
 ERROR	multiple_definitions
 ERROR	multiple_equivalent_classes
-ERROR	multiple_labels
+WARN	multiple_labels
