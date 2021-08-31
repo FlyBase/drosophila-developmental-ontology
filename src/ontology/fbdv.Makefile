@@ -154,8 +154,10 @@ fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
 	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
 	
-post_release: fly_development.obo reports/chado_load_check_simple.txt
+post_release: obo_qc fly_development.obo reports/chado_load_check_simple.txt
 	cp fly_development.obo ../..
+	mv obo_qc_fbdv.obo.txt reports/obo_qc_fbdv.obo.txt
+	mv obo_qc_fbdv.owl.txt reports/obo_qc_fbdv.owl.txt
 	
 ########################
 ##    TRAVIS       #####
