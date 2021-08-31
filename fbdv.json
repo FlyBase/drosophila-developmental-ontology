@@ -107,15 +107,6 @@
           "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000003"
           ],
-          "predicateId": "http://purl.obolibrary.org/obo/BFO_0000066",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000004"
-          ]
-        },
-        {
-          "domainClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000003"
-          ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0000057",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000002"
@@ -146,15 +137,6 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002222",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000003"
-          ]
-        },
-        {
-          "domainClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000003"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/RO_0002479",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000004"
           ]
         },
         {
@@ -457,11 +439,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000063",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002411"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000067",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/BFO_0000066"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CARO_0030000",
@@ -3969,11 +3946,6 @@
           "sub": "http://purl.obolibrary.org/obo/BFO_0000051"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/RO_0002131",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002432"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002180",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002018"
@@ -4167,11 +4139,6 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002328",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002431"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0002328",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002432"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002328",
@@ -4723,7 +4690,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "05:07:2021 10:40"
+            "val": "31:08:2021 09:05"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4735,11 +4702,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-07-05"
+            "val": "2021-08-31"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-07-05/fbdv.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-08-31/fbdv.json",
         "xrefs": []
       },
       "nodes": [
@@ -4941,7 +4908,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "lbl": "has_part",
+          "lbl": "has part",
           "meta": {
             "basicPropertyValues": [
               {
@@ -4985,10 +4952,6 @@
                 "val": "external"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "relationship"
-              },
-              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
                 "val": "has_part"
               }
@@ -5005,9 +4968,6 @@
             "xrefs": [
               {
                 "val": "BFO:0000051"
-              },
-              {
-                "val": "OBO_REL:has_part"
               }
             ]
           },
@@ -5015,7 +4975,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/BFO_0000062",
-          "lbl": "preceded_by",
+          "lbl": "preceded by",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5037,14 +4997,6 @@
               {
                 "pred": "http://purl.org/dc/elements/1.1/source",
                 "val": "http://www.obofoundry.org/ro/#OBO_REL:preceded_by"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "relationship"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "preceded_by"
               }
             ],
             "definition": {
@@ -5053,14 +5005,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
-            ],
-            "xrefs": [
-              {
-                "val": "BFO:0000062"
-              },
-              {
-                "val": "OBO_REL:preceded_by"
-              }
             ]
           },
           "type": "PROPERTY"
@@ -5082,71 +5026,6 @@
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
             ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000066",
-          "lbl": "occurs in",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "occurs in"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "occurs_in"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "unfolds in"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "unfolds_in"
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
-            "comments": [
-              "Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant"
-            ],
-            "definition": {
-              "val": "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_ontology",
-              "http://purl.obolibrary.org/obo/valid_for_gocam"
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000067",
-          "lbl": "contains process",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "site of"
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
-            "comments": [
-              "Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant"
-            ],
-            "definition": {
-              "val": "[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t",
-              "xrefs": []
-            }
           },
           "type": "PROPERTY"
         },
@@ -11116,6 +10995,7 @@
               ]
             },
             "subsets": [
+              "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate",
               "http://purl.obolibrary.org/obo/go#goslim_pir"
             ],
             "synonyms": [
@@ -11525,6 +11405,19 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
                 "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0100001",
+          "lbl": "term replaced by",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
               }
             ]
           },
@@ -12233,7 +12126,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002090",
-          "lbl": "ends_at_start_of",
+          "lbl": "immediately precedes",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12251,14 +12144,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/RO_0002575",
                 "val": "http://purl.obolibrary.org/obo/BFO_0000063"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "FlyBase_development_CV"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "ends_at_start_of"
               }
             ],
             "comments": [
@@ -12266,11 +12151,6 @@
             ],
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
-            ],
-            "xrefs": [
-              {
-                "val": "RO:0002090"
-              }
             ]
           },
           "type": "PROPERTY"
@@ -12397,14 +12277,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
                 "val": "http://purl.obolibrary.org/obo/RO_0001901"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "FlyBase_development_CV"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "overlaps"
               }
             ],
             "definition": {
@@ -12415,11 +12287,6 @@
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
-            ],
-            "xrefs": [
-              {
-                "val": "RO:0002131"
-              }
             ]
           },
           "type": "PROPERTY"
@@ -13639,44 +13506,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/RO_0002432",
-          "lbl": "is active in",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "A protein that enables activity in a cytosol."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Chris Mungall"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "executes activity in"
-              }
-            ],
-            "comments": [
-              ""
-            ],
-            "definition": {
-              "val": "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.",
-              "xrefs": [
-                "GOC:cjm",
-                "GOC:dos"
-              ]
-            },
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "enables activity in",
-                "xrefs": []
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/RO_0002434",
           "lbl": "interacts with",
           "meta": {
@@ -13882,26 +13711,6 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
                 "val": "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning."
               }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0002479",
-          "lbl": "has part that occurs in",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Chris Mungall"
-              }
-            ],
-            "definition": {
-              "val": "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
             ]
           },
           "type": "PROPERTY"
@@ -14603,11 +14412,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/IAO_0100001",
-          "lbl": "term replaced by",
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule",
           "lbl": "namespace-id-rule",
           "type": "PROPERTY"
@@ -14790,20 +14594,6 @@
         {
           "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/BFO_0000050",
-            "http://purl.obolibrary.org/obo/BFO_0000066"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/BFO_0000066"
-        },
-        {
-          "chainPredicateIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000050",
-            "http://purl.obolibrary.org/obo/BFO_0000066"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/BFO_0000066"
-        },
-        {
-          "chainPredicateIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000050",
             "http://purl.obolibrary.org/obo/RO_0000052"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002314"
@@ -14856,13 +14646,6 @@
             "http://purl.obolibrary.org/obo/RO_0002331"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002331"
-        },
-        {
-          "chainPredicateIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000051",
-            "http://purl.obolibrary.org/obo/BFO_0000066"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/RO_0002479"
         },
         {
           "chainPredicateIds": [
@@ -14933,13 +14716,6 @@
             "http://purl.obolibrary.org/obo/RO_0002092"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/BFO_0000063"
-        },
-        {
-          "chainPredicateIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000066",
-            "http://purl.obolibrary.org/obo/RO_0002327"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/RO_0002432"
         },
         {
           "chainPredicateIds": [
