@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2021-07-05
-date: 05:07:2021 10:41
+data-version: 2021-08-31
+date: 31:08:2021 09:06
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -1992,13 +1992,6 @@ relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: substage_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
-id: ends_at_start_of
-name: ends_at_start_of
-comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
-subset: ro-eco
-xref: RO:0002090
-
-[Typedef]
 id: happens_during
 name: happens_during
 comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
@@ -2010,53 +2003,16 @@ xref: RO:0002092
 is_transitive: true
 
 [Typedef]
-id: has_part
-name: has_part
-namespace: relationship
-def: "a core relation that holds between a whole and its part" []
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-xref: BFO:0000051
-xref_analog: OBO_REL:has_part
-is_transitive: true
-is_a: overlaps ! overlaps
-
-[Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
 xref: RO:0002087
-is_a: preceded_by ! preceded_by
-inverse_of: ends_at_start_of ! ends_at_start_of
 
 [Typedef]
 id: occurent_part_of
 name: occurent_part_of
 def: "A part of relation that applies only between occurents." []
 xref: RO:0002012
-is_a: overlaps ! overlaps
-
-[Typedef]
-id: overlaps
-name: overlaps
-def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-subset: ro-eco
-xref: RO:0002131
-holds_over_chain: has_part overlaps
-
-[Typedef]
-id: preceded_by
-name: preceded_by
-namespace: relationship
-def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-subset: ro-eco
-xref: BFO:0000062
-xref_analog: OBO_REL:preceded_by
-holds_over_chain: happens_during preceded_by
-is_transitive: true
 
 [Typedef]
 id: substage_of
