@@ -9,8 +9,7 @@ DATE   ?= $(shell date +%Y-%m-%d)
 ### Code for generating additional FlyBase reports ###
 ######################################################
 
-# Illegal division by 0 problem: reports/onto_metrics_calc.txt 
-REPORT_FILES := $(REPORT_FILES) reports/obo_track_new_simple.txt  reports/robot_simple_diff.txt
+REPORT_FILES := $(REPORT_FILES) reports/obo_track_new_simple.txt  reports/robot_simple_diff.txt reports/onto_metrics_calc.txt 
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
@@ -41,7 +40,7 @@ reports/robot_simple_diff.txt: $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo
 	$(ROBOT) diff --left $(ONT)-simple.obo --right $(LAST_DEPLOYED_SIMPLE) --output $@
 
 reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
-	../scripts/onto_metrics_calc.pl 'phenotypic_class' $(ONT)-simple.obo > $@
+	../scripts/onto_metrics_calc.pl 'FlyBase_development_CV' $(ONT)-simple.obo > $@
 	
 reports/chado_load_check_simple.txt: install_flybase_scripts fly_development.obo 
 	../scripts/chado_load_checks.pl fly_development.obo > $@
@@ -155,8 +154,10 @@ fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
 	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
 	
-post_release: fly_development.obo reports/chado_load_check_simple.txt
+post_release: obo_qc fly_development.obo reports/chado_load_check_simple.txt
 	cp fly_development.obo ../..
+	mv obo_qc_fbdv.obo.txt reports/obo_qc_fbdv.obo.txt
+	mv obo_qc_fbdv.owl.txt reports/obo_qc_fbdv.owl.txt
 	
 ########################
 ##    TRAVIS       #####
