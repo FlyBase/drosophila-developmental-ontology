@@ -55,6 +55,7 @@ prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 ######################################################
 ### Overwriting some default artefacts ###
 ######################################################
+# remove excess defs, labels and comments from obo files
 
 # Simple is overwritten to strip out duplicate names and definitions.
 $(ONT)-simple.obo: $(ONT)-simple.owl
@@ -70,14 +71,24 @@ $(ONT).obo: $(ONT)-simple.owl
 	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'namespace[:][ ]external' > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
+	
+$(ONT)-base.obo: $(ONT)-base.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+		
+$(ONT)-non-classified.obo: $(ONT)-non-classified.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
 
-#ont.obo:
-#	$(ROBOT) annotate --input $(ONT)-simple.owl --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
-#	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-#	grep -v ^owl-axioms $@.tmp.obo > $@.tmp &&\
-#	sed -i '/subset[:] ro[-]eco/d' $@.tmp &&\
-#	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-#	rm -f $@.tmp.obo $@.tmp
+$(ONT)-full.obo: $(ONT)-full.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
 
 #non_native_classes.txt: $(SRC)
 #	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/non-native-classes.sparql $@.tmp &&\

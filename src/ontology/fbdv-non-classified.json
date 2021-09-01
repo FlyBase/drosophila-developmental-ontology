@@ -222,15 +222,6 @@
         },
         {
           "domainClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000020"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/RO_0002573",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000020"
-          ]
-        },
-        {
-          "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000040"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002434",
@@ -394,11 +385,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000019"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000001"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -4670,7 +4656,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "31:08:2021 09:06"
+            "val": "01:09:2021 09:21"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4682,11 +4668,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-08-31"
+            "val": "2021-09-01"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-08-31/fbdv-non-classified.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-09-01/fbdv-non-classified.json",
         "xrefs": []
       },
       "nodes": [
@@ -11404,19 +11390,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/PATO_0000001",
-          "lbl": "quality",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
-                "val": "quality (PATO)"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
           "lbl": "characteristic of",
           "meta": {
@@ -13873,34 +13846,6 @@
               "val": "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size).",
               "xrefs": []
             }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0002573",
-          "lbl": "has modifier",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Chris Mungall"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "http://www.ncbi.nlm.nih.gov/pubmed/20064205"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as 'abnormal' and 'normal'. It has yet to be formally aligned into an ontological framework; it's not clear what the ontological status of the \"modifiers\" are."
-              }
-            ],
-            "definition": {
-              "val": "A relation that holds between an attribute or a qualifier and another attribute.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
-            ]
           },
           "type": "PROPERTY"
         },
