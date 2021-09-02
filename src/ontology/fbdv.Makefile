@@ -153,7 +153,6 @@ tmp/fbdv-obj.obo:
 
 fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	cp fbdv-simple.obo tmp/fbdv-simple-stripped.obo
-	#cat fbdv-simple.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > tmp/fbdv-simple-stripped.obo &&\
 	$(ROBOT) remove -vv -i tmp/fbdv-simple-stripped.obo --select "owl:deprecated='true'^^xsd:boolean" --trim true \
 		merge --collapse-import-closure false --input tmp/fbdv-obj.obo \
 		remove --term-file rem_flybase.txt --trim false \
@@ -167,8 +166,8 @@ fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	
 post_release: obo_qc fly_development.obo reports/chado_load_check_simple.txt
 	cp fly_development.obo ../..
-	mv obo_qc_fbdv.obo.txt reports/obo_qc_fbdv.obo.txt
-	mv obo_qc_fbdv.owl.txt reports/obo_qc_fbdv.owl.txt
+	mv obo_qc_$(ONT).obo.txt reports/obo_qc_$(ONT).obo.txt
+	mv obo_qc_$(ONT).owl.txt reports/obo_qc_$(ONT).owl.txt
 	
 ########################
 ##    TRAVIS       #####
