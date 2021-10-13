@@ -480,7 +480,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 
 [Term]
 id: FBdv:00005305
-name: syncytial blastoderm stage
+name: obsolete syncytial blastoderm stage
 is_obsolete: true
 
 [Term]
@@ -525,7 +525,7 @@ relationship: substage_of FBdv:00005306 ! embryonic stage 4
 
 [Term]
 id: FBdv:00005310
-name: cellular blastoderm stage
+name: obsolete cellular blastoderm stage
 is_obsolete: true
 
 [Term]
@@ -619,7 +619,7 @@ relationship: substage_of FBdv:00005317 ! gastrula stage
 
 [Term]
 id: FBdv:00005320
-name: germ band stage
+name: obsolete germ band stage
 is_obsolete: true
 
 [Term]
@@ -673,7 +673,7 @@ relationship: substage_of FBdv:00004450 ! late extended germ band stage
 
 [Term]
 id: FBdv:00005326
-name: contracted germ band stage
+name: obsolete contracted germ band stage
 is_obsolete: true
 
 [Term]
@@ -700,7 +700,7 @@ relationship: substage_of FBdv:00005331 ! dorsal closure stage
 
 [Term]
 id: FBdv:00005329
-name: head involution stage
+name: obsolete head involution stage
 is_obsolete: true
 replaced_by: FBdv:00005330
 
@@ -1284,7 +1284,7 @@ creation_date: 2008-12-11T01:19:53Z
 
 [Term]
 id: FBdv:00007008
-name: occurrent
+name: obsolete occurrent
 is_obsolete: true
 
 [Term]
