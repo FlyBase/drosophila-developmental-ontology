@@ -13,7 +13,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2021-09-01/fbdv-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2021-10-13/fbdv-simple.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00000000"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005259"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007013"/>
@@ -26,10 +26,10 @@
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase Developmental Ontology (FBdv)</dc:title>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/3.0/</terms:license>
         <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* FBdv:$sequence(8,7000,10000)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01:09:2021 09:21</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13:10:2021 08:59</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-01</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -250,30 +250,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -2068,7 +2044,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005305">
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005305</oboInOwl:id>
-        <rdfs:label>syncytial blastoderm stage</rdfs:label>
+        <rdfs:label>obsolete syncytial blastoderm stage</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -2217,7 +2193,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005310">
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005310</oboInOwl:id>
-        <rdfs:label>cellular blastoderm stage</rdfs:label>
+        <rdfs:label>obsolete cellular blastoderm stage</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -2546,7 +2522,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005320">
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005320</oboInOwl:id>
-        <rdfs:label>germ band stage</rdfs:label>
+        <rdfs:label>obsolete germ band stage</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -2731,7 +2707,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005326">
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005326</oboInOwl:id>
-        <rdfs:label>contracted germ band stage</rdfs:label>
+        <rdfs:label>obsolete contracted germ band stage</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -2819,7 +2795,7 @@
         <obo:IAO_0100001>FBdv:00005330</obo:IAO_0100001>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005329</oboInOwl:id>
-        <rdfs:label>head involution stage</rdfs:label>
+        <rdfs:label>obsolete head involution stage</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4898,7 +4874,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007008">
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007008</oboInOwl:id>
-        <rdfs:label>occurrent</rdfs:label>
+        <rdfs:label>obsolete occurrent</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     

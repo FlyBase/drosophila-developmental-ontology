@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2021-09-01/fbdv-full.owl
-date: 01:09:2021 09:21
+data-version: fbdv/releases/2021-10-13/fbdv-full.owl
+date: 13:10:2021 08:59
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -50,7 +50,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2021-09-01" xsd:string
+property_value: owl:versionInfo "2021-10-13" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -582,7 +582,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 
 [Term]
 id: FBdv:00005305
-name: syncytial blastoderm stage
+name: obsolete syncytial blastoderm stage
 is_obsolete: true
 
 [Term]
@@ -627,7 +627,7 @@ relationship: substage_of FBdv:00005306 ! embryonic stage 4
 
 [Term]
 id: FBdv:00005310
-name: cellular blastoderm stage
+name: obsolete cellular blastoderm stage
 is_obsolete: true
 
 [Term]
@@ -721,7 +721,7 @@ relationship: substage_of FBdv:00005317 ! gastrula stage
 
 [Term]
 id: FBdv:00005320
-name: germ band stage
+name: obsolete germ band stage
 is_obsolete: true
 
 [Term]
@@ -775,7 +775,7 @@ relationship: substage_of FBdv:00004450 ! late extended germ band stage
 
 [Term]
 id: FBdv:00005326
-name: contracted germ band stage
+name: obsolete contracted germ band stage
 is_obsolete: true
 
 [Term]
@@ -802,7 +802,7 @@ relationship: substage_of FBdv:00005331 ! dorsal closure stage
 
 [Term]
 id: FBdv:00005329
-name: head involution stage
+name: obsolete head involution stage
 is_obsolete: true
 replaced_by: FBdv:00005330
 
@@ -1386,7 +1386,7 @@ creation_date: 2008-12-11T01:19:53Z
 
 [Term]
 id: FBdv:00007008
-name: occurrent
+name: obsolete occurrent
 is_obsolete: true
 
 [Term]

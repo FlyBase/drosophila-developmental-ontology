@@ -25,13 +25,7 @@ WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115
 WARN	missing_definition	oboInOwl:hasScope	IAO:0000115	
 WARN	missing_definition	oboInOwl:inSubset	IAO:0000115	
 WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
-WARN	missing_obsolete_label	FBdv:00005305	rdfs:label	syncytial blastoderm stage
-WARN	missing_obsolete_label	FBdv:00005310	rdfs:label	cellular blastoderm stage
-WARN	missing_obsolete_label	FBdv:00005320	rdfs:label	germ band stage
-WARN	missing_obsolete_label	FBdv:00005326	rdfs:label	contracted germ band stage
-WARN	missing_obsolete_label	FBdv:00005329	rdfs:label	head involution stage
 WARN	missing_obsolete_label	FBdv:00005412	rdfs:label	gamete
-WARN	missing_obsolete_label	FBdv:00007008	rdfs:label	occurrent
 WARN	missing_superclass	FBdv:00000000	rdfs:subClassOf	
 WARN	missing_superclass	FBdv:00005259	rdfs:subClassOf	
 WARN	missing_superclass	FBdv:00007013	rdfs:subClassOf	
