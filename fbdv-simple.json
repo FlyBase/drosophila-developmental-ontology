@@ -3174,7 +3174,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "01:09:2021 09:21"
+            "val": "13:10:2021 08:59"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -3186,11 +3186,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-09-01"
+            "val": "2021-10-13"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-09-01/fbdv-simple.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-10-13/fbdv-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -4334,7 +4334,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005305",
-          "lbl": "syncytial blastoderm stage",
+          "lbl": "obsolete syncytial blastoderm stage",
           "meta": {
             "basicPropertyValues": [
               {
@@ -4448,7 +4448,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005310",
-          "lbl": "cellular blastoderm stage",
+          "lbl": "obsolete cellular blastoderm stage",
           "meta": {
             "basicPropertyValues": [
               {
@@ -4725,7 +4725,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005320",
-          "lbl": "germ band stage",
+          "lbl": "obsolete germ band stage",
           "meta": {
             "basicPropertyValues": [
               {
@@ -4856,7 +4856,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005326",
-          "lbl": "contracted germ band stage",
+          "lbl": "obsolete contracted germ band stage",
           "meta": {
             "basicPropertyValues": [
               {
@@ -4928,7 +4928,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005329",
-          "lbl": "head involution stage",
+          "lbl": "obsolete head involution stage",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6639,7 +6639,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00007008",
-          "lbl": "occurrent",
+          "lbl": "obsolete occurrent",
           "meta": {
             "basicPropertyValues": [
               {
