@@ -99,9 +99,10 @@ $(ONT)-full.obo: $(ONT)-full.owl
 #####################################################################################
 ### Regenerate placeholder definitions         (Pre-release) pipelines            ###
 #####################################################################################
-# There are two types of definitions that fbdv uses: "." (DOT-) definitions are those for which the formal 
+# FBdv does not currently use DOT or SUB definitions: "." (DOT-) definitions are those for which the formal 
 # definition is translated into a human readable definitions. "$sub_" (SUB-) definitions are those that have 
-# special placeholder string to substitute in definitions from external ontologies, mostly GO
+# special placeholder string to substitute in definitions from external ontologies
+# pre_release not currently being run - change run_release.sh if needed
 
 LABEL_MAP = auto_generated_definitions_label_map.txt
 
@@ -139,8 +140,7 @@ tmp/remove_dot_defs.txt: tmp/auto_generated_definitions_seed_dot.txt
 pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl tmp/remove_dot_defs.txt
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
 	$(ROBOT) query -i tmp/$(ONT)-edit-release.obo --update ../sparql/remove-dot-definitions.ru convert -f obo --check false -o tmp/$(ONT)-edit-release.obo
-	#commenting out sub_ removal as sub_ not used in FBdv
-	#sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
+	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 
