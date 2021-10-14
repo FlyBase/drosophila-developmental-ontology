@@ -115,13 +115,9 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/classes-with-placeholder-definitions.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
-
-mirror/go.owl: mirror/go.trigger
-	$(ROBOT) convert -I $(URIBASE)/go.owl -o $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: mirror/%.owl
 	
-tmp/merged-source-pre.owl: $(SRC) mirror/go.owl
-	$(ROBOT) merge -i $(SRC) -i mirror/go.owl --output $@
+tmp/merged-source-pre.owl: $(SRC)
+	$(ROBOT) merge -i $(SRC) --output $@
 
 tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_dot.txt
 	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_dot.txt flybase $@ $(LABEL_MAP) add_dot_refs
