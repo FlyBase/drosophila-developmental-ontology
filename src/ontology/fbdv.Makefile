@@ -175,5 +175,5 @@ obo_qc_%:
 obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
 
 flybase_qc: odkversion obo_qc
-	$(ROBOT) reason --input $(ONT)-full.owl --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
+	$(ROBOT) reason --input $(ONT)-full.owl --reasoner ELK  --equivalent-classes-allowed none --output test.owl && rm test.owl && echo "Success"
 
