@@ -1175,7 +1175,7 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
 id: FBdv:00005412
-name: gamete
+name: obsolete gamete
 comment: This should be considered as a type of cell rather than as a stage. Please use FBbt:00005412.
 is_obsolete: true
 

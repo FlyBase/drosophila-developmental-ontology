@@ -3174,7 +3174,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "13:10:2021 08:59"
+            "val": "06:12:2021 09:24"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -3186,11 +3186,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-10-13"
+            "val": "2021-12-06"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-10-13/fbdv-simple.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-12-06/fbdv-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -6330,7 +6330,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005412",
-          "lbl": "gamete",
+          "lbl": "obsolete gamete",
           "meta": {
             "basicPropertyValues": [
               {

@@ -1,21 +1,11 @@
-9 axioms in left ontology but not in right ontology:
-- Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-10-13"^^xsd:string)
-- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "13:10:2021 08:59"^^xsd:string)
-- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005305> "obsolete syncytial blastoderm stage"^^xsd:string)
-- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005310> "obsolete cellular blastoderm stage"^^xsd:string)
-- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005320> "obsolete germ band stage"^^xsd:string)
-- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005326> "obsolete contracted germ band stage"^^xsd:string)
-- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005329> "obsolete head involution stage"^^xsd:string)
-- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00007008> "obsolete occurrent"^^xsd:string)
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-10-13/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+4 axioms in left ontology but not in right ontology:
+- Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-12-06"^^xsd:string)
+- Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "06:12:2021 09:24"^^xsd:string)
+- AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005412> "obsolete gamete"^^xsd:string)
+- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-12-06/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
 
-9 axioms in right ontology but not in left ontology:
-+ Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-09-01"^^xsd:string)
-+ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "01:09:2021 09:21"^^xsd:string)
-+ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005305> "syncytial blastoderm stage"^^xsd:string)
-+ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005310> "cellular blastoderm stage"^^xsd:string)
-+ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005320> "germ band stage"^^xsd:string)
-+ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005326> "contracted germ band stage"^^xsd:string)
-+ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005329> "head involution stage"^^xsd:string)
-+ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00007008> "occurrent"^^xsd:string)
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-09-01/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+4 axioms in right ontology but not in left ontology:
++ Annotation(<http://purl.obolibrary.org/obo/owl_versionInfo> "2021-10-13"^^xsd:string)
++ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "13:10:2021 08:59"^^xsd:string)
++ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBdv_00005412> "gamete"^^xsd:string)
++ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2021-10-13/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
