@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2021-10-13/fbdv-non-classified.owl
-date: 13:10:2021 09:00
+data-version: fbdv/releases/2021-12-06/fbdv-non-classified.owl
+date: 06:12:2021 09:25
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -50,7 +50,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2021-10-13" xsd:string
+property_value: owl:versionInfo "2021-12-06" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -1277,7 +1277,7 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
 id: FBdv:00005412
-name: gamete
+name: obsolete gamete
 comment: This should be considered as a type of cell rather than as a stage. Please use FBbt:00005412.
 is_obsolete: true
 
@@ -2200,7 +2200,6 @@ subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_flybase_ribbon
-subset: goslim_generic
 subset: goslim_pir
 subset: goslim_plant
 synonym: "cell-division cycle" EXACT []
@@ -2255,7 +2254,6 @@ alt_id: GO:0009795
 def: "The process whose specific outcome is the progression of an embryo from its formation until the end of its embryonic life stage. The end of the embryonic stage is organism-specific. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
 subset: gocheck_do_not_manually_annotate
 subset: goslim_chembl
-subset: goslim_generic
 subset: goslim_plant
 synonym: "embryogenesis" EXACT []
 synonym: "embryogenesis and morphogenesis" BROAD []
@@ -2271,6 +2269,7 @@ alt_id: GO:0008151
 alt_id: GO:0044763
 alt_id: GO:0050875
 def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
+subset: gocheck_do_not_annotate
 subset: goslim_plant
 synonym: "cell growth and/or maintenance" NARROW []
 synonym: "cell physiology" EXACT []
@@ -2348,6 +2347,8 @@ synonym: "organismal physiological process" EXACT []
 synonym: "single-multicellular organism process" RELATED []
 is_a: GO:0008150 ! biological_process
 disjoint_from: GO:0044848 ! biological phase
+property_value: RO:0002161 NCBITaxon:2
+property_value: RO:0002161 NCBITaxon:2157
 property_value: RO:0002161 NCBITaxon:4896
 property_value: RO:0002161 NCBITaxon:4932
 created_by: jl

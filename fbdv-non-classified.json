@@ -4656,7 +4656,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "13:10:2021 09:00"
+            "val": "06:12:2021 09:25"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4668,11 +4668,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-10-13"
+            "val": "2021-12-06"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-10-13/fbdv-non-classified.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-12-06/fbdv-non-classified.json",
         "xrefs": []
       },
       "nodes": [
@@ -8144,7 +8144,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBdv_00005412",
-          "lbl": "gamete",
+          "lbl": "obsolete gamete",
           "meta": {
             "basicPropertyValues": [
               {
@@ -10545,7 +10545,6 @@
               "http://purl.obolibrary.org/obo/go#goslim_candida",
               "http://purl.obolibrary.org/obo/go#goslim_chembl",
               "http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon",
-              "http://purl.obolibrary.org/obo/go#goslim_generic",
               "http://purl.obolibrary.org/obo/go#goslim_pir",
               "http://purl.obolibrary.org/obo/go#goslim_plant"
             ],
@@ -10703,7 +10702,6 @@
             "subsets": [
               "http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate",
               "http://purl.obolibrary.org/obo/go#goslim_chembl",
-              "http://purl.obolibrary.org/obo/go#goslim_generic",
               "http://purl.obolibrary.org/obo/go#goslim_plant"
             ],
             "synonyms": [
@@ -10769,6 +10767,7 @@
               ]
             },
             "subsets": [
+              "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate",
               "http://purl.obolibrary.org/obo/go#goslim_plant"
             ],
             "synonyms": [
@@ -10922,6 +10921,14 @@
           "lbl": "multicellular organismal process",
           "meta": {
             "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002161",
+                "val": "http://purl.obolibrary.org/obo/NCBITaxon_2"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002161",
+                "val": "http://purl.obolibrary.org/obo/NCBITaxon_2157"
+              },
               {
                 "pred": "http://purl.obolibrary.org/obo/RO_0002161",
                 "val": "http://purl.obolibrary.org/obo/NCBITaxon_4896"

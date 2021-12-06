@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2021-10-13
-date: 13:10:2021 08:59
+data-version: fbdv/releases/2021-12-06
+date: 06:12:2021 09:24
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -33,7 +33,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2021-10-13" xsd:string
+property_value: owl:versionInfo "2021-12-06" xsd:string
 
 [Term]
 id: FBdv:00000000
@@ -1176,7 +1176,7 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
 id: FBdv:00005412
-name: gamete
+name: obsolete gamete
 comment: This should be considered as a type of cell rather than as a stage. Please use FBbt:00005412.
 is_obsolete: true
 
@@ -2039,5 +2039,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurent_part_of
+is_a: occurent_part_of ! occurent part of
 
