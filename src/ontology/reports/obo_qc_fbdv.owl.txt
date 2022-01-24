@@ -1,4 +1,23 @@
 Level	Rule Name	Subject	Property	Value
+WARN	duplicate_label	FBdv:00007009	rdfs:label	developmental process
+WARN	duplicate_label	GO:0032502	rdfs:label	developmental process
+WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
+WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	multiple_labels	BFO:0000050	rdfs:label	part of
+WARN	multiple_labels	BFO:0000050	rdfs:label	part of@en
+WARN	multiple_labels	BFO:0000051	rdfs:label	has part
+WARN	multiple_labels	BFO:0000051	rdfs:label	has part@en
+WARN	multiple_labels	IAO:0100001	rdfs:label	term replaced by
+WARN	multiple_labels	IAO:0100001	rdfs:label	term replaced by@en
+WARN	multiple_labels	RO:0002012	rdfs:label	occurent_part_of
+WARN	multiple_labels	RO:0002012	rdfs:label	occurrent part of
+WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en
+WARN	multiple_labels	RO:0002087	rdfs:label	immediately_preceded_by
+WARN	multiple_labels	RO:0002092	rdfs:label	happens during
+WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en
+WARN	multiple_labels	RO:0002093	rdfs:label	ends during@en
+WARN	multiple_labels	RO:0002093	rdfs:label	ends_during
+WARN	duplicate_label_synonym	FBdv:00007024	oboInOwl:hasExactSynonym	biological process
 WARN	missing_definition	BFO:0000016	IAO:0000115	
 WARN	missing_definition	BFO:0000019	IAO:0000115	
 WARN	missing_definition	BFO:0000034	IAO:0000115	
@@ -18,6 +37,7 @@ WARN	missing_definition	GO:0016740	IAO:0000115
 WARN	missing_definition	GO:0016772	IAO:0000115	
 WARN	missing_definition	IAO:0000115	IAO:0000115	
 WARN	missing_definition	IAO:0100001	IAO:0000115	
+WARN	missing_definition	PATO:0000001	IAO:0000115	
 WARN	missing_definition	RO:0002017	IAO:0000115	
 WARN	missing_definition	RO:0002022	IAO:0000115	
 WARN	missing_definition	RO:0002084	IAO:0000115	
@@ -60,88 +80,10 @@ WARN	missing_definition	oboInOwl:hasOBONamespace	IAO:0000115
 WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasScope	IAO:0000115	
 WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
-WARN	annotation_whitespace	RO:0002093	rdfs:comment	<X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en>
-WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
-WARN	duplicate_label	FBdv:00007009	rdfs:label	developmental process
-WARN	duplicate_label	GO:0032502	rdfs:label	developmental process
-WARN	multiple_labels	BFO:0000050	rdfs:label	part of
-WARN	multiple_labels	BFO:0000050	rdfs:label	part of@en
-WARN	multiple_labels	BFO:0000051	rdfs:label	has part
-WARN	multiple_labels	BFO:0000051	rdfs:label	has part@en
-WARN	multiple_labels	IAO:0100001	rdfs:label	term replaced by
-WARN	multiple_labels	IAO:0100001	rdfs:label	term replaced by@en
-WARN	multiple_labels	RO:0002012	rdfs:label	occurent part of
-WARN	multiple_labels	RO:0002012	rdfs:label	occurent_part_of
-WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en
-WARN	multiple_labels	RO:0002087	rdfs:label	immediately_preceded_by
-WARN	multiple_labels	RO:0002092	rdfs:label	happens during
-WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en
-WARN	multiple_labels	RO:0002093	rdfs:label	ends during@en
-WARN	multiple_labels	RO:0002093	rdfs:label	ends_during
 INFO	lowercase_definition	BFO:0000050	IAO:0000115	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	BFO:0000051	IAO:0000115	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	BFO:0000062	IAO:0000115	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
-INFO	lowercase_definition	BFO:0000063	IAO:0000115	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
-INFO	lowercase_definition	FBdv:00007076	IAO:0000115	1st day after eclosion.
-INFO	lowercase_definition	FBdv:00007077	IAO:0000115	2nd day after eclosion.
-INFO	lowercase_definition	FBdv:00007078	IAO:0000115	3rd day after eclosion.
-INFO	lowercase_definition	FBdv:00007079	IAO:0000115	4th day after eclosion.
-INFO	lowercase_definition	FBdv:00007080	IAO:0000115	5th day after eclosion.
-INFO	lowercase_definition	FBdv:00007081	IAO:0000115	6th day after eclosion.
-INFO	lowercase_definition	FBdv:00007082	IAO:0000115	7th day after eclosion.
-INFO	lowercase_definition	FBdv:00007083	IAO:0000115	8th day after eclosion.
-INFO	lowercase_definition	FBdv:00007084	IAO:0000115	9th day after eclosion.
-INFO	lowercase_definition	FBdv:00007085	IAO:0000115	10th day after eclosion.
-INFO	lowercase_definition	FBdv:00007086	IAO:0000115	11th day after eclosion.
-INFO	lowercase_definition	FBdv:00007087	IAO:0000115	12th day after eclosion.
-INFO	lowercase_definition	FBdv:00007088	IAO:0000115	13th day after eclosion.
-INFO	lowercase_definition	FBdv:00007089	IAO:0000115	14th day after eclosion.
-INFO	lowercase_definition	FBdv:00007090	IAO:0000115	15th day after eclosion.
-INFO	lowercase_definition	FBdv:00007091	IAO:0000115	16th day after eclosion.
-INFO	lowercase_definition	FBdv:00007092	IAO:0000115	17th day after eclosion.
-INFO	lowercase_definition	FBdv:00007093	IAO:0000115	18th day after eclosion.
-INFO	lowercase_definition	FBdv:00007094	IAO:0000115	19th day after eclosion.
-INFO	lowercase_definition	FBdv:00007095	IAO:0000115	20th day after eclosion.
-INFO	lowercase_definition	FBdv:00007096	IAO:0000115	21st day after eclosion.
-INFO	lowercase_definition	FBdv:00007097	IAO:0000115	22nd day after eclosion.
-INFO	lowercase_definition	FBdv:00007098	IAO:0000115	23rd day after eclosion.
-INFO	lowercase_definition	FBdv:00007099	IAO:0000115	24th day after eclosion.
-INFO	lowercase_definition	FBdv:00007100	IAO:0000115	25th day after eclosion.
-INFO	lowercase_definition	FBdv:00007101	IAO:0000115	26th day after eclosion.
-INFO	lowercase_definition	FBdv:00007102	IAO:0000115	27th day after eclosion.
-INFO	lowercase_definition	FBdv:00007103	IAO:0000115	28th day after eclosion.
-INFO	lowercase_definition	FBdv:00007104	IAO:0000115	29th day after eclosion.
-INFO	lowercase_definition	FBdv:00007105	IAO:0000115	30th day after eclosion.
-INFO	lowercase_definition	FBdv:00007106	IAO:0000115	31st day after eclosion.
-INFO	lowercase_definition	FBdv:00007107	IAO:0000115	32nd day after eclosion.
-INFO	lowercase_definition	FBdv:00007108	IAO:0000115	33rd day after eclosion.
-INFO	lowercase_definition	FBdv:00007109	IAO:0000115	34th day after eclosion.
-INFO	lowercase_definition	FBdv:00007110	IAO:0000115	35th day after eclosion.
-INFO	lowercase_definition	FBdv:00007111	IAO:0000115	36th day after eclosion.
-INFO	lowercase_definition	FBdv:00007112	IAO:0000115	37th day after eclosion.
-INFO	lowercase_definition	FBdv:00007113	IAO:0000115	38th day after eclosion.
-INFO	lowercase_definition	FBdv:00007114	IAO:0000115	39th day after eclosion.
-INFO	lowercase_definition	FBdv:00007115	IAO:0000115	40th day after eclosion.
-INFO	lowercase_definition	FBdv:00007116	IAO:0000115	41st day after eclosion.
-INFO	lowercase_definition	FBdv:00007117	IAO:0000115	42nd day after eclosion.
-INFO	lowercase_definition	FBdv:00007118	IAO:0000115	43rd day after eclosion.
-INFO	lowercase_definition	FBdv:00007119	IAO:0000115	44th day after eclosion.
-INFO	lowercase_definition	FBdv:00007120	IAO:0000115	45th day after eclosion.
-INFO	lowercase_definition	FBdv:00007121	IAO:0000115	46th day after eclosion.
-INFO	lowercase_definition	FBdv:00007122	IAO:0000115	47th day after eclosion.
-INFO	lowercase_definition	FBdv:00007123	IAO:0000115	48th day after eclosion.
-INFO	lowercase_definition	FBdv:00007124	IAO:0000115	49th day after eclosion.
-INFO	lowercase_definition	FBdv:00007125	IAO:0000115	50th day after eclosion.
-INFO	lowercase_definition	FBdv:00007126	IAO:0000115	51st day after eclosion.
-INFO	lowercase_definition	FBdv:00007127	IAO:0000115	52nd day after eclosion.
-INFO	lowercase_definition	FBdv:00007128	IAO:0000115	53rd day after eclosion.
-INFO	lowercase_definition	FBdv:00007129	IAO:0000115	54th day after eclosion.
-INFO	lowercase_definition	FBdv:00007130	IAO:0000115	55th day after eclosion.
-INFO	lowercase_definition	FBdv:00007131	IAO:0000115	56th day after eclosion.
-INFO	lowercase_definition	FBdv:00007132	IAO:0000115	57th day after eclosion.
-INFO	lowercase_definition	FBdv:00007133	IAO:0000115	58th day after eclosion.
-INFO	lowercase_definition	FBdv:00007134	IAO:0000115	59th day after eclosion.
-INFO	lowercase_definition	FBdv:00007135	IAO:0000115	60th day after eclosion.
+INFO	lowercase_definition	BFO:0000062	IAO:0000115	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
+INFO	lowercase_definition	BFO:0000063	IAO:0000115	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	RO:0000052	IAO:0000115	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	RO:0000056	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	RO:0000057	IAO:0000115	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
@@ -158,9 +100,9 @@ INFO	lowercase_definition	RO:0002131	IAO:0000115	x overlaps y if and only if the
 INFO	lowercase_definition	RO:0002180	IAO:0000115	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	RO:0002202	IAO:0000115	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
 INFO	lowercase_definition	RO:0002203	IAO:0000115	inverse of develops from
-INFO	lowercase_definition	RO:0002211	IAO:0000115	<process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.>
+INFO	lowercase_definition	RO:0002211	IAO:0000115	process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.
 INFO	lowercase_definition	RO:0002216	IAO:0000115	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
-INFO	lowercase_definition	RO:0002233	IAO:0000115	<p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.>
+INFO	lowercase_definition	RO:0002233	IAO:0000115	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
 INFO	lowercase_definition	RO:0002254	IAO:0000115	x has developmental contribution from y iff x has some part z such that z develops from y@en
 INFO	lowercase_definition	RO:0002255	IAO:0000115	inverse of has developmental contribution from
 INFO	lowercase_definition	RO:0002263	IAO:0000115	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.

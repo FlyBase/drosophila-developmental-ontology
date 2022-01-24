@@ -3174,7 +3174,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "06:12:2021 09:24"
+            "val": "24:01:2022 09:23"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -3186,11 +3186,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-12-06"
+            "val": "2022-01-24"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-12-06/fbdv-simple.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-01-24/fbdv-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -8509,7 +8509,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002012",
-          "lbl": "occurent part of",
+          "lbl": "occurent_part_of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8522,7 +8522,7 @@
               }
             ],
             "definition": {
-              "val": "A part of relation that applies only between occurents.",
+              "val": "A part of relation that applies only between occurrents.",
               "xrefs": []
             },
             "xrefs": [
