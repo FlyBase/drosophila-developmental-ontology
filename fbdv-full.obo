@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2021-12-06/fbdv-full.owl
-date: 06:12:2021 09:24
+data-version: fbdv/releases/2022-01-24/fbdv-full.owl
+date: 24:01:2022 09:23
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -50,7 +50,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2021-12-06" xsd:string
+property_value: owl:versionInfo "2022-01-24" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -2235,7 +2235,6 @@ comment: Note that, in addition to forming the root of the biological process on
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
-subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_pir
 subset: goslim_plant
@@ -2495,6 +2494,12 @@ intersection_of: part_of GO:0000278 ! mitotic cell cycle
 relationship: part_of GO:0000278 ! mitotic cell cycle
 created_by: jl
 creation_date: 2014-05-22T14:22:34Z
+
+[Term]
+id: PATO:0000001
+name: quality
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: IAO:0000589 "quality (PATO)" xsd:string
 
 [Typedef]
 id: BFO:0000062
@@ -3112,7 +3117,6 @@ property_value: IAO:0000118 "has" xsd:string
 property_value: IAO:0000118 "is catalyzing" xsd:string
 property_value: IAO:0000118 "is executing" xsd:string
 property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
-property_value: IAO:0000232 "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time." xsd:string
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
 transitive_over: has_part ! has part
@@ -3672,6 +3676,45 @@ range: BFO:0000040 ! material entity
 is_a: RO:0002566 ! causally influences
 
 [Typedef]
+id: RO:0017001
+name: utilizes
+def: "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y." []
+property_value: IAO:0000112 "A diagnostic testing device utilizes a specimen." xsd:string
+property_value: IAO:0000117 "Asiyah Lin" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 Bill Duncan" xsd:string
+property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
+property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
+holds_over_chain: RO:0002215 RO:0002233
+creation_date: 2021-11-08
+
+[Typedef]
+id: RO:0019000
+name: regulates characteristic
+def: "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+domain: BFO:0000015 ! process
+range: PATO:0000001 ! quality
+holds_over_chain: RO:0002211 RO:0019000
+is_a: RO:0002410 ! causally related to
+
+[Typedef]
+id: RO:0019001
+name: positively regulates characteristic
+def: "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+holds_over_chain: RO:0002213 RO:0019001
+is_a: RO:0019000 ! regulates characteristic
+
+[Typedef]
+id: RO:0019002
+name: negatively regulates characteristic
+def: "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+holds_over_chain: RO:0002212 RO:0019001
+holds_over_chain: RO:0002213 RO:0019002
+is_a: RO:0019000 ! regulates characteristic
+
+[Typedef]
 id: ends_during
 name: ends_during
 namespace: external
@@ -3733,8 +3776,8 @@ inverse_of: RO:0002090 ! immediately precedes
 
 [Typedef]
 id: occurent_part_of
-name: occurent_part_of
-def: "A part of relation that applies only between occurents." []
+name: occurrent part of
+def: "A part of relation that applies only between occurrents." []
 xref: RO:0002012
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
@@ -3782,5 +3825,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurent part of
+is_a: occurent_part_of ! occurrent part of
 

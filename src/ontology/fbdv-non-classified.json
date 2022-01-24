@@ -222,6 +222,15 @@
         },
         {
           "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019000",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/PATO_0000001"
+          ]
+        },
+        {
+          "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000040"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002434",
@@ -385,6 +394,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000019"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000001"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -4232,6 +4246,11 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002608"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002410",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019000"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002411",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002404"
@@ -4490,6 +4509,16 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0011002",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002448"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0019000",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0019000",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019002"
         }
       ],
       "equivalentNodesSets": [],
@@ -4656,7 +4685,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "06:12:2021 09:25"
+            "val": "24:01:2022 09:24"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4668,11 +4697,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-12-06"
+            "val": "2022-01-24"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2021-12-06/fbdv-non-classified.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-01-24/fbdv-non-classified.json",
         "xrefs": []
       },
       "nodes": [
@@ -10640,7 +10669,6 @@
               "http://purl.obolibrary.org/obo/go#goslim_aspergillus",
               "http://purl.obolibrary.org/obo/go#goslim_candida",
               "http://purl.obolibrary.org/obo/go#goslim_chembl",
-              "http://purl.obolibrary.org/obo/go#goslim_generic",
               "http://purl.obolibrary.org/obo/go#goslim_metagenomics",
               "http://purl.obolibrary.org/obo/go#goslim_pir",
               "http://purl.obolibrary.org/obo/go#goslim_plant",
@@ -11397,6 +11425,19 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0000001",
+          "lbl": "quality",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
+                "val": "quality (PATO)"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
           "lbl": "characteristic of",
           "meta": {
@@ -11748,7 +11789,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002012",
-          "lbl": "occurent part of",
+          "lbl": "occurent_part_of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -11761,7 +11802,7 @@
               }
             ],
             "definition": {
-              "val": "A part of relation that applies only between occurents.",
+              "val": "A part of relation that applies only between occurrents.",
               "xrefs": []
             },
             "xrefs": [
@@ -12936,10 +12977,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
                 "val": "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time."
               }
             ],
             "subsets": [
@@ -14291,6 +14328,94 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0017001",
+          "lbl": "utilizes",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A diagnostic testing device utilizes a specimen."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Asiyah Lin"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "See github ticket https://github.com/oborel/obo-relations/issues/497"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-11-08"
+              }
+            ],
+            "definition": {
+              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019000",
+          "lbl": "regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019001",
+          "lbl": "positively regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019002",
+          "lbl": "negatively regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/fbdv#systematic_synonym",
           "lbl": "Systematic synonym",
           "meta": {
@@ -14694,6 +14819,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002211",
+            "http://purl.obolibrary.org/obo/RO_0019000"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019000"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002212",
             "http://purl.obolibrary.org/obo/RO_0002212"
           ],
@@ -14722,6 +14854,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002212",
+            "http://purl.obolibrary.org/obo/RO_0019001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002213",
             "http://purl.obolibrary.org/obo/RO_0002215"
           ],
@@ -14740,6 +14879,27 @@
             "http://purl.obolibrary.org/obo/RO_0002331"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002429"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002213",
+            "http://purl.obolibrary.org/obo/RO_0019001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019001"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002213",
+            "http://purl.obolibrary.org/obo/RO_0019002"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002215",
+            "http://purl.obolibrary.org/obo/RO_0002233"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0017001"
         },
         {
           "chainPredicateIds": [
