@@ -2013,8 +2013,8 @@ name: immediately_preceded_by
 xref: RO:0002087
 
 [Typedef]
-id: occurent_part_of
-name: occurent_part_of
+id: occurrent_part_of
+name: occurrent_part_of
 xref: RO:0002012
 
 [Typedef]
@@ -2024,6 +2024,6 @@ namespace: relationship
 comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
-is_a: occurent_part_of ! occurent_part_of
+is_a: occurrent_part_of ! occurrent_part_of
 is_a: RO:0002092 ! happens during
 
