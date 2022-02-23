@@ -4705,7 +4705,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "24:01:2022 09:23"
+            "val": "23:02:2022 10:35"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4717,11 +4717,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-01-24"
+            "val": "2022-02-23"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-01-24/fbdv-full.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-02-23/fbdv-full.json",
         "xrefs": []
       },
       "nodes": [
@@ -11809,7 +11809,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002012",
-          "lbl": "occurent_part_of",
+          "lbl": "occurrent_part_of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -11818,7 +11818,7 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "occurent_part_of"
+                "val": "occurrent_part_of"
               }
             ],
             "definition": {
