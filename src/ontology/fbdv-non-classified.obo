@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2022-01-24/fbdv-non-classified.owl
-date: 24:01:2022 09:24
+data-version: fbdv/releases/2022-02-23/fbdv-non-classified.owl
+date: 23:02:2022 10:37
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -50,7 +50,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2022-01-24" xsd:string
+property_value: owl:versionInfo "2022-02-23" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -3771,8 +3771,8 @@ is_a: BFO:0000062 ! preceded by
 inverse_of: RO:0002090 ! immediately precedes
 
 [Typedef]
-id: occurent_part_of
-name: occurrent part of
+id: occurrent_part_of
+name: occurrent_part_of
 def: "A part of relation that applies only between occurrents." []
 xref: RO:0002012
 domain: BFO:0000003 ! occurrent
@@ -3821,5 +3821,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurent_part_of ! occurrent part of
+is_a: occurrent_part_of ! occurrent_part_of
 

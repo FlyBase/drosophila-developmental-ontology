@@ -9,8 +9,8 @@ WARN	multiple_labels	BFO:0000051	rdfs:label	has part
 WARN	multiple_labels	BFO:0000051	rdfs:label	has part@en
 WARN	multiple_labels	IAO:0100001	rdfs:label	term replaced by
 WARN	multiple_labels	IAO:0100001	rdfs:label	term replaced by@en
-WARN	multiple_labels	RO:0002012	rdfs:label	occurent_part_of
 WARN	multiple_labels	RO:0002012	rdfs:label	occurrent part of
+WARN	multiple_labels	RO:0002012	rdfs:label	occurrent_part_of
 WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en
 WARN	multiple_labels	RO:0002087	rdfs:label	immediately_preceded_by
 WARN	multiple_labels	RO:0002092	rdfs:label	happens during
