@@ -18,7 +18,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbdv/fbdv-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2022-02-23/fbdv-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2022-02-25/fbdv-non-classified.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00000000"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005259"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007013"/>
@@ -29,12 +29,12 @@
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0027-0858</dc:creator>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology of Drosophila melanogaster developmental stages.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase Developmental Ontology (FBdv)</dc:title>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/3.0/</terms:license>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
         <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* FBdv:$sequence(8,7000,10000)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23:02:2022 10:37</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25:02:2022 11:15</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-23</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-25</owl:versionInfo>
     </owl:Ontology>
     
 

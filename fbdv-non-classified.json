@@ -4677,7 +4677,7 @@
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/by/3.0/"
+            "val": "https://creativecommons.org/licenses/by/4.0/"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule",
@@ -4685,7 +4685,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "23:02:2022 10:37"
+            "val": "25:02:2022 11:15"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4697,11 +4697,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-02-23"
+            "val": "2022-02-25"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-02-23/fbdv-non-classified.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-02-25/fbdv-non-classified.json",
         "xrefs": []
       },
       "nodes": [
