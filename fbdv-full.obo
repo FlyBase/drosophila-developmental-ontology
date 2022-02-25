@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2022-02-23/fbdv-full.owl
-date: 23:02:2022 10:35
+data-version: fbdv/releases/2022-02-25/fbdv-full.owl
+date: 25:02:2022 11:14
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -45,12 +45,12 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2022-02-23" xsd:string
+property_value: owl:versionInfo "2022-02-25" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -3825,5 +3825,5 @@ comment: Creating this relation as a temporary fix, pending adding the axiom occ
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens during
-is_a: occurrent_part_of ! occurrent part of
+is_a: occurrent_part_of ! occurrent_part_of
 
