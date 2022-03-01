@@ -1,22 +1,12 @@
 # Running the FBDV release pipeline
+# 0. This command ensures process stops if any error encountered.
 set -e
 
-# 0. If you run this for the first time, make sure you first run:
-# sh run.sh make all_imports -B
-# 1. First, lets make sure the ODK is up to date (I comment this out because I use even newer version)
-#docker pull obolibrary/odkfull
+# 1. Preprocessing - not required for FBdv. To use this, copy code for pre_release from FBcv.Makefile
+#sh run.sh make pre_release -B
 
-# 2. Next lets run the preprocessing. This involves creating creating the definitions (essentially substitution of the ones containing the $sub_GO:001 macro)
-# This process results in an updated source file fbdv-edit-release.owl
-#  Not needed for FBdv
-#sh run.sh make PAT=false pre_release -B
+# 2. Proper release.
+sh run.sh make prepare_release -B
+# To use auto-generated definitions, copy pre_release code from FBcv and use
+#sh run.sh make SRC=fbdv-edit-release.owl IMP=false PAT=false prepare_release -B
 
-# 3. Now lets run the proper release. Note that here, we are overwriting the SRC variable to be the newly created dpo-edit-release.owl
-# currently using ordinary SRC as no preprocessing needed
-# This process generates everything from the simple and basic releases to the various flybase reports
-# All deviations from the standard OBO process can be found in the dpo.Makefile file
-#sh run.sh make SRC=fbdv-edit-release.owl PAT=false prepare_release -B
-sh run.sh make PAT=false prepare_release -B
-
-# 4. Run some post release steps
-sh run.sh make PAT=false post_release -B

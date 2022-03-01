@@ -3,7 +3,7 @@ title: "Drosophila Developmental Ontology"
 github_org: FlyBase
 repo: drosophila-developmental-ontology
 report_fail_on: none
-use_dosdps: TRUE
+use_dosdps: FALSE
 dosdp_tools_options: "--obo-prefixes=true --restrict-axioms-to=logical"
 namespaces: 
   - http://purl.obolibrary.org/obo/FBdv_
