@@ -5,11 +5,21 @@
 
 DATE   ?= $(shell date +%Y-%m-%d)
 
+# For some reason, fly_development.obo needs to be explicitly listed as a prerequisite, otherwise it will not be made (despite being added to $(MAIN_FILES)). Also rsyncing all $(ASSETS), including reports and imports. Making $(ASSETS) .PRECIOUS prevents reports from being deleted as intermediate files.
+.PHONY: prepare_release
+prepare_release: all fly_development.obo
+	rsync -R $(ASSETS) $(RELEASEDIR) &&\
+	rm -f $(CLEANFILES) &&\
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+.PRECIOUS: $(ASSETS)
+
 ######################################################
 ### Code for generating additional FlyBase reports ###
 ######################################################
 
-REPORT_FILES := $(REPORT_FILES) reports/obo_track_new_simple.txt  reports/robot_simple_diff.txt reports/onto_metrics_calc.txt 
+FLYBASE_REPORTS = reports/obo_qc_fbdv.obo.txt reports/obo_qc_fbdv.owl.txt reports/obo_track_new_simple.txt  reports/robot_simple_diff.txt reports/onto_metrics_calc.txt reports/chado_load_check_simple.txt
+
+REPORT_FILES := $(REPORT_FILES) $(FLYBASE_REPORTS)
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
@@ -37,20 +47,16 @@ reports/obo_track_new_simple.txt: $(LAST_DEPLOYED_SIMPLE) install_flybase_script
 	echo "Comparing with: "$(SIMPLE_PURL) && ../scripts/obo_track_new.pl $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo > $@
 
 reports/robot_simple_diff.txt: $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo
-	$(ROBOT) diff --left $(ONT)-simple.obo --right $(LAST_DEPLOYED_SIMPLE) --output $@
+	$(ROBOT) diff --left $(ONT)-simple.obo --right $(LAST_DEPLOYED_SIMPLE) --labels true --output $@
 
 reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 	../scripts/onto_metrics_calc.pl 'FlyBase_development_CV' $(ONT)-simple.obo > $@
 	
 reports/chado_load_check_simple.txt: install_flybase_scripts fly_development.obo 
 	../scripts/chado_load_checks.pl fly_development.obo > $@
-
-all_reports: all_reports_onestep $(REPORT_FILES)
-
-prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
-	rsync -R $(ASSETS) $(RELEASEDIR) &&\
-	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
-
+	
+reports/obo_qc_%.txt:
+	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@
 
 ######################################################
 ### Overwriting some default artefacts ###
@@ -90,64 +96,25 @@ $(ONT)-full.obo: $(ONT)-full.owl
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
 
-#non_native_classes.txt: $(SRC)
-#	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/non-native-classes.sparql $@.tmp &&\
-#	cat $@.tmp | sort | uniq >  $@
-#	rm -f $@.tmp
-
 
 #####################################################################################
 ### Regenerate placeholder definitions         (Pre-release) pipelines            ###
 #####################################################################################
-# FBdv does not currently use DOT or SUB definitions: "." (DOT-) definitions are those for which the formal 
-# definition is translated into a human readable definitions. "$sub_" (SUB-) definitions are those that have 
-# special placeholder string to substitute in definitions from external ontologies
-# pre_release not currently being run - change run_release.sh if needed
-
-LABEL_MAP = auto_generated_definitions_label_map.txt
-
-tmp/auto_generated_definitions_seed_dot.txt: $(SRC)
-	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/dot-definitions.sparql $@.tmp &&\
-	cat $@.tmp | sort | uniq >  $@
-	rm -f $@.tmp
-	
-tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
-	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/classes-with-placeholder-definitions.sparql $@.tmp &&\
-	cat $@.tmp | sort | uniq >  $@
-	rm -f $@.tmp
-	
-tmp/merged-source-pre.owl: $(SRC)
-	$(ROBOT) merge -i $(SRC) --output $@
-
-tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_dot.txt
-	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_dot.txt flybase $@ $(LABEL_MAP) add_dot_refs
-
-tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_sub.txt
-	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_sub.txt sub_external $@ $(LABEL_MAP) source_xref
-
-tmp/replaced_defs.txt:
-	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
-
-tmp/remove_dot_defs.txt: tmp/auto_generated_definitions_seed_dot.txt
-	cp $< $@
-	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
-	echo "http://www.geneontology.org/formats/oboInOwl#hasDbXref" >> $@
-
-pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl tmp/remove_dot_defs.txt
-	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
-	$(ROBOT) query -i tmp/$(ONT)-edit-release.obo --update ../sparql/remove-dot-definitions.ru convert -f obo --check false -o tmp/$(ONT)-edit-release.obo
-	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
-	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
-	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
+# FBdv does not currently use DOT or SUB definitions:
+# "." (DOT-) definitions are those for which the formal definition is translated into a human readable definitions.
+# "$sub_" (SUB-) definitions are those that have special placeholder string to substitute in definitions from external ontologies
+# support for this was removed from fbdv.Makefile - copy code and sparql from FBcv if needed
 
 #####################################################################################
-### Generate the flybase anatomy version of fbdv                                  ###
+### Generate the flybase version of fbdv                                          ###
 #####################################################################################
 
-tmp/fbdv-obj.obo:
+MAIN_FILES := $(MAIN_FILES) fly_development.obo
+
+tmp/fbdv-obj.obo: fbdv-simple.obo
 	$(ROBOT) remove -i fbdv-simple.obo --select object-properties --trim true -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 
-fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
+fly_development.obo: fbdv-simple.obo tmp/fbdv-obj.obo rem_flybase.txt
 	cp fbdv-simple.obo tmp/fbdv-simple-stripped.obo
 	$(ROBOT) remove -vv -i tmp/fbdv-simple-stripped.obo --select "owl:deprecated='true'^^xsd:boolean" --trim true \
 		merge --collapse-import-closure false --input tmp/fbdv-obj.obo \
@@ -160,20 +127,3 @@ fly_development.obo: tmp/fbdv-obj.obo rem_flybase.txt
 	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
 	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
 	
-post_release: obo_qc fly_development.obo reports/chado_load_check_simple.txt
-	cp fly_development.obo ../..
-	mv obo_qc_$(ONT).obo.txt reports/obo_qc_$(ONT).obo.txt
-	mv obo_qc_$(ONT).owl.txt reports/obo_qc_$(ONT).owl.txt
-	
-########################
-##    TRAVIS       #####
-########################
-
-obo_qc_%:
-	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
-
-obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
-
-flybase_qc: odkversion obo_qc
-	$(ROBOT) reason --input $(ONT)-full.owl --reasoner ELK  --equivalent-classes-allowed none --output test.owl && rm test.owl && echo "Success"
-
