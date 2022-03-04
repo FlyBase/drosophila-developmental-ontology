@@ -5,21 +5,28 @@
 
 DATE   ?= $(shell date +%Y-%m-%d)
 
-# For some reason, fly_development.obo needs to be explicitly listed as a prerequisite, otherwise it will not be made (despite being added to $(MAIN_FILES)). Also rsyncing all $(ASSETS), including reports and imports. Making $(ASSETS) .PRECIOUS prevents reports from being deleted as intermediate files.
+# Using .SECONDEXPANSION to include custom FlyBase files in $(ASSETS). Also rsyncing $(IMPORTS) and $(REPORT_FILES).
+.SECONDEXPANSION:
 .PHONY: prepare_release
-prepare_release: all fly_development.obo
+prepare_release: $$(ASSETS) all_reports
 	rsync -R $(ASSETS) $(RELEASEDIR) &&\
 	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
-.PRECIOUS: $(ASSETS)
+
+MAIN_FILES := $(MAIN_FILES) fly_development.obo
+CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
 
 ######################################################
 ### Code for generating additional FlyBase reports ###
 ######################################################
 
-FLYBASE_REPORTS = reports/obo_qc_fbdv.obo.txt reports/obo_qc_fbdv.owl.txt reports/obo_track_new_simple.txt  reports/robot_simple_diff.txt reports/onto_metrics_calc.txt reports/chado_load_check_simple.txt
+FLYBASE_REPORTS = reports/obo_qc_fbdv.obo.txt reports/obo_qc_fbdv.owl.txt reports/obo_track_new_simple.txt reports/robot_simple_diff.txt reports/onto_metrics_calc.txt reports/chado_load_check_simple.txt
 
-REPORT_FILES := $(REPORT_FILES) $(FLYBASE_REPORTS)
+.PHONY: flybase_reports
+flybase_reports: $(FLYBASE_REPORTS)
+
+.PHONY: all_reports
+all_reports: custom_reports robot_reports flybase_reports
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
@@ -108,8 +115,6 @@ $(ONT)-full.obo: $(ONT)-full.owl
 #####################################################################################
 ### Generate the flybase version of fbdv                                          ###
 #####################################################################################
-
-MAIN_FILES := $(MAIN_FILES) fly_development.obo
 
 tmp/fbdv-obj.obo: fbdv-simple.obo
 	$(ROBOT) remove -i fbdv-simple.obo --select object-properties --trim true -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
