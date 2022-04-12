@@ -3218,7 +3218,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "25:02:2022 11:15"
+            "val": "12:04:2022 10:28"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -3230,11 +3230,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-02-25"
+            "val": "2022-04-12"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-02-25/fbdv-base.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-04-12/fbdv-base.json",
         "xrefs": []
       },
       "nodes": [
