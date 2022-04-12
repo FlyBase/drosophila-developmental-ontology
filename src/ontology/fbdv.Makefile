@@ -1,5 +1,5 @@
 ## Customize Makefile settings for fbdv
-## 
+##
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
@@ -8,7 +8,7 @@ DATE   ?= $(shell date +%Y-%m-%d)
 # Using .SECONDEXPANSION to include custom FlyBase files in $(ASSETS). Also rsyncing $(IMPORTS) and $(REPORT_FILES).
 .SECONDEXPANSION:
 .PHONY: prepare_release
-prepare_release: $$(ASSETS) all_reports
+prepare_release: $$(ASSETS) release_reports
 	rsync -R $(ASSETS) $(RELEASEDIR) &&\
 	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
@@ -27,6 +27,9 @@ flybase_reports: $(FLYBASE_REPORTS)
 
 .PHONY: all_reports
 all_reports: custom_reports robot_reports flybase_reports
+
+.PHONY: release_reports
+all_reports: robot_reports flybase_reports
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
@@ -58,10 +61,10 @@ reports/robot_simple_diff.txt: $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo
 
 reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 	../scripts/onto_metrics_calc.pl 'FlyBase_development_CV' $(ONT)-simple.obo > $@
-	
-reports/chado_load_check_simple.txt: install_flybase_scripts fly_development.obo 
+
+reports/chado_load_check_simple.txt: install_flybase_scripts fly_development.obo
 	../scripts/chado_load_checks.pl fly_development.obo > $@
-	
+
 reports/obo_qc_%.txt:
 	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@
 
@@ -84,13 +87,13 @@ $(ONT).obo: $(ONT)-simple.owl
 	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'namespace[:][ ]external' > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
-	
+
 $(ONT)-base.obo: $(ONT)-base.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
 	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
-		
+
 $(ONT)-non-classified.obo: $(ONT)-non-classified.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
 	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
@@ -126,9 +129,8 @@ fly_development.obo: fbdv-simple.obo tmp/fbdv-obj.obo rem_flybase.txt
 		remove --term-file rem_flybase.txt --trim false \
 		query --update ../sparql/force-obo.ru \
 		convert -f obo --check false -o $@.tmp.obo
-	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:lower:][:punct:]]*\n\)\(name:[ ]\)\([[:lower:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@  
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:lower:][:punct:]]*\n\)\(name:[ ]\)\([[:lower:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
 	rm $@.tmp.obo
 	$(ROBOT) convert --input $@ -f obo --output $@
 	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
 	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
-	
