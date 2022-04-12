@@ -29,7 +29,7 @@ flybase_reports: $(FLYBASE_REPORTS)
 all_reports: custom_reports robot_reports flybase_reports
 
 .PHONY: release_reports
-all_reports: robot_reports flybase_reports
+release_reports: robot_reports flybase_reports
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
