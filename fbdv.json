@@ -4705,7 +4705,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "12:04:2022 10:28"
+            "val": "08:06:2022 14:58"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -4717,11 +4717,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-12"
+            "val": "2022-06-08"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-04-12/fbdv.json",
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-06-08/fbdv.json",
         "xrefs": []
       },
       "nodes": [
@@ -10535,7 +10535,6 @@
               ]
             },
             "subsets": [
-              "http://purl.obolibrary.org/obo/go#goslim_aspergillus",
               "http://purl.obolibrary.org/obo/go#goslim_candida",
               "http://purl.obolibrary.org/obo/go#goslim_pir"
             ],
@@ -10590,7 +10589,6 @@
             "subsets": [
               "http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate",
               "http://purl.obolibrary.org/obo/go#goslim_agr",
-              "http://purl.obolibrary.org/obo/go#goslim_aspergillus",
               "http://purl.obolibrary.org/obo/go#goslim_candida",
               "http://purl.obolibrary.org/obo/go#goslim_chembl",
               "http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon",
@@ -10686,7 +10684,6 @@
               ]
             },
             "subsets": [
-              "http://purl.obolibrary.org/obo/go#goslim_aspergillus",
               "http://purl.obolibrary.org/obo/go#goslim_candida",
               "http://purl.obolibrary.org/obo/go#goslim_chembl",
               "http://purl.obolibrary.org/obo/go#goslim_metagenomics",
@@ -11064,7 +11061,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/go#goslim_agr",
-              "http://purl.obolibrary.org/obo/go#goslim_aspergillus",
               "http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon",
               "http://purl.obolibrary.org/obo/go#goslim_pir"
             ],
@@ -14349,7 +14345,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0017001",
-          "lbl": "utilizes",
+          "lbl": "device utilizes material",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14358,11 +14354,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Asiyah Lin"
+                "val": "https://orcid.org/0000-0001-9625-1899"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+                "val": "https://orcid.org/0000-0003-2620-0345"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -14374,13 +14370,20 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2021-11-08"
+                "val": "2021-11-08T12:00:00Z"
               }
             ],
             "definition": {
-              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.",
+              "val": "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y.",
               "xrefs": []
-            }
+            },
+            "synonyms": [
+              {
+                "pred": "hasBroadSynonym",
+                "val": "utilizes",
+                "xrefs": []
+              }
+            ]
           },
           "type": "PROPERTY"
         },
