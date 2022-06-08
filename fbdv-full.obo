@@ -1,12 +1,11 @@
 format-version: 1.2
-data-version: fbdv/releases/2022-04-12/fbdv-full.owl
-date: 12:04:2022 10:28
+data-version: fbdv/releases/2022-06-08/fbdv-full.owl
+date: 08:06:2022 14:58
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr ""
-subsetdef: goslim_aspergillus ""
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
 subsetdef: goslim_candida ""
 subsetdef: goslim_candida "Candida GO slim"
@@ -50,7 +49,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2022-04-12" xsd:string
+property_value: owl:versionInfo "2022-06-08" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -2182,7 +2181,6 @@ name: organelle organization
 namespace: biological_process
 alt_id: GO:1902589
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of an organelle within a cell. An organelle is an organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:mah]
-subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_pir
 synonym: "organelle organisation" EXACT []
@@ -2200,7 +2198,6 @@ namespace: biological_process
 def: "The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division." [GOC:go_curators, GOC:mtg_cell_cycle]
 subset: gocheck_do_not_manually_annotate
 subset: goslim_agr
-subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_flybase_ribbon
@@ -2232,7 +2229,6 @@ alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
-subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_metagenomics
@@ -2364,7 +2360,6 @@ namespace: biological_process
 alt_id: GO:0044767
 def: "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition." [GOC:isa_complete]
 subset: goslim_agr
-subset: goslim_aspergillus
 subset: goslim_flybase_ribbon
 subset: goslim_pir
 synonym: "development" NARROW []
@@ -2831,6 +2826,7 @@ property_value: RO:0001900 RO:0001901
 holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 holds_over_chain: has_part RO:0002131
 holds_over_chain: part_of part_of
+is_symmetric: true
 is_a: RO:0002323 ! mereotopologically related to
 transitive_over: part_of ! part of
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
@@ -3677,15 +3673,16 @@ is_a: RO:0002566 ! causally influences
 
 [Typedef]
 id: RO:0017001
-name: utilizes
-def: "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y." []
+name: device utilizes material
+def: "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y." []
+synonym: "utilizes" BROAD []
 property_value: IAO:0000112 "A diagnostic testing device utilizes a specimen." xsd:string
-property_value: IAO:0000117 "Asiyah Lin" xsd:string
-property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 Bill Duncan" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-9625-1899 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0003-2620-0345 xsd:string
 property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: RO:0002215 RO:0002233
-creation_date: 2021-11-08
+creation_date: 2021-11-08T12:00:00Z
 
 [Typedef]
 id: RO:0019000
