@@ -1,7 +1,6 @@
 {
   "graphs": [
     {
-      "domainRangeAxioms": [],
       "edges": [
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00000000",
@@ -3119,9 +3118,7 @@
           "sub": "http://purl.obolibrary.org/obo/FBdv_00018001"
         }
       ],
-      "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/fbdv/fbdv-simple.json",
-      "logicalDefinitionAxioms": [],
       "meta": {
         "basicPropertyValues": [
           {
@@ -3174,7 +3171,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "08:06:2022 14:58"
+            "val": "10:08:2022 09:56"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -3186,12 +3183,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-06-08"
+            "val": "2022-08-10"
           }
         ],
-        "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-06-08/fbdv-simple.json",
-        "xrefs": []
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-08-10/fbdv-simple.json"
       },
       "nodes": [
         {
@@ -3217,8 +3212,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "Drosophila life cycle",
-                "xrefs": []
+                "val": "Drosophila life cycle"
               }
             ]
           },
@@ -3284,8 +3278,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "oogenesis stage",
-                "xrefs": []
+                "val": "oogenesis stage"
               }
             ],
             "xrefs": [
@@ -3302,11 +3295,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2009-10-01T05:56:56Z"
               },
               {
@@ -4009,8 +4002,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pre-blastoderm",
-                "xrefs": []
+                "val": "pre-blastoderm"
               }
             ]
           },
@@ -4325,8 +4317,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "blastoderm",
-                "xrefs": []
+                "val": "blastoderm"
               }
             ]
           },
@@ -4368,13 +4359,11 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "syncytial blastoderm",
-                "xrefs": []
+                "val": "syncytial blastoderm"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "syncytial blastoderm stage",
-                "xrefs": []
+                "val": "syncytial blastoderm stage"
               }
             ]
           },
@@ -4482,13 +4471,11 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "cellular blastoderm",
-                "xrefs": []
+                "val": "cellular blastoderm"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "cellular blastoderm stage",
-                "xrefs": []
+                "val": "cellular blastoderm stage"
               }
             ]
           },
@@ -4672,8 +4659,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "gastrula",
-                "xrefs": []
+                "val": "gastrula"
               }
             ]
           },
@@ -4781,8 +4767,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "rapidly extending germ band stage",
-                "xrefs": []
+                "val": "rapidly extending germ band stage"
               }
             ]
           },
@@ -4890,8 +4875,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "retracting germ band stage",
-                "xrefs": []
+                "val": "retracting germ band stage"
               }
             ]
           },
@@ -4919,8 +4903,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "contracted germ band stage",
-                "xrefs": []
+                "val": "contracted germ band stage"
               }
             ]
           },
@@ -4966,8 +4949,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "head involution stage",
-                "xrefs": []
+                "val": "head involution stage"
               }
             ]
           },
@@ -5127,13 +5109,11 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "L1",
-                "xrefs": []
+                "val": "L1"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "first instar larva",
-                "xrefs": []
+                "val": "first instar larva"
               }
             ],
             "xrefs": [
@@ -5166,13 +5146,11 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "L2",
-                "xrefs": []
+                "val": "L2"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "second instar larva",
-                "xrefs": []
+                "val": "second instar larva"
               }
             ],
             "xrefs": [
@@ -5205,13 +5183,11 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "L3",
-                "xrefs": []
+                "val": "L3"
               },
               {
                 "pred": "hasRelatedSynonym",
-                "val": "third instar larva",
-                "xrefs": []
+                "val": "third instar larva"
               }
             ],
             "xrefs": [
@@ -5228,11 +5204,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "david"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2008-11-13T11:51:56Z"
               },
               {
@@ -5258,11 +5234,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "david"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2008-11-13T11:55:46Z"
               },
               {
@@ -5282,13 +5258,11 @@
             "synonyms": [
               {
                 "pred": "hasBroadSynonym",
-                "val": "late third instar",
-                "xrefs": []
+                "val": "late third instar"
               },
               {
                 "pred": "hasBroadSynonym",
-                "val": "post-feeding larva",
-                "xrefs": []
+                "val": "post-feeding larva"
               }
             ]
           },
@@ -5340,8 +5314,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P1",
-                "xrefs": []
+                "val": "pupal stage P1"
               },
               {
                 "pred": "hasExactSynonym",
@@ -5398,15 +5371,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P2"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "brown puparium stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P2",
-                "xrefs": []
               }
             ]
           },
@@ -5435,15 +5407,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P3"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "bubble prepupa stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P3",
-                "xrefs": []
               }
             ]
           },
@@ -5472,15 +5443,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P4"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "cryptocephalic pupa",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P4",
-                "xrefs": []
               }
             ]
           },
@@ -5509,15 +5479,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P4(i)"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "buoyant stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P4(i)",
-                "xrefs": []
               }
             ]
           },
@@ -5546,15 +5515,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P4(ii)"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "moving bubble stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P4(ii)",
-                "xrefs": []
               }
             ]
           },
@@ -5766,8 +5734,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P8",
-                "xrefs": []
+                "val": "pupal stage P8"
               },
               {
                 "pred": "hasExactSynonym",
@@ -5803,15 +5770,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P9"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "amber-eyed stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P9",
-                "xrefs": []
               }
             ]
           },
@@ -5840,8 +5806,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P10",
-                "xrefs": []
+                "val": "pupal stage P10"
               },
               {
                 "pred": "hasExactSynonym",
@@ -5877,8 +5842,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P11",
-                "xrefs": []
+                "val": "pupal stage P11"
               }
             ]
           },
@@ -5907,15 +5871,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P11(i)"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "head bristles stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P11(i)",
-                "xrefs": []
               }
             ]
           },
@@ -5944,8 +5907,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P11(ii)",
-                "xrefs": []
+                "val": "pupal stage P11(ii)"
               },
               {
                 "pred": "hasExactSynonym",
@@ -5981,8 +5943,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P12",
-                "xrefs": []
+                "val": "pupal stage P12"
               }
             ]
           },
@@ -6011,8 +5972,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P12(i)",
-                "xrefs": []
+                "val": "pupal stage P12(i)"
               },
               {
                 "pred": "hasExactSynonym",
@@ -6048,8 +6008,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P12(ii)",
-                "xrefs": []
+                "val": "pupal stage P12(ii)"
               },
               {
                 "pred": "hasExactSynonym",
@@ -6085,8 +6044,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P13",
-                "xrefs": []
+                "val": "pupal stage P13"
               },
               {
                 "pred": "hasExactSynonym",
@@ -6122,15 +6080,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P14"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "mature bristles stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P14",
-                "xrefs": []
               }
             ]
           },
@@ -6159,8 +6116,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "pupal stage P15",
-                "xrefs": []
+                "val": "pupal stage P15"
               }
             ]
           },
@@ -6189,15 +6145,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P15(i)"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "meconium stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P15(i)",
-                "xrefs": []
               }
             ]
           },
@@ -6226,15 +6181,14 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
+                "val": "pupal stage P15(ii)"
+              },
+              {
+                "pred": "hasExactSynonym",
                 "val": "eclosion stage",
                 "xrefs": [
                   "FlyBase:FBrf0036849"
                 ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "pupal stage P15(ii)",
-                "xrefs": []
               }
             ]
           },
@@ -6288,8 +6242,7 @@
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "adult stage I",
-                "xrefs": []
+                "val": "adult stage I"
               }
             ]
           },
@@ -6321,8 +6274,7 @@
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "adult stage II",
-                "xrefs": []
+                "val": "adult stage II"
               }
             ]
           },
@@ -6395,8 +6347,7 @@
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "adult stage III",
-                "xrefs": []
+                "val": "adult stage III"
               }
             ]
           },
@@ -6408,11 +6359,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "david"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2008-06-05T04:51:08Z"
               },
               {
@@ -6437,11 +6388,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "david"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2008-06-05T04:51:40Z"
               },
               {
@@ -6461,13 +6412,11 @@
             "synonyms": [
               {
                 "pred": "hasBroadSynonym",
-                "val": "metamorphosis",
-                "xrefs": []
+                "val": "metamorphosis"
               },
               {
                 "pred": "hasRelatedSynonym",
-                "val": "pupal stage",
-                "xrefs": []
+                "val": "pupal stage"
               }
             ]
           },
@@ -6583,11 +6532,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "david"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2008-11-13T06:27:57Z"
               },
               {
@@ -6613,11 +6562,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "david"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2008-12-11T01:19:53Z"
               },
               {
@@ -6657,11 +6606,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2009-10-01T05:56:42Z"
               },
               {
@@ -6683,11 +6632,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2009-10-01T05:57:41Z"
               },
               {
@@ -6711,11 +6660,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2009-10-01T05:59:22Z"
               },
               {
@@ -6732,8 +6681,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "life cycle stage",
-                "xrefs": []
+                "val": "life cycle stage"
               }
             ]
           },
@@ -6745,11 +6693,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2010-09-29T12:25:36Z"
               },
               {
@@ -6772,11 +6720,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2010-09-29T12:28:05Z"
               },
               {
@@ -6799,11 +6747,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2011-04-26T11:57:15Z"
               },
               {
@@ -6829,11 +6777,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2011-04-26T12:00:15Z"
               },
               {
@@ -6859,11 +6807,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2011-04-26T12:01:18Z"
               },
               {
@@ -6889,11 +6837,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2011-04-26T12:03:14Z"
               },
               {
@@ -7041,11 +6989,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2013-01-08T20:06:59Z"
               },
               {
@@ -7071,11 +7019,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2013-01-10T13:03:54Z"
               },
               {
@@ -8522,8 +8470,7 @@
               }
             ],
             "definition": {
-              "val": "A part of relation that applies only between occurrents.",
-              "xrefs": []
+              "val": "A part of relation that applies only between occurrents."
             },
             "xrefs": [
               {
@@ -8772,8 +8719,7 @@
           },
           "type": "CLASS"
         }
-      ],
-      "propertyChainAxioms": []
+      ]
     }
   ]
 }
