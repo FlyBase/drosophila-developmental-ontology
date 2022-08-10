@@ -1,6 +1,9 @@
 Level	Rule Name	Subject	Property	Value
+WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
+WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	duplicate_label	FBdv:00007009	rdfs:label	developmental process
 WARN	duplicate_label	GO:0032502	rdfs:label	developmental process
+WARN	duplicate_label_synonym	FBdv:00007024	oboInOwl:hasExactSynonym	biological process
 WARN	missing_definition	BFO:0000016	IAO:0000115	
 WARN	missing_definition	BFO:0000019	IAO:0000115	
 WARN	missing_definition	BFO:0000034	IAO:0000115	
@@ -63,9 +66,6 @@ WARN	missing_definition	oboInOwl:hasOBONamespace	IAO:0000115
 WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasScope	IAO:0000115	
 WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
-WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
-WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
-WARN	duplicate_label_synonym	FBdv:00007024	oboInOwl:hasExactSynonym	biological process
 WARN	multiple_labels	BFO:0000050	rdfs:label	part of
 WARN	multiple_labels	BFO:0000050	rdfs:label	part of@en
 WARN	multiple_labels	BFO:0000051	rdfs:label	has part

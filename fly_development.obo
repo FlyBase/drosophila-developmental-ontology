@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2022-06-08
-date: 08:06:2022 14:59
+data-version: 2022-08-10
+date: 10:08:2022 09:56
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -62,8 +62,6 @@ id: FBdv:00005259
 name: developmental stage
 alt_id: FBdv:00007010
 def: "A temporal subdivision of a developmental process." [FBC:DOS]
-created_by: djs93
-creation_date: 2009-10-01T05:56:56Z
 
 [Term]
 id: FBdv:00005261
@@ -809,8 +807,6 @@ comment: Temporal ordering number - 440.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005339 ! third instar larval stage
-created_by: david
-creation_date: 2008-11-13T11:51:56Z
 
 [Term]
 id: FBdv:00005341
@@ -822,8 +818,6 @@ synonym: "post-feeding larva" BROAD []
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage
 relationship: substage_of FBdv:00007007 ! late third instar larval stage
-created_by: david
-creation_date: 2008-11-13T11:55:46Z
 
 [Term]
 id: FBdv:00005342
@@ -1195,8 +1189,6 @@ name: spermatogenesis
 comment: Temporal ordering number - 20000.
 xref: GO:0007283
 is_a: FBdv:00007009 ! developmental process
-created_by: david
-creation_date: 2008-06-05T04:51:08Z
 
 [Term]
 id: FBdv:00007001
@@ -1210,8 +1202,6 @@ relationship: immediately_preceded_by FBdv:00005336 ! larval stage
 relationship: immediately_preceded_by FBdv:00005339 ! third instar larval stage
 relationship: immediately_preceded_by FBdv:00007005 ! third instar larval stage L2
 relationship: immediately_preceded_by FBdv:00007007 ! late third instar larval stage
-created_by: david
-creation_date: 2008-06-05T04:51:40Z
 
 [Term]
 id: FBdv:00007002
@@ -1257,8 +1247,6 @@ def: "Oogenesis stage during which the number of nurse cell nuclei at the anteri
 comment: Temporal ordering number - 10250.
 is_a: FBdv:00005259 ! developmental stage
 relationship: substage_of FBdv:00005278 ! oogenesis stage S13
-created_by: david
-creation_date: 2008-11-13T06:27:57Z
 
 [Term]
 id: FBdv:00007007
@@ -1268,8 +1256,6 @@ comment: Temporal ordering number - 450.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage
 relationship: substage_of FBdv:00005339 ! third instar larval stage
-created_by: david
-creation_date: 2008-12-11T01:19:53Z
 
 [Term]
 id: FBdv:00007008
@@ -1281,16 +1267,12 @@ id: FBdv:00007009
 name: developmental process
 xref: GO:0032502
 is_a: FBdv:00007024 ! biological process
-created_by: djs93
-creation_date: 2009-10-01T05:56:42Z
 
 [Term]
 id: FBdv:00007011
 name: embryonic cycle
 def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
 is_a: FBdv:00007024 ! biological process
-created_by: djs93
-creation_date: 2009-10-01T05:57:41Z
 
 [Term]
 id: FBdv:00007012
@@ -1299,23 +1281,17 @@ def: "A temporal subdivision of a Drosophila life, delimited by major transition
 synonym: "life cycle stage" EXACT []
 is_a: FBdv:00005259 ! developmental stage
 relationship: substage_of FBdv:00000000 ! Drosophila life
-created_by: djs93
-creation_date: 2009-10-01T05:59:22Z
 
 [Term]
 id: FBdv:00007013
 name: age
 def: "Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion." [FBC:DOS]
-created_by: djs93
-creation_date: 2010-09-29T12:25:36Z
 
 [Term]
 id: FBdv:00007014
 name: adult age in days
 def: "Temporal subdivision of adulthood in days post-eclosion." [FBC:DOS]
 is_a: FBdv:00007013 ! age
-created_by: djs93
-creation_date: 2010-09-29T12:28:05Z
 
 [Term]
 id: FBdv:00007015
@@ -1325,8 +1301,6 @@ comment: Temporal ordering number - 391. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005334 ! embryonic stage 16
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T11:57:15Z
 
 [Term]
 id: FBdv:00007016
@@ -1336,8 +1310,6 @@ comment: Temporal ordering number - 392. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007015 ! embryonic stage 17(i)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T12:00:15Z
 
 [Term]
 id: FBdv:00007017
@@ -1347,8 +1319,6 @@ comment: Temporal ordering number - 393. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007016 ! embryonic stage 17(ii)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T12:01:18Z
 
 [Term]
 id: FBdv:00007018
@@ -1358,8 +1328,6 @@ comment: Temporal ordering number - 394. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007017 ! embryonic stage 17(iii)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T12:03:14Z
 
 [Term]
 id: FBdv:00007019
@@ -1416,8 +1384,6 @@ is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006011 ! pharate adult stage
 relationship: immediately_preceded_by FBdv:00007001 ! P-stage
 relationship: substage_of FBdv:00007075 ! day 0 of adulthood
-created_by: djs93
-creation_date: 2013-01-08T20:06:59Z
 
 [Term]
 id: FBdv:00007026
@@ -1426,8 +1392,6 @@ def: "Life stage from the end of adult stage A3, when tanning is complete, to de
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006012 ! adult stage A3
 relationship: immediately_preceded_by FBdv:00007025 ! immature adult stage
-created_by: djs93
-creation_date: 2013-01-10T13:03:54Z
 
 [Term]
 id: FBdv:00007075

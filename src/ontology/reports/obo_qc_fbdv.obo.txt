@@ -1,8 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_superclass	FBdv:00000000	rdfs:subClassOf	
-WARN	missing_superclass	FBdv:00005259	rdfs:subClassOf	
-WARN	missing_superclass	FBdv:00007013	rdfs:subClassOf	
-WARN	missing_superclass	FBdv:00007024	rdfs:subClassOf	
 WARN	missing_definition	FBdv:00004886	IAO:0000115	
 WARN	missing_definition	FBdv:00005287	IAO:0000115	
 WARN	missing_definition	FBdv:00005288	IAO:0000115	
@@ -29,3 +25,7 @@ WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115
 WARN	missing_definition	oboInOwl:hasScope	IAO:0000115	
 WARN	missing_definition	oboInOwl:inSubset	IAO:0000115	
 WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
+WARN	missing_superclass	FBdv:00000000	rdfs:subClassOf	
+WARN	missing_superclass	FBdv:00005259	rdfs:subClassOf	
+WARN	missing_superclass	FBdv:00007013	rdfs:subClassOf	
+WARN	missing_superclass	FBdv:00007024	rdfs:subClassOf	
