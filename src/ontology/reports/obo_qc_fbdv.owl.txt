@@ -76,6 +76,8 @@ WARN	multiple_labels	RO:0002012	rdfs:label	occurrent part of
 WARN	multiple_labels	RO:0002012	rdfs:label	occurrent_part_of
 WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en
 WARN	multiple_labels	RO:0002087	rdfs:label	immediately_preceded_by
+WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes@en
+WARN	multiple_labels	RO:0002090	rdfs:label	immediately_precedes
 WARN	multiple_labels	RO:0002092	rdfs:label	happens during
 WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en
 WARN	multiple_labels	RO:0002093	rdfs:label	ends during@en
