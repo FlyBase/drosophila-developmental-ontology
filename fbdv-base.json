@@ -1418,9 +1418,19 @@
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007001"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005336",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005289"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005337",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00005338"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005337",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005289"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005338",
@@ -1431,6 +1441,11 @@
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005338",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00005340"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005338",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005337"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005339",
@@ -1456,6 +1471,11 @@
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005339",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005339",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005338"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005340",
@@ -1521,6 +1541,16 @@
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005342",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00005350"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005342",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005336"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005342",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005339"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005343",
@@ -1601,6 +1631,11 @@
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005349",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00006011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005349",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005342"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005350",
@@ -2083,14 +2118,39 @@
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007135"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005369",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00006011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005369",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00007001"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005370",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00005371"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005370",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00006011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005370",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00007001"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00005371",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00006012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00005371",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005370"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00006011",
@@ -2153,9 +2213,19 @@
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007075"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00006011",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005349"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00006012",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007026"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00006012",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005371"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00007001",
@@ -2191,6 +2261,16 @@
           "obj": "http://purl.obolibrary.org/obo/FBdv_00007001",
           "pred": "http://purl.obolibrary.org/obo/RO_0002087",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007075"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00007001",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005336"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00007001",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00005339"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00007004",
@@ -2793,6 +2873,26 @@
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007026"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00007025",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00006011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00007025",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00007001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00007026",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00006012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBdv_00007026",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002090",
+          "sub": "http://purl.obolibrary.org/obo/FBdv_00007025"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/FBdv_00007075",
           "pred": "http://purl.obolibrary.org/obo/FBdv_00018001",
           "sub": "http://purl.obolibrary.org/obo/FBdv_00007025"
@@ -3216,7 +3316,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "10:08:2022 09:56"
+            "val": "17:08:2022 15:40"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -3228,10 +3328,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-08-10"
+            "val": "2022-08-17"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-08-10/fbdv-base.json"
+        "version": "http://purl.obolibrary.org/obo/fbdv/releases/2022-08-17/fbdv-base.json"
       },
       "nodes": [
         {
@@ -8513,6 +8613,28 @@
             "xrefs": [
               {
                 "val": "RO:0002087"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002090",
+          "lbl": "immediately_precedes",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "FlyBase_development_CV"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "immediately_precedes"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "RO:0002090"
               }
             ]
           },

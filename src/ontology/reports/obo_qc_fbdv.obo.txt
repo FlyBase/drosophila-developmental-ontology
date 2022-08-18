@@ -9,6 +9,7 @@ WARN	missing_definition	FBdv:00018001	IAO:0000115
 WARN	missing_definition	IAO:0000115	IAO:0000115	
 WARN	missing_definition	IAO:0100001	IAO:0000115	
 WARN	missing_definition	RO:0002087	IAO:0000115	
+WARN	missing_definition	RO:0002090	IAO:0000115	
 WARN	missing_definition	RO:0002092	IAO:0000115	
 WARN	missing_definition	obo:fbdv.obo#systematic_synonym	IAO:0000115	
 WARN	missing_definition	oboInOwl:NamespaceIdRule	IAO:0000115	

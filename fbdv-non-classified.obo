@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2022-08-10/fbdv-non-classified.owl
-date: 10:08:2022 09:56
+data-version: fbdv/releases/2022-08-17/fbdv-non-classified.owl
+date: 17:08:2022 15:40
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -49,7 +49,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2022-08-10" xsd:string
+property_value: owl:versionInfo "2022-08-17" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -436,6 +436,8 @@ def: "The stage of the Drosophila life-cycle from fertilization to hatching." [F
 comment: Temporal ordering number - 20.
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
+relationship: immediately_precedes FBdv:00005336 ! larval stage
+relationship: immediately_precedes FBdv:00005337 ! first instar larval stage
 
 [Term]
 id: FBdv:00005290
@@ -873,6 +875,8 @@ is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005289 ! embryonic stage
 relationship: immediately_preceded_by FBdv:00005335 ! embryonic stage 17
 relationship: immediately_preceded_by FBdv:00007018 ! embryonic stage 17(iv)
+relationship: immediately_precedes FBdv:00005342 ! prepupal stage
+relationship: immediately_precedes FBdv:00007001 ! P-stage
 
 [Term]
 id: FBdv:00005337
@@ -887,6 +891,7 @@ relationship: immediately_preceded_by FBdv:00005289 ! embryonic stage
 relationship: immediately_preceded_by FBdv:00005333 ! late embryonic stage
 relationship: immediately_preceded_by FBdv:00005335 ! embryonic stage 17
 relationship: immediately_preceded_by FBdv:00007018 ! embryonic stage 17(iv)
+relationship: immediately_precedes FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
 
 [Term]
@@ -899,6 +904,7 @@ synonym: "second instar larva" EXACT []
 xref: UBERON:8000001
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005337 ! first instar larval stage
+relationship: immediately_precedes FBdv:00005339 ! third instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
 
 [Term]
@@ -911,6 +917,8 @@ synonym: "third instar larva" RELATED []
 xref: UBERON:8000002
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
+relationship: immediately_precedes FBdv:00005342 ! prepupal stage
+relationship: immediately_precedes FBdv:00007001 ! P-stage
 relationship: substage_of FBdv:00005336 ! larval stage
 
 [Term]
@@ -947,6 +955,7 @@ relationship: immediately_preceded_by FBdv:00005336 ! larval stage
 relationship: immediately_preceded_by FBdv:00005339 ! third instar larval stage
 relationship: immediately_preceded_by FBdv:00007005 ! third instar larval stage L2
 relationship: immediately_preceded_by FBdv:00007007 ! late third instar larval stage
+relationship: immediately_precedes FBdv:00005349 ! pupal stage
 relationship: substage_of FBdv:00007001 ! P-stage
 
 [Term]
@@ -1029,6 +1038,7 @@ comment: Temporal ordering number - 570. DISAMBIGUATION: In Drosophila lab verna
 synonym: "phanerocephalic pupa" EXACT [FlyBase:FBrf0036849]
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005342 ! prepupal stage
+relationship: immediately_precedes FBdv:00006011 ! pharate adult stage
 relationship: substage_of FBdv:00007001 ! P-stage
 
 [Term]
@@ -1261,6 +1271,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005368 ! pharate adult stage P15(ii)
 relationship: immediately_preceded_by FBdv:00006011 ! pharate adult stage
 relationship: immediately_preceded_by FBdv:00007001 ! P-stage
+relationship: immediately_precedes FBdv:00005371 ! adult stage A2
 relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
@@ -1272,6 +1283,7 @@ comment: Temporal ordering number - 790.
 synonym: "adult stage II" RELATED []
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005370 ! adult stage A1
+relationship: immediately_precedes FBdv:00006012 ! adult stage A3
 relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
@@ -1288,6 +1300,9 @@ comment: Temporal ordering number - 625.
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005349 ! pupal stage
 relationship: immediately_preceded_by FBdv:00005354 ! pupal stage P7
+relationship: immediately_precedes FBdv:00005369 ! adult stage
+relationship: immediately_precedes FBdv:00005370 ! adult stage A1
+relationship: immediately_precedes FBdv:00007025 ! immature adult stage
 relationship: substage_of FBdv:00007001 ! P-stage
 
 [Term]
@@ -1299,6 +1314,7 @@ comment: Temporal ordering number - 800.
 synonym: "adult stage III" RELATED []
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005371 ! adult stage A2
+relationship: immediately_precedes FBdv:00007026 ! mature adult stage
 relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
@@ -1322,6 +1338,9 @@ relationship: immediately_preceded_by FBdv:00005336 ! larval stage
 relationship: immediately_preceded_by FBdv:00005339 ! third instar larval stage
 relationship: immediately_preceded_by FBdv:00007005 ! third instar larval stage L2
 relationship: immediately_preceded_by FBdv:00007007 ! late third instar larval stage
+relationship: immediately_precedes FBdv:00005369 ! adult stage
+relationship: immediately_precedes FBdv:00005370 ! adult stage A1
+relationship: immediately_precedes FBdv:00007025 ! immature adult stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
 property_value: http://purl.org/dc/terms/date 2008-06-05T04:51:40Z xsd:string
 
@@ -1532,6 +1551,7 @@ comment: Temporal ordering number - 782.
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006011 ! pharate adult stage
 relationship: immediately_preceded_by FBdv:00007001 ! P-stage
+relationship: immediately_precedes FBdv:00007026 ! mature adult stage
 relationship: substage_of FBdv:00007075 ! day 0 of adulthood
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
 property_value: http://purl.org/dc/terms/date 2013-01-08T20:06:59Z xsd:string
@@ -2789,17 +2809,6 @@ is_a: RO:0002222 ! temporally related to
 inverse_of: RO:0002091 ! starts during
 
 [Typedef]
-id: RO:0002090
-name: immediately precedes
-comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
-subset: ro-eco
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-property_value: IAO:0000118 "ends_at_start_of" xsd:string
-property_value: IAO:0000118 "meets" xsd:string
-property_value: RO:0002575 BFO:0000063
-is_a: BFO:0000063 ! precedes
-
-[Typedef]
 id: RO:0002091
 name: starts during
 comment: X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))
@@ -3271,7 +3280,7 @@ def: "p is immediately causally upstream of q iff both (a) p immediately precede
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0002575 RO:0002411
-is_a: RO:0002090 ! immediately precedes
+is_a: immediately_precedes ! immediately_precedes
 is_a: RO:0002411 ! causally upstream of
 
 [Typedef]
@@ -3765,7 +3774,19 @@ xref: RO:0002087
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "starts_at_end_of" xsd:string
 is_a: BFO:0000062 ! preceded by
-inverse_of: RO:0002090 ! immediately precedes
+inverse_of: immediately_precedes ! immediately_precedes
+
+[Typedef]
+id: immediately_precedes
+name: immediately_precedes
+comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
+subset: ro-eco
+xref: RO:0002090
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "ends_at_start_of" xsd:string
+property_value: IAO:0000118 "meets" xsd:string
+property_value: RO:0002575 BFO:0000063
+is_a: BFO:0000063 ! precedes
 
 [Typedef]
 id: occurrent_part_of
