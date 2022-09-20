@@ -25,7 +25,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Drosophila Developmental Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
