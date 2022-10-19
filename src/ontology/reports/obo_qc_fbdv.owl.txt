@@ -80,8 +80,8 @@ WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes@en
 WARN	multiple_labels	RO:0002090	rdfs:label	immediately_precedes
 WARN	multiple_labels	RO:0002092	rdfs:label	happens during
 WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en
+WARN	multiple_labels	RO:0002093	rdfs:label	ends during
 WARN	multiple_labels	RO:0002093	rdfs:label	ends during@en
-WARN	multiple_labels	RO:0002093	rdfs:label	ends_during
 INFO	lowercase_definition	BFO:0000050	IAO:0000115	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	BFO:0000051	IAO:0000115	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	BFO:0000062	IAO:0000115	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
