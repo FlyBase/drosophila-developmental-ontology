@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2022-08-17/fbdv-full.owl
-date: 17:08:2022 15:40
+data-version: fbdv/releases/2022-10-19/fbdv-full.owl
+date: 19:10:2022 08:00
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate ""
@@ -43,13 +43,13 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "FlyBase Developmental Ontology (FBdv)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Drosophila Developmental Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2022-08-17" xsd:string
+property_value: owl:versionInfo "2022-10-19" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -2781,7 +2781,7 @@ comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test fi
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 is_a: RO:0002222 ! temporally related to
-inverse_of: ends_during ! ends_during
+inverse_of: ends_during ! ends during
 
 [Typedef]
 id: RO:0002085
@@ -3722,7 +3722,7 @@ is_a: RO:0019000 ! regulates characteristic
 
 [Typedef]
 id: ends_during
-name: ends_during
+name: ends during
 namespace: external
 comment: X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). 
 subset: ro-eco
@@ -3746,7 +3746,7 @@ property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "d" xsd:string
 property_value: IAO:0000118 "during" xsd:string
 is_transitive: true
-is_a: ends_during ! ends_during
+is_a: ends_during ! ends during
 is_a: RO:0002091 ! starts during
 
 [Typedef]
