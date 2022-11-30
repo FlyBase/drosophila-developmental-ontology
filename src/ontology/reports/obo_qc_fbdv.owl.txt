@@ -36,9 +36,6 @@ WARN	missing_definition	RO:0002091	IAO:0000115
 WARN	missing_definition	RO:0002092	IAO:0000115	
 WARN	missing_definition	RO:0002093	IAO:0000115	
 WARN	missing_definition	RO:0002222	IAO:0000115	
-WARN	missing_definition	RO:0002304	IAO:0000115	
-WARN	missing_definition	RO:0002305	IAO:0000115	
-WARN	missing_definition	RO:0002327	IAO:0000115	
 WARN	missing_definition	RO:0002405	IAO:0000115	
 WARN	missing_definition	RO:0002447	IAO:0000115	
 WARN	missing_definition	RO:0002464	IAO:0000115	
@@ -102,14 +99,19 @@ INFO	lowercase_definition	RO:0002131	IAO:0000115	x overlaps y if and only if the
 INFO	lowercase_definition	RO:0002180	IAO:0000115	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	RO:0002202	IAO:0000115	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
 INFO	lowercase_definition	RO:0002203	IAO:0000115	inverse of develops from
-INFO	lowercase_definition	RO:0002211	IAO:0000115	process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.
+INFO	lowercase_definition	RO:0002211	IAO:0000115	p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q.
+INFO	lowercase_definition	RO:0002212	IAO:0000115	p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q.
+INFO	lowercase_definition	RO:0002213	IAO:0000115	p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q.
 INFO	lowercase_definition	RO:0002216	IAO:0000115	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
 INFO	lowercase_definition	RO:0002233	IAO:0000115	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
 INFO	lowercase_definition	RO:0002254	IAO:0000115	x has developmental contribution from y iff x has some part z such that z develops from y@en
 INFO	lowercase_definition	RO:0002255	IAO:0000115	inverse of has developmental contribution from
 INFO	lowercase_definition	RO:0002263	IAO:0000115	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
 INFO	lowercase_definition	RO:0002264	IAO:0000115	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+INFO	lowercase_definition	RO:0002304	IAO:0000115	p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.
+INFO	lowercase_definition	RO:0002305	IAO:0000115	p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.
 INFO	lowercase_definition	RO:0002314	IAO:0000115	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	RO:0002327	IAO:0000115	c enables p iff c is capable of p and c acts to execute p.
 INFO	lowercase_definition	RO:0002329	IAO:0000115	this relation holds between c and p when c is part of some c', and c' is capable of p.
 INFO	lowercase_definition	RO:0002331	IAO:0000115	c involved_in p if and only if c enables some process p', and p' is part of p
 INFO	lowercase_definition	RO:0002333	IAO:0000115	inverse of enables
@@ -122,15 +124,23 @@ INFO	lowercase_definition	RO:0002385	IAO:0000115	x has potential to developmentr
 INFO	lowercase_definition	RO:0002387	IAO:0000115	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
 INFO	lowercase_definition	RO:0002388	IAO:0000115	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en
 INFO	lowercase_definition	RO:0002404	IAO:0000115	inverse of upstream of
-INFO	lowercase_definition	RO:0002411	IAO:0000115	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
-INFO	lowercase_definition	RO:0002412	IAO:0000115	p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.
-INFO	lowercase_definition	RO:0002418	IAO:0000115	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.
+INFO	lowercase_definition	RO:0002407	IAO:0000115	p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q.
+INFO	lowercase_definition	RO:0002409	IAO:0000115	p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q.
+INFO	lowercase_definition	RO:0002410	IAO:0000115	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
+INFO	lowercase_definition	RO:0002411	IAO:0000115	p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.
+INFO	lowercase_definition	RO:0002412	IAO:0000115	p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q.
+INFO	lowercase_definition	RO:0002418	IAO:0000115	p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.
 INFO	lowercase_definition	RO:0002427	IAO:0000115	inverse of causally upstream of or within
 INFO	lowercase_definition	RO:0002428	IAO:0000115	c involved in regulation of p if c is involved in some p' and p' regulates some p
 INFO	lowercase_definition	RO:0002429	IAO:0000115	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
 INFO	lowercase_definition	RO:0002430	IAO:0000115	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
 INFO	lowercase_definition	RO:0002431	IAO:0000115	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
-INFO	lowercase_definition	RO:0002501	IAO:0000115	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
+INFO	lowercase_definition	RO:0002501	IAO:0000115	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.
+INFO	lowercase_definition	RO:0002578	IAO:0000115	p directly regulates q iff p is immediately causally upstream of q and p regulates q.
 INFO	lowercase_definition	RO:0002584	IAO:0000115	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+INFO	lowercase_definition	RO:0002629	IAO:0000115	p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q.
+INFO	lowercase_definition	RO:0002630	IAO:0000115	p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q.
 INFO	lowercase_definition	RO:0004034	IAO:0000115	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
 INFO	lowercase_definition	RO:0004035	IAO:0000115	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
+INFO	lowercase_definition	RO:0012011	IAO:0000115	p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.
+INFO	lowercase_definition	RO:0012012	IAO:0000115	p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.
