@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2023-02-08/fbdv-simple.owl
-date: 08:02:2023 13:47
+data-version: fbdv/releases/2023-03-17/fbdv-simple.owl
+date: 17:03:2023 17:08
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -22,18 +22,18 @@ synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv/fbdv-simple
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-7073-9172 xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "http://orcid.org/0000-0002-1373-1705" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "http://orcid.org/0000-0002-7073-9172" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-5948-3092" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0002-0027-0858" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Drosophila Developmental Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
+property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2023-02-08" xsd:string
+property_value: owl:versionInfo "2023-03-17" xsd:string
 
 [Term]
 id: FBdv:00000000
@@ -75,7 +75,7 @@ name: developmental stage
 alt_id: FBdv:00007010
 def: "A temporal subdivision of a developmental process." [FBC:DOS]
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2009-10-01T05:56:56Z xsd:string
+property_value: http://purl.org/dc/terms/date "2009-10-01T05:56:56Z" xsd:string
 
 [Term]
 id: FBdv:00005261
@@ -555,7 +555,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 [Term]
 id: FBdv:00005313
 name: embryonic cycle 14A
-def: "The interphase of embryonic cycle 14. This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [[FlyBase:FBrf0039741]
+def: "The interphase of embryonic cycle 14. This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [FlyBase:FBrf0039741]
 comment: Temporal ordering number - 256.
 synonym: "embryonic cycle 14 interphase" EXACT [FBC:DOS]
 is_a: FBdv:00007022 ! embryonic cycle interphase
@@ -830,7 +830,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005339 ! third instar larval stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2008-11-13T11:51:56Z xsd:string
+property_value: http://purl.org/dc/terms/date "2008-11-13T11:51:56Z" xsd:string
 
 [Term]
 id: FBdv:00005341
@@ -843,7 +843,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage
 relationship: substage_of FBdv:00007007 ! late third instar larval stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2008-11-13T11:55:46Z xsd:string
+property_value: http://purl.org/dc/terms/date "2008-11-13T11:55:46Z" xsd:string
 
 [Term]
 id: FBdv:00005342
@@ -1224,7 +1224,7 @@ comment: Temporal ordering number - 20000.
 xref: GO:0007283
 is_a: FBdv:00007009 ! developmental process
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2008-06-05T04:51:08Z xsd:string
+property_value: http://purl.org/dc/terms/date "2008-06-05T04:51:08Z" xsd:string
 
 [Term]
 id: FBdv:00007001
@@ -1242,7 +1242,7 @@ relationship: immediately_precedes FBdv:00005369 ! adult stage
 relationship: immediately_precedes FBdv:00005370 ! adult stage A1
 relationship: immediately_precedes FBdv:00007025 ! immature adult stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2008-06-05T04:51:40Z xsd:string
+property_value: http://purl.org/dc/terms/date "2008-06-05T04:51:40Z" xsd:string
 
 [Term]
 id: FBdv:00007002
@@ -1289,7 +1289,7 @@ comment: Temporal ordering number - 10250.
 is_a: FBdv:00005259 ! developmental stage
 relationship: substage_of FBdv:00005278 ! oogenesis stage S13
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2008-11-13T06:27:57Z xsd:string
+property_value: http://purl.org/dc/terms/date "2008-11-13T06:27:57Z" xsd:string
 
 [Term]
 id: FBdv:00007007
@@ -1300,7 +1300,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage
 relationship: substage_of FBdv:00005339 ! third instar larval stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2008-12-11T01:19:53Z xsd:string
+property_value: http://purl.org/dc/terms/date "2008-12-11T01:19:53Z" xsd:string
 
 [Term]
 id: FBdv:00007008
@@ -1313,7 +1313,7 @@ name: developmental process
 xref: GO:0032502
 is_a: FBdv:00007024 ! biological process
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2009-10-01T05:56:42Z xsd:string
+property_value: http://purl.org/dc/terms/date "2009-10-01T05:56:42Z" xsd:string
 
 [Term]
 id: FBdv:00007011
@@ -1321,7 +1321,7 @@ name: embryonic cycle
 def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
 is_a: FBdv:00007024 ! biological process
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2009-10-01T05:57:41Z xsd:string
+property_value: http://purl.org/dc/terms/date "2009-10-01T05:57:41Z" xsd:string
 
 [Term]
 id: FBdv:00007012
@@ -1331,14 +1331,14 @@ synonym: "life cycle stage" EXACT []
 is_a: FBdv:00005259 ! developmental stage
 relationship: substage_of FBdv:00000000 ! Drosophila life
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2009-10-01T05:59:22Z xsd:string
+property_value: http://purl.org/dc/terms/date "2009-10-01T05:59:22Z" xsd:string
 
 [Term]
 id: FBdv:00007013
 name: age
 def: "Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion." [FBC:DOS]
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2010-09-29T12:25:36Z xsd:string
+property_value: http://purl.org/dc/terms/date "2010-09-29T12:25:36Z" xsd:string
 
 [Term]
 id: FBdv:00007014
@@ -1346,7 +1346,7 @@ name: adult age in days
 def: "Temporal subdivision of adulthood in days post-eclosion." [FBC:DOS]
 is_a: FBdv:00007013 ! age
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2010-09-29T12:28:05Z xsd:string
+property_value: http://purl.org/dc/terms/date "2010-09-29T12:28:05Z" xsd:string
 
 [Term]
 id: FBdv:00007015
@@ -1357,7 +1357,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005334 ! embryonic stage 16
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2011-04-26T11:57:15Z xsd:string
+property_value: http://purl.org/dc/terms/date "2011-04-26T11:57:15Z" xsd:string
 
 [Term]
 id: FBdv:00007016
@@ -1368,7 +1368,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007015 ! embryonic stage 17(i)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2011-04-26T12:00:15Z xsd:string
+property_value: http://purl.org/dc/terms/date "2011-04-26T12:00:15Z" xsd:string
 
 [Term]
 id: FBdv:00007017
@@ -1379,7 +1379,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007016 ! embryonic stage 17(ii)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2011-04-26T12:01:18Z xsd:string
+property_value: http://purl.org/dc/terms/date "2011-04-26T12:01:18Z" xsd:string
 
 [Term]
 id: FBdv:00007018
@@ -1390,7 +1390,7 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007017 ! embryonic stage 17(iii)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2011-04-26T12:03:14Z xsd:string
+property_value: http://purl.org/dc/terms/date "2011-04-26T12:03:14Z" xsd:string
 
 [Term]
 id: FBdv:00007019
@@ -1449,7 +1449,7 @@ relationship: immediately_preceded_by FBdv:00007001 ! P-stage
 relationship: immediately_precedes FBdv:00007026 ! mature adult stage
 relationship: substage_of FBdv:00007075 ! day 0 of adulthood
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2013-01-08T20:06:59Z xsd:string
+property_value: http://purl.org/dc/terms/date "2013-01-08T20:06:59Z" xsd:string
 
 [Term]
 id: FBdv:00007026
@@ -1459,7 +1459,7 @@ is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006012 ! adult stage A3
 relationship: immediately_preceded_by FBdv:00007025 ! immature adult stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
-property_value: http://purl.org/dc/terms/date 2013-01-10T13:03:54Z xsd:string
+property_value: http://purl.org/dc/terms/date "2013-01-10T13:03:54Z" xsd:string
 
 [Term]
 id: FBdv:00007075
@@ -2025,7 +2025,7 @@ relationship: substage_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
 id: happens_during
-name: happens during
+name: happens_during
 comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -2053,6 +2053,7 @@ comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
 subset: ro-eco
 xref: RO:0002090
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
 property_value: RO:0002575 BFO:0000063
@@ -2070,6 +2071,6 @@ namespace: relationship
 comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
-is_a: happens_during ! happens during
-is_a: occurrent_part_of ! occurrent_part_of
+is_a: happens_during ! happens_during
+is_a: occurrent_part_of ! occurrent part of
 
