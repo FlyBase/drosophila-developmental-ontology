@@ -16,8 +16,7 @@ subsetdef: gosubset_prok "Prokaryotic GO subset"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
-import: http://purl.obolibrary.org/obo/fbdv/imports/go_import.owl
-import: http://purl.obolibrary.org/obo/fbdv/imports/ro_import.owl
+import: http://purl.obolibrary.org/obo/fbdv/imports/merged_import.owl
 import: http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl
 ontology: fbdv
 property_value: http://purl.org/dc/elements/1.1/creator "http://orcid.org/0000-0002-1373-1705" xsd:string

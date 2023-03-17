@@ -5,6 +5,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbdv/imports/go_import.obo" uri="imports/go_import.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbdv/imports/ro_import.owl" uri="imports/ro_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbdv/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbdv/imports/merged_import.owl" uri="imports/merged_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
