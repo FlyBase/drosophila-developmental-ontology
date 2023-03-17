@@ -2042,6 +2042,11 @@ name: occurrent_part_of
 xref: RO:0002012
 
 [Typedef]
+id: happens_during
+name: happens_during
+xref: RO:0002092
+
+[Typedef]
 id: substage_of
 name: substage_of
 namespace: relationship
