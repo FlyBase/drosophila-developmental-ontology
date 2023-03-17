@@ -19,9 +19,24 @@ export_formats:
   - obo
   - json
 import_group:
+  use_base_merging: TRUE
+  exclude_iri_patterns:
+    - <http://purl.obolibrary.org/obo/CARO_*>
+    - <http://purl.obolibrary.org/obo/PATO_*>
+    - <http://purl.obolibrary.org/obo/CHEBI_*>
+    - <http://purl.obolibrary.org/obo/CL_*>
+    - <http://purl.obolibrary.org/obo/NCBITaxon_*>
+    - <http://purl.obolibrary.org/obo/UBERON_*>
+    - <http://purl.obolibrary.org/obo/PR_*>
   products:
     - id: go
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/GOCHE_
+        - http://purl.obolibrary.org/obo/GO_
+        - http://purl.obolibrary.org/obo/GOREL_
     - id: ro
+      use_base: TRUE
 edit_format: obo
 robot_java_args: '-Xmx8G'
 allow_equivalents: none

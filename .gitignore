@@ -20,6 +20,7 @@ src/ontology/dosdp-tools.log
 src/patterns/imports/seed_sorted.txt
 src/ontology/ed_definitions_merged.owl
 src/ontology/patterns 
+src/ontology/imports/*_combined.txt
 *.tmp.obo
 *.tmp.owl
 src/ontology/fly-stage.obo
