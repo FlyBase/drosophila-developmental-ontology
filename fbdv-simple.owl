@@ -13,23 +13,23 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2023-02-08/fbdv-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2023-05-03/fbdv-simple.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00000000"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005259"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007013"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007024"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-1373-1705</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-7073-9172</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5948-3092</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0027-0858</dc:creator>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology of Drosophila melanogaster developmental stages.</dc:description>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drosophila Developmental Ontology</dc:title>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* FBdv:$sequence(8,7000,10000)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">08:02:2023 13:47</oboInOwl:date>
-        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_development_CV</oboInOwl:default-namespace>
-        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-08</owl:versionInfo>
+        <dc:creator>http://orcid.org/0000-0002-1373-1705</dc:creator>
+        <dc:creator>http://orcid.org/0000-0002-7073-9172</dc:creator>
+        <dc:creator>https://orcid.org/0000-0001-5948-3092</dc:creator>
+        <dc:creator>https://orcid.org/0000-0002-0027-0858</dc:creator>
+        <dc:description>An ontology of Drosophila melanogaster developmental stages.</dc:description>
+        <dc:title>Drosophila Developmental Ontology</dc:title>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <oboInOwl:NamespaceIdRule>* FBdv:$sequence(8,7000,10000)$</oboInOwl:NamespaceIdRule>
+        <oboInOwl:date>03:05:2023 09:28</oboInOwl:date>
+        <oboInOwl:default-namespace>FlyBase_development_CV</oboInOwl:default-namespace>
+        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <owl:versionInfo>2023-05-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -45,16 +45,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -78,12 +71,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <rdfs:label>term replaced by</rdfs:label>
-        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -253,6 +250,24 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
@@ -262,6 +277,12 @@
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -286,6 +307,12 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
         <rdfs:label>synonym_type_property</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
     
 
 
@@ -466,6 +493,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002090 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002090">
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
         <obo:IAO_0000118>ends_at_start_of</obo:IAO_0000118>
         <obo:IAO_0000118>meets</obo:IAO_0000118>
@@ -490,7 +518,7 @@
         <obo:IAO_0000118>d</obo:IAO_0000118>
         <obo:IAO_0000118>during</obo:IAO_0000118>
         <oboInOwl:hasDbXref>RO:0002092</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>happens_during</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
@@ -498,8 +526,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>happens_during</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</rdfs:comment>
-        <rdfs:label>happens during</rdfs:label>
         <rdfs:label xml:lang="en">happens during</rdfs:label>
+        <rdfs:label>happens_during</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -529,7 +557,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The life of an individual of the species Drosophila melanogaster, from fertilization to death.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -560,7 +588,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00000054"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A collective term for stages 1-4.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -597,7 +625,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00004450"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A collective term for stages 11 and 12.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -631,7 +659,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005259"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A temporal subdivision of a developmental process.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -656,9 +684,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005261"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Earliest stage of ovarian cyst development - lasts while the 16 cell cyst is within the germarium (region 3).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -689,9 +717,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005262"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when the cyst leaves the germarium (from this point the cyst is referred to as an egg chamber). During this stage, polyploidation of the nurse cells begins, they reach a ploidy of 8C, and follicle cells start to divide.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -722,9 +750,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005263"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when the oocyte chromosomes condense into a karyosome attached to a distinctive spherical structure known as an endobody. The oocyte nucleolus disappears completely. During this stage, nurse cell ploidy reaches 16C.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -755,9 +783,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005264"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when the nurse cells chromosomes become bulbous. Nurse cell chromosomes during this stage are polytene and reach a ploidy of 32C. The egg chamber is oval shaped.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -788,9 +816,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005265"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when nurse cell chromosomes are no longer bulbous - the association between homologs weakens so that these chromosomes no longer have a polytene structure. During this stage, posterior nurse cell nuclei have a higher ploidy (64C) than anterior ones.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -821,9 +849,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005266"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which follicle cell division ceases.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -854,9 +882,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005267"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which polyploidation and enlargement of follicle cells begins. Nurse cell ploidy ranges from 256C (anterior) to 512C (posterior) and the egg chamber gains an elongated shape.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -887,9 +915,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005268"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage which begins when yolk first appears in the oocyte. Follicle cell migration over the oocyte begins during this stage (although mostly occurs during stage 9).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -920,9 +948,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005269"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when the border cells begin to migrate. During this stage: the oocyte is about 1/3 the length of the egg chamber with its nucleus located antero-dorsally; follicle cell migration results in an anterior to posterior gradient of follicle cell thickness with posterior cells being thicker (-&gt; columnar) and posterior cells thinner ( -&gt; squamous); border cell migration begins and ends; secretion of vitelline membrane begins.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -953,9 +981,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005270"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when all the oocyte associated follicular epithelium is columnar and all of the nurse cell associated follicular epithelium is completely squamous and ends with the beginning of nurse cell dumping.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -986,8 +1014,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005271"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage which begins when all the oocyte associated follicular epithelium is columnar and all of the nurse cell associated follicular epithelium is completely squamous and ends when centripetal follicle migration begins. During this stage, the migrating border cells reach the oocyte. The oocyte is about 50% egg chamber length.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1018,9 +1046,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005272"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when the centripetal follicle cells begin to migrate. As a result, the vitelline membrane extends into the opercular region. This stage ends when nurse cell dumping begins.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1057,10 +1085,10 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005273"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when nurse cell dumping begins and development of the wax layer begins. The dorsal appendages begin to form during this stage. This stage ends when dying nurse cells form an anterior cap to the oocyte.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1091,10 +1119,10 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005274"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when dying nurse cells form an anterior cap to the oocyte. Shortly after this, nurse cell dumping and growth of the oocyte are complete. Elongation of the dorsal appendages and formation of the innermost chorionic layer and endochorion begins during this stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1125,7 +1153,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005275"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Innermost chorionic layer and endochorion begin to form in the anterior of the follicle.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1156,7 +1184,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005276"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Secretion of innermost chorionic layer and endochorion begins in the main follicle cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1187,7 +1215,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005277"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Formation of specialized endochorion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochorion lacking the pillars seen in the rest of the follicle.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1224,10 +1252,10 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005278"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when the micropyle begins to form. At the beginning of this stage, about 12-15 nurse cell nuclei remain at the anterior of the oocyte. By the end of this stage, none of these nuclei remain. Oocyte meiosis up to arrest at full metaphase I occurs during this stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0029744</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0034074</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0029744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034074</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064777</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1258,7 +1286,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005279"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which 12-15 nurse cell nuclei remain at the anterior of the oocyte. At this stage, the oocyte nucleus has reached its maximum volume and its chromosomes are compressed into a 5-7 micrometer karyosome.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0029744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0029744</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1289,7 +1317,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005280"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which 9-11 nurse cell nuclei remain at the anterior of the oocyte. During this stage, the nuclear membrane of the oocyte nucleus disappears, indicating the start of meiotic pro-metaphase.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0029744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0029744</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1320,7 +1348,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005281"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which only 7-8 nurse cell nuclei remain at the anterior of the oocyte. At the beginning of this stage, oocyte chromosome bivalents separate from each other - indicating mid-prometaphase of oocyte meiosis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0029744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0029744</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1351,7 +1379,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005282"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which only 5-6 nurse cell nuclei remain at the anterior of the oocyte. The oocyte nucleus is in late prometaphase:the bivalents arrange themselves in on the equatorial plane of the spindle; homologous centromeres are pulled towards the poles.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0029744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0029744</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1388,7 +1416,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005283"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The last stage of oogenesis. This stage begins when no nurse cell nuclei remain at the anterior of the egg (chamber). Exochorion formation and secretion occurs during this stage. The dorsal appendages complete their elongation and the follicle cells die.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1419,8 +1447,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005284"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Secretion and formation of the outer endochorionic network by throughout the follicle. Crystallization of the innermost chorionic layer of the main body follicle cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1451,8 +1479,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005285"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Secretion of the exochorion begins and ends.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0021038</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0021038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1471,7 +1499,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005286"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The stage of the Drosophila life-cycle from maturation of an egg to the end of fertilization. At the beginning of this stage, the nucleus is arrested in meiotic metaphase I. The completion of meiosis and the start of protein synthesis are triggered by ovulation. If the female has already mated, fertilization begins during meiosis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064779</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064779</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1568,7 +1596,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005289"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The stage of the Drosophila life-cycle from fertilization to hatching.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1600,7 +1628,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005290"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic stage 1-3.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1631,8 +1659,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005291"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The embryonic stage that lasts from the end of fertilization to the end of the second nuclear division. Duration at 25 degrees C: approximately 25 minutes (0-25 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0064779</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064779</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1663,7 +1691,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005292"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The first mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1694,7 +1722,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005293"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Nuclear divisions 3-8. The egg cytoplasm contracts producing a clear separation from the vitelline membrane and empty spaces at the anterior and posterior. The cleavage nuclei migrate towards the periphery. Duration at 25 degrees C approximately 40 minutes (25-65 minutes AEL).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1725,7 +1753,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005294"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The second mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1762,7 +1790,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005295"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The third mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1793,7 +1821,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005296"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The fourth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1824,7 +1852,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005297"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The fifth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1855,7 +1883,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005298"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The sixth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1886,7 +1914,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005299"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The seventh mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1917,7 +1945,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005300"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The eighth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1954,7 +1982,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005301"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Nuclear division 9. The cleavage nuclei complete their migration to the periphery. Polar buds form at the posterior pole and divide once. Duration at 25 degrees C: approximately 15 minutes (65-80 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1991,7 +2019,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005302"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The ninth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2028,7 +2056,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005303"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The tenth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2066,7 +2094,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005304"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic stages 4 and 5.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2122,7 +2150,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005306"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Nuclear division 10-13. Polar buds divide twice and become tightly grouped at the posterior pole by the end of this stage. Nuclei visible at the rim of the embryo. Stage 4 ends with the beginning of cellularization. Duration at 25 degrees C: approximately 50 minutes (80-130 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2153,7 +2181,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005307"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 11th mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2184,7 +2212,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005308"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 12th mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2215,7 +2243,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005309"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 13th mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2265,7 +2293,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005311"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cellularization. Stage 5 begins when cellularization starts. Near the end of this stage the pole cells begin to migrate dorsally and ventral midline cells acquire an irregular, wavy appearance. Stage 5 ends when ventral furrow formation becomes apparent. Duration at 25 degrees: approximately 40 minutes (130-170 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2291,14 +2319,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005312"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 14th mitotic cell cycle of embryogenesis. This is the first round of nuclear division to occur in a cellularized embryo, so this is the first round of cell division. Embryonic cycle 14 mitosis is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005312"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>first blastoderm mitosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2324,13 +2352,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005313"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The interphase of embryonic cycle 14. This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[FlyBase:FBrf0039741</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0039741</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005313"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>embryonic cycle 14 interphase</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2356,13 +2384,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005314"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The M-phase of embryonic cycle 14. This is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0039741</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0039741</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005314"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>embryonic cycle 14 M-phase</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2394,13 +2422,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005315"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 15th cell cycle of embryogenesis. Asynchronous.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005315"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>second blastoderm mitosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2432,13 +2460,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005316"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 16th cell cycle division of embryogenesis. Asynchronous.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005316"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>third blastoderm mitosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2476,7 +2504,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005317"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stages during which gastrulation occurs. 6-8.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2513,7 +2541,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005318"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 6 begins when the ventral furrow becomes apparent, an event which is followed rapidly by the formation of the cephalic furrow. Stage 6 ends when the pole cells have adopted a dorsal (horizontal) position at the posterior. Duration at 25 degrees C: approximately 10 minutes (170-180 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2544,7 +2572,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005319"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 7 begins when the pole cells have adopted a dorsal (horizontal) position at the posterior. Invagination of the anterior and posterior midgut and hindgut follows. The &apos;discoid plate&apos; that carries the pole cells forms a pocket. Transverse furrows (dorsal folds) form on the dorsal surface. This stage ends when the anterior wall of the amnioproctodeal invagination starts moving anteriorly and the pole cells are no longer visible externally. Duration at 25 degrees C: approximately 10 minutes (180-190 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2592,7 +2620,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005321"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stages during which the germ band is extended - 9-12.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2624,7 +2652,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005322"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 8 starts with the rapid phase of germ band extension and ends with the beginning of mesodermal segmentation. By the end of this stage germ band extension has progressed to the point where the proctodeal opening is at about 60% egg length and the dorsal folds (transverse furrows) are no longer visible. Duration at 25 degrees C: approximately 30 minutes (190-220 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2661,7 +2689,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005323"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 9 begins when mesodermal segmentation becomes (transiently) visible, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2692,7 +2720,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005324"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 10 begins with the appearance of the stomodeal invagination, slightly ventral to the anterior pole. Periodic furrows appear in the embryonic epidermis around the middle of the stage. The germ band continues to extend, reaching its maximum extent of 75% egg length towards the end of the stage. The end of the stage is marked by the beginning of invagination of the tracheal placodes. Duration at 25 degrees : approximately 60 minutes (260-320 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2729,7 +2757,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005325"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 11 begins with the invagination of the tracheal placodes. Para-segmental furrow form and segment boundary furrows become deep folds. Within the head, gnathal protuberances become apparent. The end of this stage is signaled by the appearance of a distinct cleft at the posterior pole of the embryo, which becomes detached from the vitelline membrane. This marks the beginning of germ-band retraction. Duration at 25 degrees C: approximately 120 minutes (320-440 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2772,7 +2800,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005327"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Germ band retraction. Stage 12 begins when germ-band retraction starts and ends when this process is complete so that the prospective anal plate occupies the posterior pole. During this stage the posterior and anterior midgut primordia meet and fuse and the tracheal pits fuse to form the tracheal tree. Duration at 25 degrees C: approximately 120 minutes (440-560 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2816,7 +2844,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005328"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 13 begins at the completion of germ-band retraction, when the prospective anal plate occupy the posterior pole. The dorsal ridge becomes apparent externally; the clypeolabrum retracts, leaving a triangular shaped gap at the anterior pole; the labium moves to the ventral midline. This stage ends when head involution begins. Duration at 25 degrees C: Approximately 60 minutes (560-620 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2860,7 +2888,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005330"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 14 begins with the initiation of head involution. Closure of the midgut around the yolk and dorsal closure continue. Dorsal closure is 80% complete by the end of this stage. This stage ends with the appearance of the second midgut constriction. Duration at 25 degrees C: approximately 60 minutes (620-680 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2903,7 +2931,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005331"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A collective term for stages 13-15.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2934,7 +2962,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005332"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 15 begins with the appearance of the second midgut constriction. During this stage the 1st and 3rd midgut constrictions form, dorsal closure is completed, and epidermal segmentation is accomplished. This stage ends when the intersegmental grooves can be distinguished at mid-dorsal level. Duration at 25 degrees C: approximately 100 minutes (680-780 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2971,7 +2999,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005333"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic stages 16-17.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3008,7 +3036,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005334"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 16 begins when the intersegmental grooves can be distinguished at mid-dorsal level, and ends when the dorsal ridge (frontal sac) has overgrown the tip of the clypeolabrum, which is thereby enclosed in the atrium. During this stage the ventral cord retracts to about 60% egg length. Duration at 25 degrees C: approximately 180 minutes (780-960 minutes after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3039,7 +3067,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005335"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage 17 begins when the dorsal ridge (frontal sac) has overgrown the tip of the clypeolabrum, which is thereby enclosed in the atrium. It lasts until hatching of the embryo (approximately 24 hours after egg laying), during which time much terminal differentiation occurs, the tracheal tree fills with air, so becoming completely visible, and the ventral cord continues to retract. Duration at 25 degrees C: approximately 8 hours (16-24 hours after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3088,7 +3116,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The stage of the Drosophila life-cycle from hatching to the beginning of puparium formation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3146,7 +3174,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005337"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The first larval instar begins at hatching and ends at the first larval molt. Anterior spiracles are not yet present; posterior spiracles have two openings each. Salivary glands are very small and all cells are uniform in size. Mouth hooks typically have one tooth. Duration at 25 degrees C: approximately 25 hours (24-49 hours after egg laying; 0-25 hours after hatching).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0007733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3186,7 +3214,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005338"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The second larval instar begins at the first larval molt and ends at the second larval molt. Larvae are actively feeding and crawling in the food. Distinct anterior spiracles are present as enlargements at the end of the tracheal trunk, but not open to the outside; posterior spiracles have three openings each, and four groups of small unbranched hairs. The salivary glands extend to the first abdominal segment, and have cells that are uniform in size. Mouth hooks typically have two or three teeth. Duration at 25 degrees C: approximately 23 hours (49-72 hours after egg laying; 25-48 hours after hatching).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0007733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3232,7 +3260,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The third larval instar begins at the second larval molt and ends at puparium formation. Anterior spiracles are open to the outside; posterior spiracles have three openings each, and four groups of large branched hairs. The salivary glands extend to the second abdominal segment, with cells larger in the posterior than in the anterior of the gland. Mouth hooks typically have 9-12 teeth. About 24 hours before pupariation (at 25 degree C), larvae stop feeding and climb away from their food. Duration at 25 degrees C: approximately 48 hours (72-120 hours after egg laying; 48-96 hours after hatching).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0007733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3265,7 +3293,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005340"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Third instar larva prior to the wandering stage (approximately the first 24 hours of the third instar larval stage under standard conditions at 25&apos;C.).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049147</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049147</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3300,7 +3328,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage of the third larval instar during which the larva wanders out of the food and climbs. Under optimum conditions at 25&apos;C, this occurs approximately 24 hours after the start of the third instar larval stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049147</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049147</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3355,8 +3383,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005342"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The prepupal stage begins at puparium formation and ends when larval/pupal apolysis is complete, as indicated by the completion of imaginal head sac eversion and the expulsion of the oral armature of the larva. Duration at 25 degrees C: approximately 12 hours. (120-132.2 hours after egg laying; 0-12.2 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3410,32 +3438,32 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005343"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Extends from puparium formation through tanning of the pupal cuticle. Posterior spiracles and ridge between anterior spiracles tan orange. Wriggling stops completely. Puparium becomes brown to the unaided eye. Duration at 25 degrees C: approximately 20 minutes. (120-120.3 hours after egg laying; 0-0.3 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005343"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>puparium formation</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005343"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>white puparium stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005343"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>pupal stage P0</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005343"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>white prepupa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3468,14 +3496,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005344"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Male gonads become less distinct. Oral armature stops moving permanently. Dorsal medial abdominal contractions stop. Gas bubble becomes visible within abdomen. Duration at 25 degrees C: approximately 100 minutes. (120.3-122 hours after egg laying; 0.3-2 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005344"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>brown puparium stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3508,14 +3536,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005345"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Ridge of the operculum becomes distinct. Puparium begins to separate from underlying epidermis. Becomes positively buoyant. Duration at 25 degrees C: approximately 4 hours, 45 minutes. (122-126.75 hours after egg laying; 2-6.75 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005345"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>bubble prepupa stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3548,14 +3576,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005346"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Prepupal stage P4 begins as the lateral trunk trachea become obscured and ends when the imaginal head sac is everted and the oral armature of the larva is expelled. Duration at 25 degrees C: approximately 5 hours, 30 minutes. (126.75-132.2 hours after egg laying; 6.75-12.2 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005346"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>cryptocephalic pupa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3588,14 +3616,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005347"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Lateral trunk tracheae become obscured. Dorsal medial abdominal contractions occur. Everted leg and wing discs become visible. Bubble appears in posterior of puparium, displacing the pupa anteriorly; abdominal bubble disappears. Duration at 25 degrees C: approximately 5 hours, 15 minutes. (126.75-132 hours after egg laying; 6.75-12 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005347"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>buoyant stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3628,14 +3656,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005348"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Bubble is displaced to anterior end of the puparium, and pupa withdraws to the posterior end. Imaginal head sac is everted and the oral armature of the larva is expelled. Duration at 25 degrees C: approximately 12 minutes. (132-132.2 hours after egg laying; 12-12.2 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005348"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>moving bubble stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3673,14 +3701,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The pupal stage starts once larval/pupal apolysis is complete as indicated by the expulsion of the larval armature. Early in this stage, the legs and wings reach full extension along the abdomen. The stage ends when the pupal cuticle separates from the underlying epidermis (pupal/adult apolysis), and the eye cup becomes yellow at its periphery. Duration at 25 degrees C: approximately 32 hours. (132.2-164.3 hours after egg laying; 12.2-44.3 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>phanerocephalic pupa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3723,8 +3751,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005350"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Pupal stage P5 starts when the legs and wings reach full extension along the abdomen and ends as the Malpighian tubules become prominent and green. Duration at 25 degrees C: approximately 6 hours, 30 minutes. (132.2-138.7 hours after egg laying; 12.2-18.7 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3762,14 +3790,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005351"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Legs and wings reach full extension along abdomen. Enlarged initial segments of anterior pair Malpighian tubules move from thorax into abdomen. Translucent patch that lacks adhering fat body cells becomes discernible in the middle of the eye region. Pair of white Malpighian tubules becomes visible dorsally in the abdomen. Duration at 25 degrees C: approximately 66 minutes. (132.2-133.3 hours after egg laying; 12.2-13.3 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005351"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Malpighian tubules migrating</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3801,14 +3829,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005352"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Malpighian tubules become prominent and green. Duration at 25 degrees C: approximately 5 hours, 25 minutes. (133.3-138.7 hours after egg laying; 13.3-18.7 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005352"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>white Malpighian tubules stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3846,14 +3874,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005353"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Dark green &apos;yellow body&apos; appears between the anterior ends of the two Malpighian tubule segments, mid-dorsally at the anterior of the abdomen. Duration at 25 degrees C: approximately 13 hours, 45 minutes. (138.7-152.4 hours after egg laying; 18.7-32.4 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005353"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>green Malpighian tubules stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3885,14 +3913,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005354"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The &apos;yellow body&apos; moves back between the Malpighian tubules. The transparent pupal cuticle separates from the underlying epidermis. Eye cup becomes yellow at its perimeter. Duration at 25 degrees C: approximately 12 hours. (152.4-164.3 hours after egg laying; 32.4-44.3 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005354"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>yellow body stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3931,14 +3959,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005355"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Pale yellow pigmentation spreads inwards across the eye. Eye color becomes bright yellow, then changes to amber. Duration at 25 degrees C: approximately 12 hours 20 minutes. (164.3-176.6 hours after egg laying; 44.3-56.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005355"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>yellow-eyed stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3971,14 +3999,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005356"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Eye color darkens to deep amber, then becomes pale pink. Duration at 25 degrees C: approximately 18 hours. (176.6-194.5 hours after egg laying; 56.6-74.5 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005356"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>amber-eyed stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4011,14 +4039,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005357"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Eyes become bright red. Orbital and ocellar bristles and vibrissae darken. Duration at 25 degrees C: approximately 6 minutes. (194.5-194.6 hours after egg laying; 74.5-74.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005357"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>red-eye bald stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4050,8 +4078,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005358"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Thoracic bristles become visible, and the tips of the wings turn grey. Duration at 25 degrees C: approximately 2 hours. (194.6-196.6 hours after egg laying; 74.6-76.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4084,14 +4112,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005359"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Dorsal thoracic microchaetes and macrochaetes become visible. Duration at 25 degrees C: approximately 80 minutes (194.6-195.5 hours after egg laying; 74.6-75.9 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005359"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>head bristles stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4124,14 +4152,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005360"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Tips of folded wings become grey. Duration at 25 degrees C: approximately 45 minutes (195.5-196.6 hours after egg laying; 75.9-76.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005360"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>thoracic bristles stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4169,8 +4197,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005361"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Pharate adult stage P12 begins as the abdominal tergite bristles become visible, and ends as the wings darken to black. Duration at 25 degrees C: approximately 2 hours. (196.6-198.6 hours after egg laying; 76.6-78.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4209,14 +4237,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005362"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Bristles of the abdominal tergites become visible, and the wings become grey. Duration at 25 degrees C: approximately 55 minutes. (196.6-197.5 hours after egg laying; 76.6-77.5 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005362"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>wing tips grey stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4249,14 +4277,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005363"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sex combs darken in males. Wings darken to black. Duration at 25 degrees C: approximately 65 minutes. (197.5-198.6 hours after egg laying; 77.5-78.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005363"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>wings grey stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4295,14 +4323,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005364"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Tarsal bristles darken and claws become black. Duration at 25 degrees C: approximately 3 hours, 20 minutes. (198.6-201.9 hours after egg laying; 78.6-81.9 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005364"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>wings black stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4335,14 +4363,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005365"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The meconium appears dorsally at the posterior tip of the abdomen. Duration at 25 degrees C: approximately 9 hours, 30 minutes (201.9-211.5 hours after egg laying; 81.9-91.5 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005365"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>mature bristles stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4374,8 +4402,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005366"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Pharate adult stage P15 begins with the tanning of the tergites and ends with eclosion. Duration at 25 degrees C: approximately 8 hours, 30 minutes. (211.5-220 hours after egg laying; 91.5-100 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4408,14 +4436,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005367"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Tanning of the tergites obscures the Malpighian tubules and the &apos;yellow body&apos;. Legs begin to twitch; fly is able to walk if puparium is removed prematurely. Ptilinum expands by hydrostatic pressure, opening the operculum. Duration at 25 degrees C: approximately 8 hours, 6 minutes. (211.5-219.6 hours after egg laying; 91.5-99.6 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005367"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>meconium stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4448,14 +4476,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005368"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage which starts when the operculum opens and ends when eclosion is completed. Duration at 25 degrees C: approximately 24 minutes. (219.6-220 hours after egg laying; 99.6-100 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005368"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>eclosion stage</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4498,7 +4526,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The stage of the Drosophila life-cycle from eclosion to death.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4549,7 +4577,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005370"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Newly eclosed adult stage. Animal free of pupal case. Runs rapidly to find site for wing expansion. Wings are folded back and black against a very pale abdomen.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049147</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049147</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4588,7 +4616,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005371"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage, shortly after eclosion, during which the wings expand. During wing expansion, the abdomen pulsates and the hind legs stroke the wings vigorously for several minutes at a time. The stage ends when the wings are folded down over the abdomen, which has become broader and shorter, and the wing cuticle has lost its folds. The stage lasts around 15 minutes at 25&apos;C.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049147</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049147</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4685,9 +4713,9 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00006011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The developing adult after pupal-adult apolysis, i.e.- from stage P8 (when yellow eye color first becomes visible through the pupal case), to eclosion. Duration at 25 degrees C: approximately 55.7 hours (164.3-220 hours after egg laying; 44.3-100 hours after puparium formation).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0048355</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049147</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049147</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4726,7 +4754,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00006012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Adult stage immediately after wing expansion, during which tanning of the cuticle is completed. This stage lasts approximately 45 minutes at 25&apos;C.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049147</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049147</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4806,7 +4834,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The stage of the Drosophila life-cycle from the formation of the puparium (beginning of the prepupal stage) to eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4831,7 +4859,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when nurse cell dumping begins and development of the wax layer begins and ends when the dorsal appendages begin to form.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4856,7 +4884,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage that begins when endochorion begins to form at the anterior pole, a process which includes the beginning of formation of the dorsal appendages. During this stage, the follicle cells secrete membranous vesicles that form irregular extracellular plaques. This stage ends when dying nurse cells form an anterior cap to the oocyte.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0043885</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0043885</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4893,7 +4921,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stage which begins when wandering third instar larva stops crawling. The larva everts its anterior spiracles during this stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4926,19 +4954,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The anterior spiracles are fully everted, with 7-9 finger-like projections. The body shortens, withdrawing three apparent abdominal segments and the larva sticks to its substrate.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>spiracles everted larva</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>white prepupa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4965,7 +4993,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Oogenesis stage during which the number of nurse cell nuclei at the anterior of the oocyte reduce from 4 to zero. The oocyte chromosomes reach full metaphase I during this stage, at which point meiosis is arrested (until fertilization).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0029744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0029744</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4998,7 +5026,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Third instar larva from the beginning of wandering to the beginning of puparium formation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5053,8 +5081,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0049535</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5081,7 +5109,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A temporal subdivision of a Drosophila life, delimited by major transitions in the circumstances of the organism, such as: fertilization; hatching; pupal ecdysis; eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5100,7 +5128,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5120,7 +5148,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007014"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Temporal subdivision of adulthood in days post-eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5153,7 +5181,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The first two hours of embryonic stage 17 at 25&apos;C. (Approximately 16-18 hours at 25&apos;C after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5186,7 +5214,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hours 2-4 of embryonic stage 17 at 25&apos;C. (Approximately 18-20 hours at 25&apos;C after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5219,7 +5247,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hours 4-6 of embryonic stage 17 at 25&apos;C. (Approximately 20-22 hours at 25&apos;C after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5252,7 +5280,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hours 6-8 (the last two hours) of embryonic stage 17 at 25&apos;C. (Approximately 22-24 hours at 25&apos;C after egg laying).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5283,7 +5311,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007019"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The substage of the wandering third instar larval stage, prior to the beginning of clearance of the gut.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0076598</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0076598</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5314,7 +5342,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007020"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The substage of the wandering third instar larval stage when the larva has partially cleared its gut contents.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0076598</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0076598</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5345,7 +5373,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007021"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The substage of the wandering third instar larval stage when the larva has cleared its gut contents.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0076598</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0076598</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5369,7 +5397,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The interphase (GO:0051325) of an embryonic cycle.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5393,7 +5421,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007023"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The M-phase (GO:0000279) of an embryonic cycle.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5449,7 +5477,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The developmental stage that lasts from eclosion of the adult from the pupal case until tanning is complete (the end of adult stage A3).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5481,7 +5509,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Life stage from the end of adult stage A3, when tanning is complete, to death.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5530,7 +5558,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007075"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The day of eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5561,7 +5589,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007076"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>1st day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5592,7 +5620,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007077"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>2nd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5623,7 +5651,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007078"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>3rd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5654,7 +5682,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007079"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>4th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5685,7 +5713,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007080"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>5th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5716,7 +5744,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007081"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>6th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5747,7 +5775,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007082"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>7th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5778,7 +5806,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007083"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>8th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5809,7 +5837,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007084"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>9th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5840,7 +5868,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007085"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>10th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5871,7 +5899,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007086"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>11th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5902,7 +5930,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007087"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>12th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5933,7 +5961,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007088"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>13th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5964,7 +5992,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007089"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>14th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5995,7 +6023,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007090"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>15th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6026,7 +6054,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007091"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>16th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6057,7 +6085,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>17th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6088,7 +6116,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007093"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>18th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6119,7 +6147,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007094"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>19th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6150,7 +6178,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007095"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>20th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6181,7 +6209,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007096"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>21st day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6212,7 +6240,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007097"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>22nd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6243,7 +6271,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>23rd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6274,7 +6302,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>24th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6305,7 +6333,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007100"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>25th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6336,7 +6364,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007101"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>26th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6367,7 +6395,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007102"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>27th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6398,7 +6426,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007103"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>28th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6429,7 +6457,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007104"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>29th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6460,7 +6488,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007105"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>30th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6491,7 +6519,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007106"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>31st day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6522,7 +6550,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007107"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>32nd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6553,7 +6581,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007108"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>33rd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6584,7 +6612,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007109"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>34th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6615,7 +6643,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007110"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>35th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6646,7 +6674,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007111"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>36th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6677,7 +6705,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007112"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>37th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6708,7 +6736,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007113"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>38th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6739,7 +6767,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007114"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>39th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6770,7 +6798,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007115"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>40th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6801,7 +6829,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007116"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>41st day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6832,7 +6860,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007117"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>42nd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6863,7 +6891,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007118"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>43rd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6894,7 +6922,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007119"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>44th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6925,7 +6953,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007120"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>45th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6956,7 +6984,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007121"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>46th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6987,7 +7015,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007122"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>47th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7018,7 +7046,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007123"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>48th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7049,7 +7077,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007124"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>49th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7080,7 +7108,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007125"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>50th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7111,7 +7139,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007126"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>51st day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7142,7 +7170,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007127"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>52nd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7173,7 +7201,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007128"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>53rd day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7204,7 +7232,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007129"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>54th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7235,7 +7263,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>55th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7266,7 +7294,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>56th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7297,7 +7325,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007132"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>57th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7328,7 +7356,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007133"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>58th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7359,7 +7387,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007134"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>59th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7390,7 +7418,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007135"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>60th day after eclosion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7427,7 +7455,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00014201"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A collective term for stages 9 and 10.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7443,5 +7471,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 
