@@ -13,7 +13,6 @@ subsetdef: goslim_plant "Plant GO slim"
 subsetdef: goslim_pombe "Fission yeast GO slim"
 subsetdef: goslim_yeast "Yeast GO slim"
 subsetdef: gosubset_prok "Prokaryotic GO subset"
-synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 import: http://purl.obolibrary.org/obo/fbdv/imports/merged_import.owl
@@ -61,6 +60,7 @@ relationship: substage_of FBdv:00005321 ! extended germ band stage
 [Term]
 id: FBdv:00004886
 name: oogenesis
+def: "The complete process of formation and maturation of an ovum or female gemate from a primordial female germ cell." [GO:0048477]
 comment: Temporal ordering number - 10000.
 synonym: "oogenesis stage" EXACT []
 xref: GO:0048477
@@ -312,6 +312,7 @@ is_a: FBdv:00005259 ! developmental stage
 [Term]
 id: FBdv:00005287
 name: unfertilized egg stage
+def: "Developmental stage that starts with ovulation, at the end of oogenesis, until the egg is fertilized by a sperm." [FlyBase:FBrf0158848]
 comment: Temporal ordering number - 10300.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005283 ! oogenesis stage S14
@@ -321,6 +322,7 @@ relationship: substage_of FBdv:00005286 ! egg stage
 [Term]
 id: FBdv:00005288
 name: fertilized egg stage
+def: "Developmental stage that starts with sperm entry until the first mitotic division of the zygote." [FlyBase:FBrf0229233]
 comment: Temporal ordering number - 10.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
@@ -1218,6 +1220,7 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 [Term]
 id: FBdv:00007000
 name: spermatogenesis
+def: "The developmental process by which male germ line stem cells self renew or give rise to successive cell types resulting in the development of a spermatozoon." [GO:0007283]
 comment: Temporal ordering number - 20000.
 xref: GO:0007283
 is_a: FBdv:00007009 ! developmental process
@@ -1308,6 +1311,7 @@ is_obsolete: true
 [Term]
 id: FBdv:00007009
 name: developmental process
+def: "A biological process whose specific outcome is the progression of an integrated living unit (an anatomical structure or an entire organism) over time from an initial condition to a later condition." [GO:0032502]
 xref: GO:0032502
 is_a: FBdv:00007024 ! biological process
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
@@ -1438,6 +1442,7 @@ intersection_of: substage_of FBdv:00007011 ! embryonic cycle
 [Term]
 id: FBdv:00007024
 name: biological process
+def: "The execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module." [GO:0008150]
 xref: GO:0008150
 is_a: BFO:0000003 ! occurrent
 
@@ -2027,6 +2032,11 @@ relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: substage_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
+id: happens_during
+name: happens_during
+xref: RO:0002092
+
+[Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
 xref: RO:0002087
@@ -2042,17 +2052,13 @@ name: occurrent_part_of
 xref: RO:0002012
 
 [Typedef]
-id: happens_during
-name: happens_during
-xref: RO:0002092
-
-[Typedef]
 id: substage_of
 name: substage_of
 namespace: relationship
+def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
 comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
+is_a: happens_during ! happens_during
 is_a: occurrent_part_of ! occurrent_part_of
-is_a: RO:0002092 ! happens during
 
