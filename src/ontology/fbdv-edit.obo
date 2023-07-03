@@ -2033,32 +2033,32 @@ relationship: substage_of FBdv:00005321 ! extended germ band stage
 
 [Typedef]
 id: happens_during
-name: happens_during
+name: happens during
 xref: RO:0002092
 
 [Typedef]
 id: immediately_preceded_by
-name: immediately_preceded_by
+name: immediately preceded by
 xref: RO:0002087
 
 [Typedef]
 id: immediately_precedes
-name: immediately_precedes
+name: immediately precedes
 xref: RO:0002090
 
 [Typedef]
 id: occurrent_part_of
-name: occurrent_part_of
+name: occurrent part of
 xref: RO:0002012
 
 [Typedef]
 id: substage_of
-name: substage_of
+name: substage of
 namespace: relationship
 def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
 comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
-is_a: happens_during ! happens_during
-is_a: occurrent_part_of ! occurrent_part_of
+is_a: happens_during ! happens during
+is_a: occurrent_part_of ! occurrent part of
 
