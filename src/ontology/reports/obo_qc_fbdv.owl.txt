@@ -7,13 +7,6 @@ WARN	duplicate_label_synonym	FBdv:00007024	oboInOwl:hasExactSynonym	biological p
 WARN	missing_definition	BFO:0000016	IAO:0000115	
 WARN	missing_definition	BFO:0000019	IAO:0000115	
 WARN	missing_definition	BFO:0000034	IAO:0000115	
-WARN	missing_definition	FBdv:00004886	IAO:0000115	
-WARN	missing_definition	FBdv:00005287	IAO:0000115	
-WARN	missing_definition	FBdv:00005288	IAO:0000115	
-WARN	missing_definition	FBdv:00007000	IAO:0000115	
-WARN	missing_definition	FBdv:00007009	IAO:0000115	
-WARN	missing_definition	FBdv:00007024	IAO:0000115	
-WARN	missing_definition	FBdv:00018001	IAO:0000115	
 WARN	missing_definition	IAO:0000115	IAO:0000115	
 WARN	missing_definition	IAO:0100001	IAO:0000115	
 WARN	missing_definition	RO:0002017	IAO:0000115	
@@ -41,10 +34,8 @@ WARN	missing_definition	RO:0004032	IAO:0000115
 WARN	missing_definition	RO:0004033	IAO:0000115	
 WARN	missing_definition	RO:0004046	IAO:0000115	
 WARN	missing_definition	RO:0004047	IAO:0000115	
-WARN	missing_definition	obo:fbdv#systematic_synonym	IAO:0000115	
 WARN	missing_definition	oboInOwl:NamespaceIdRule	IAO:0000115	
 WARN	missing_definition	oboInOwl:SubsetProperty	IAO:0000115	
-WARN	missing_definition	oboInOwl:SynonymTypeProperty	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasAlternativeId	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasBroadSynonym	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasDbXref	IAO:0000115	
@@ -53,18 +44,18 @@ WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115
 WARN	missing_definition	oboInOwl:hasOBOFormatVersion	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasOBONamespace	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115	
-WARN	missing_definition	oboInOwl:hasScope	IAO:0000115	
 WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
 WARN	missing_superclass	GO:0003674	rdfs:subClassOf	
 WARN	missing_superclass	GO:0008150	rdfs:subClassOf	
-WARN	multiple_labels	RO:0002012	rdfs:label	occurrent part of
-WARN	multiple_labels	RO:0002012	rdfs:label	occurrent_part_of
+WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by
 WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en
-WARN	multiple_labels	RO:0002087	rdfs:label	immediately_preceded_by
+WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes
 WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes@en
-WARN	multiple_labels	RO:0002090	rdfs:label	immediately_precedes
+WARN	multiple_labels	RO:0002092	rdfs:label	happens during
 WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en
-WARN	multiple_labels	RO:0002092	rdfs:label	happens_during
+INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
+INFO	lowercase_definition	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
+INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
 INFO	lowercase_definition	BFO:0000050	IAO:0000115	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	BFO:0000051	IAO:0000115	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	BFO:0000062	IAO:0000115	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en

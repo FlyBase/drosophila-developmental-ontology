@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2023-05-03
-date: 03:05:2023 09:28
+data-version: 2023-07-05
+date: 05:07:2023 10:45
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -18,7 +18,6 @@ subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
-synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv/fbdv-simple
@@ -52,6 +51,7 @@ relationship: substage_of FBdv:00005321 ! extended germ band stage
 [Term]
 id: FBdv:00004886
 name: oogenesis
+def: "The complete process of formation and maturation of an ovum or female gemate from a primordial female germ cell." [GO:0048477]
 comment: Temporal ordering number - 10000.
 synonym: "oogenesis stage" EXACT []
 xref: GO:0048477
@@ -300,6 +300,7 @@ is_a: FBdv:00005259 ! developmental stage
 [Term]
 id: FBdv:00005287
 name: unfertilized egg stage
+def: "Developmental stage that starts with ovulation, at the end of oogenesis, until the egg is fertilized by a sperm." [FlyBase:FBrf0158848]
 comment: Temporal ordering number - 10300.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005283 ! oogenesis stage S14
@@ -309,6 +310,7 @@ relationship: substage_of FBdv:00005286 ! egg stage
 [Term]
 id: FBdv:00005288
 name: fertilized egg stage
+def: "Developmental stage that starts with sperm entry until the first mitotic division of the zygote." [FlyBase:FBrf0229233]
 comment: Temporal ordering number - 10.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
@@ -1186,6 +1188,7 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 [Term]
 id: FBdv:00007000
 name: spermatogenesis
+def: "The developmental process by which male germ line stem cells self renew or give rise to successive cell types resulting in the development of a spermatozoon." [GO:0007283]
 comment: Temporal ordering number - 20000.
 xref: GO:0007283
 is_a: FBdv:00007009 ! developmental process
@@ -1265,6 +1268,7 @@ is_obsolete: true
 [Term]
 id: FBdv:00007009
 name: developmental process
+def: "A biological process whose specific outcome is the progression of an integrated living unit (an anatomical structure or an entire organism) over time from an initial condition to a later condition." [GO:0032502]
 xref: GO:0032502
 is_a: FBdv:00007024 ! biological process
 
@@ -1373,6 +1377,7 @@ relationship: substage_of FBdv:00007011 ! embryonic cycle
 [Term]
 id: FBdv:00007024
 name: biological process
+def: "The execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module." [GO:0008150]
 xref: GO:0008150
 
 [Term]
@@ -1982,6 +1987,7 @@ xref: RO:0002012
 id: substage_of
 name: substage_of
 namespace: relationship
+def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
 comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
