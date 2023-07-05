@@ -1,8 +1,1 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	oogenesis	definition	
-WARN	missing_definition	unfertilized egg stage	definition	
-WARN	missing_definition	fertilized egg stage	definition	
-WARN	missing_definition	spermatogenesis	definition	
-WARN	missing_definition	developmental process	definition	
-WARN	missing_definition	biological process	definition	
-WARN	missing_definition	substage_of	definition	
