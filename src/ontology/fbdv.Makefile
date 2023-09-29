@@ -122,16 +122,19 @@ $(ONT)-full.obo: $(ONT)-full.owl
 tmp/fbdv-obj.obo: fbdv-simple.obo
 	$(ROBOT) remove -i fbdv-simple.obo --select object-properties --trim true -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 
+flybase_additions.obo: fbdv-simple.obo
+	python3 $(SCRIPTSDIR)/FB_typedefs.py
+
 # removing RO_0002090, as may not work for FlyBase
-fly_development.obo: fbdv-simple.obo tmp/fbdv-obj.obo rem_flybase.txt
+fly_development.obo: fbdv-simple.obo tmp/fbdv-obj.obo flybase_removals.txt flybase_additions.obo
 	cp fbdv-simple.obo tmp/fbdv-simple-stripped.obo
 	$(ROBOT) remove -vv -i tmp/fbdv-simple-stripped.obo --select "owl:deprecated='true'^^xsd:boolean" --trim true \
-		merge --collapse-import-closure false --input tmp/fbdv-obj.obo \
-		remove --term-file rem_flybase.txt --trim false \
+		merge --collapse-import-closure false --input tmp/fbdv-obj.obo --input flybase_additions.obo \
+		remove --term-file flybase_removals.txt --trim false \
 		remove --term http://purl.obolibrary.org/obo/RO_0002090 --select "self" --trim true \
 		query --update ../sparql/force-obo.ru \
 		convert -f obo --check false -o $@.tmp.obo
-	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:lower:][:punct:]]*\n\)\(name:[ ]\)\([[:lower:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
 	rm $@.tmp.obo
 	$(ROBOT) convert --input $@ -f obo --output $@
 	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
