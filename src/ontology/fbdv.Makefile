@@ -122,6 +122,9 @@ $(ONT)-full.obo: $(ONT)-full.owl
 tmp/fbdv-obj.obo: fbdv-simple.obo
 	$(ROBOT) remove -i fbdv-simple.obo --select object-properties --trim true -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 
+flybase_additions.obo: fbdv-simple.obo
+	python3 $(SCRIPTSDIR)/FB_typedefs.py
+
 # removing RO_0002090, as may not work for FlyBase
 fly_development.obo: fbdv-simple.obo tmp/fbdv-obj.obo flybase_removals.txt flybase_additions.obo
 	cp fbdv-simple.obo tmp/fbdv-simple-stripped.obo
