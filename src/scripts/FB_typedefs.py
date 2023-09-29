@@ -10,6 +10,7 @@ typedefs_file = "flybase_additions.obo"
 for file in os.listdir('.'):
     if fnmatch.fnmatchcase(file, '*-simple.obo'):
         ontology_file = file
+        ont_name = ontology_file.split('-')[0]
 
 ontology = oaklib.get_adapter(ontology_file)
 all_typedefs = [t for t in ontology.entities(owl_type='owl:ObjectProperty')]
@@ -22,7 +23,7 @@ if os.path.isfile(typedefs_file):
     existing_typedefs = [re.match('^xref:[ ](.*)', l).group(1) for l in flybase_additions_lines \
                             if re.match('^xref:[ ](.*)', l)]
 else:
-    flybase_additions_lines = ['format-version: 1.2\n', 'ontology: fbdv\n', '\n']
+    flybase_additions_lines = ['format-version: 1.2\n', 'ontology: %s\n' % ont_name, '\n']
     existing_typedefs = []
 
 new_typedefs = [t for t in all_typedefs if not (t in existing_typedefs)]
