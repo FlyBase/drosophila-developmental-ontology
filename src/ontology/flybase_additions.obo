@@ -1,0 +1,22 @@
+format-version: 1.2
+ontology: fbdv
+
+[Typedef]
+id: happens_during
+xref: RO:0002092
+
+[Typedef]
+id: immediately_preceded_by
+xref: RO:0002087
+
+[Typedef]
+id: immediately_precedes
+xref: RO:0002090
+
+[Typedef]
+id: occurrent_part_of
+xref: RO:0002012
+
+[Typedef]
+id: substage_of
+xref: FBdv:00018001
