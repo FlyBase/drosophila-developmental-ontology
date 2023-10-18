@@ -44,15 +44,9 @@ WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115
 WARN	missing_definition	oboInOwl:hasOBOFormatVersion	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasOBONamespace	IAO:0000115	
 WARN	missing_definition	oboInOwl:hasRelatedSynonym	IAO:0000115	
-WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
+WARN	missing_definition	oboInOwl:id	IAO:0000115	
 WARN	missing_superclass	GO:0003674	rdfs:subClassOf	
 WARN	missing_superclass	GO:0008150	rdfs:subClassOf	
-WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by
-WARN	multiple_labels	RO:0002087	rdfs:label	immediately preceded by@en
-WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes
-WARN	multiple_labels	RO:0002090	rdfs:label	immediately precedes@en
-WARN	multiple_labels	RO:0002092	rdfs:label	happens during
-WARN	multiple_labels	RO:0002092	rdfs:label	happens during@en
 INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 INFO	lowercase_definition	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
