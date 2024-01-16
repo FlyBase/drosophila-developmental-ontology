@@ -46,6 +46,15 @@ Datatype: idrange:2
     
     EquivalentTo: 
         xsd:integer[>= 0007000 , <= 0010000]
+
+
+Datatype: idrange:3
+
+    Annotations:
+        allocatedto: "dpg44"
+
+    EquivalentTo:
+        xsd:integer[>= 0010001 , <= 0011000]
     
     
 Datatype: xsd:integer
