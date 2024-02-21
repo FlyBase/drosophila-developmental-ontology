@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2023-12-07
-date: 07:12:2023 07:30
+data-version: 2024-02-21
+date: 21:02:2024 14:18
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -1959,6 +1959,96 @@ is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005317 ! gastrula stage
 relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: substage_of FBdv:00005321 ! extended germ band stage
+
+[Term]
+id: FBdv:0010001
+name: day 61 of adulthood
+def: "61st day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1410.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:00007135 ! day 60 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010002
+name: day 62 of adulthood
+def: "62nd day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1420.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010001 ! day 61 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010003
+name: day 63 of adulthood
+def: "63rd day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1430.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010002 ! day 62 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010004
+name: day 64 of adulthood
+def: "64th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1440.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010003 ! day 63 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010005
+name: day 65 of adulthood
+def: "65th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1450.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010004 ! day 64 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010006
+name: day 66 of adulthood
+def: "66th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1460.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010005 ! day 65 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010007
+name: day 67 of adulthood
+def: "67th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1470.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010006 ! day 66 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010008
+name: day 68 of adulthood
+def: "68th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1480.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010007 ! day 67 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010009
+name: day 69 of adulthood
+def: "69th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1490.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010008 ! day 68 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010010
+name: day 70 of adulthood
+def: "70th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1500.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010009 ! day 69 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
 
 [Typedef]
 id: happens_during
