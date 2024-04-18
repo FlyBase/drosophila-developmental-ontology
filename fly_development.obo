@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2024-02-21
-date: 21:02:2024 14:18
+data-version: 2024-04-18
+date: 18:04:2024 09:08
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -14,10 +14,6 @@ subsetdef: goslim_plant "Plant GO slim"
 subsetdef: goslim_pombe "Fission yeast GO slim"
 subsetdef: goslim_yeast "Yeast GO slim"
 subsetdef: gosubset_prok "Prokaryotic GO subset"
-subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
-subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
-subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
-subsetdef: ro-eco ""
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 ontology: fbdv/fbdv-simple
@@ -2054,10 +2050,6 @@ relationship: substage_of FBdv:00005369 ! adult stage
 id: happens_during
 name: happens_during
 comment: X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-subset: ro-eco
 xref: RO:0002092
 is_transitive: true
 
