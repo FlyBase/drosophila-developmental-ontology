@@ -3,7 +3,7 @@
 <http://purl.obolibrary.org/obo/FBdv_00005310>		
 <http://purl.obolibrary.org/obo/FBdv_00005320>		
 <http://purl.obolibrary.org/obo/FBdv_00005326>		
-<http://purl.obolibrary.org/obo/FBdv_00005329>	"FBdv:00005330"	
+<http://purl.obolibrary.org/obo/FBdv_00005329>	<http://purl.obolibrary.org/obo/FBdv_00005330>	
 <http://purl.obolibrary.org/obo/FBdv_00005373>	<http://purl.obolibrary.org/obo/FBdv_00005370>	
 <http://purl.obolibrary.org/obo/FBdv_00005374>	<http://purl.obolibrary.org/obo/FBdv_00005371>	
 <http://purl.obolibrary.org/obo/FBdv_00005375>	<http://purl.obolibrary.org/obo/FBdv_00006012>	

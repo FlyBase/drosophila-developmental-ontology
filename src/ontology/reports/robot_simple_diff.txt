@@ -1,9 +1,9 @@
 3 axioms in left ontology but not in right ontology:
-- Annotation(<oboInOwl:date> "25:04:2024 05:20")
-- Annotation(<owl:versionInfo> "2024-04-25")
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2024-04-25/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
+- Annotation(<oboInOwl:date> "13:06:2024 09:02")
+- Annotation(<owl:versionInfo> "2024-06-13")
+- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2024-06-13/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
 
 3 axioms in right ontology but not in left ontology:
-+ Annotation(<oboInOwl:date> "18:04:2024 09:08")
-+ Annotation(<owl:versionInfo> "2024-04-18")
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2024-04-18/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
++ Annotation(<oboInOwl:date> "25:04:2024 05:20")
++ Annotation(<owl:versionInfo> "2024-04-25")
++ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2024-04-25/fbdv-simple.owl/fbdv/fbdv-simple.owl>))

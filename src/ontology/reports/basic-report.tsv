@@ -29,12 +29,10 @@
 <http://purl.obolibrary.org/obo/FBdv_00007086>	"11th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007099>	"24th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007025>	"The developmental stage that lasts from eclosion of the adult from the pupal case until tanning is complete (the end of adult stage A3)."	
-<http://purl.obolibrary.org/obo/BFO_0000003>	"An entity that has temporal parts and that happens, unfolds or develops through time."@en	
 <http://purl.obolibrary.org/obo/GO_0000278>	"Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent."	"Wikipedia:Mitosis"
 <http://purl.obolibrary.org/obo/FBdv_00005316>	"The 16th cell cycle division of embryogenesis. Asynchronous."	
 <http://purl.obolibrary.org/obo/FBdv_00005314>	"The M-phase of embryonic cycle 14. This is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains."	
 <http://purl.obolibrary.org/obo/FBdv_00005265>	"Oogenesis stage that begins when nurse cell chromosomes are no longer bulbous - the association between homologs weakens so that these chromosomes no longer have a polytene structure. During this stage, posterior nurse cell nuclei have a higher ploidy (64C) than anterior ones."	
-<http://purl.obolibrary.org/obo/BFO_0000015>	"p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en	
 <http://purl.obolibrary.org/obo/FBdv_00005355>	"Pale yellow pigmentation spreads inwards across the eye. Eye color becomes bright yellow, then changes to amber. Duration at 25 degrees C: approximately 12 hours 20 minutes. (164.3-176.6 hours after egg laying; 44.3-56.6 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_00005358>	"Thoracic bristles become visible, and the tips of the wings turn grey. Duration at 25 degrees C: approximately 2 hours. (194.6-196.6 hours after egg laying; 74.6-76.6 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_00007114>	"39th day after eclosion."	
@@ -58,19 +56,16 @@
 <http://purl.obolibrary.org/obo/FBdv_00005307>	"The 11th mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo."	
 <http://purl.obolibrary.org/obo/FBdv_00007005>	"The anterior spiracles are fully everted, with 7-9 finger-like projections. The body shortens, withdrawing three apparent abdominal segments and the larva sticks to its substrate."	
 <http://purl.obolibrary.org/obo/FBdv_00007094>	"19th day after eclosion."	
-<http://purl.obolibrary.org/obo/BFO_0000023>	"A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en	
 <http://purl.obolibrary.org/obo/FBdv_00007091>	"16th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007088>	"13th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005267>	"Oogenesis stage during which polyploidation and enlargement of follicle cells begins. Nurse cell ploidy ranges from 256C (anterior) to 512C (posterior) and the egg chamber gains an elongated shape."	
 <http://purl.obolibrary.org/obo/FBdv_00005352>	"Malpighian tubules become prominent and green. Duration at 25 degrees C: approximately 5 hours, 25 minutes. (133.3-138.7 hours after egg laying; 13.3-18.7 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_00005308>	"The 12th mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo."	
 <http://purl.obolibrary.org/obo/FBdv_00005290>	"Embryonic stage 1-3."	
-<http://purl.obolibrary.org/obo/BFO_0000019>		
 <http://purl.obolibrary.org/obo/FBdv_00005322>	"Stage 8 starts with the rapid phase of germ band extension and ends with the beginning of mesodermal segmentation. By the end of this stage germ band extension has progressed to the point where the proctodeal opening is at about 60% egg length and the dorsal folds (transverse furrows) are no longer visible. Duration at 25 degrees C: approximately 30 minutes (190-220 minutes after egg laying)."	
 <http://purl.obolibrary.org/obo/GO_0016043>	"A process that results in the assembly, arrangement of constituent parts, or disassembly of a cellular component."	
 <http://purl.obolibrary.org/obo/FBdv_00007023>	"The M-phase (GO:0000279) of an embryonic cycle."	
 <http://purl.obolibrary.org/obo/FBdv_00007122>	"47th day after eclosion."	
-<http://purl.obolibrary.org/obo/BFO_0000017>	"A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en	
 <http://purl.obolibrary.org/obo/FBdv_00007111>	"36th day after eclosion."	
 <http://purl.obolibrary.org/obo/GO_0000279>	"A cell cycle phase during which nuclear division occurs, and which is comprises the phases: prophase, metaphase, anaphase and telophase."	"Wikipedia:M_phase"
 <http://purl.obolibrary.org/obo/FBdv_00005272>	"Oogenesis stage that begins when the centripetal follicle cells begin to migrate. As a result, the vitelline membrane extends into the opercular region. This stage ends when nurse cell dumping begins."	
@@ -94,7 +89,6 @@
 <http://purl.obolibrary.org/obo/FBdv_0010001>	"61st day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005360>	"Tips of folded wings become grey. Duration at 25 degrees C: approximately 45 minutes (195.5-196.6 hours after egg laying; 75.9-76.6 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_00007121>	"46th day after eclosion."	
-<http://purl.obolibrary.org/obo/GO_0016740>	"Catalysis of the transfer of a group, e.g. a methyl group, glycosyl group, acyl group, phosphorus-containing, or other groups, from one compound (generally regarded as the donor) to another compound (generally regarded as the acceptor). Transferase is the systematic name for any enzyme of EC class 2."	"Reactome:R-HSA-8868783 EC:2.-.-.- Reactome:R-HSA-5668414 Reactome:R-HSA-1483186 Reactome:R-HSA-1483089"
 <http://purl.obolibrary.org/obo/FBdv_00007126>	"51st day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007106>	"31st day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005349>	"The pupal stage starts once larval/pupal apolysis is complete as indicated by the expulsion of the larval armature. Early in this stage, the legs and wings reach full extension along the abdomen. The stage ends when the pupal cuticle separates from the underlying epidermis (pupal/adult apolysis), and the eye cup becomes yellow at its periphery. Duration at 25 degrees C: approximately 32 hours. (132.2-164.3 hours after egg laying; 12.2-44.3 hours after puparium formation)."	
@@ -124,7 +118,6 @@
 <http://purl.obolibrary.org/obo/FBdv_00007082>	"7th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005266>	"Oogenesis stage during which follicle cell division ceases."	
 <http://purl.obolibrary.org/obo/FBdv_00007078>	"3rd day after eclosion."	
-<http://purl.obolibrary.org/obo/BFO_0000004>	"b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en	
 <http://purl.obolibrary.org/obo/FBdv_00005311>	"Cellularization. Stage 5 begins when cellularization starts. Near the end of this stage the pole cells begin to migrate dorsally and ventral midline cells acquire an irregular, wavy appearance. Stage 5 ends when ventral furrow formation becomes apparent. Duration at 25 degrees: approximately 40 minutes (130-170 minutes after egg laying)."	
 <http://purl.obolibrary.org/obo/FBdv_00007075>	"The day of eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007077>	"2nd day after eclosion."	
@@ -158,7 +151,6 @@
 <http://purl.obolibrary.org/obo/FBdv_00005340>	"Third instar larva prior to the wandering stage (approximately the first 24 hours of the third instar larval stage under standard conditions at 25'C.)."	
 <http://purl.obolibrary.org/obo/GO_0007275>	"The biological process whose specific outcome is the progression of a multicellular organism over time from an initial condition (e.g. a zygote or a young adult) to a later condition (e.g. a multicellular animal or an aged adult)."	
 <http://purl.obolibrary.org/obo/FBdv_00007115>	"40th day after eclosion."	
-<http://purl.obolibrary.org/obo/BFO_0000034>		
 <http://purl.obolibrary.org/obo/FBdv_00005323>	"Stage 9 begins when mesodermal segmentation becomes (transiently) visible, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)."	
 <http://purl.obolibrary.org/obo/FBdv_00007011>	"A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized."	
 <http://purl.obolibrary.org/obo/GO_0048285>	"The creation of two or more organelles by division of one organelle."	
@@ -175,7 +167,6 @@
 <http://purl.obolibrary.org/obo/FBdv_00007079>	"4th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007081>	"6th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005375>		
-<http://purl.obolibrary.org/obo/GO_0016772>	"Catalysis of the transfer of a phosphorus-containing group from one compound (donor) to another (acceptor)."	"EC:2.7.-.-"
 <http://purl.obolibrary.org/obo/FBdv_00005263>	"Oogenesis stage that begins when the oocyte chromosomes condense into a karyosome attached to a distinctive spherical structure known as an endobody. The oocyte nucleolus disappears completely. During this stage, nurse cell ploidy reaches 16C."	
 <http://purl.obolibrary.org/obo/FBdv_00014201>	"A collective term for stages 9 and 10."	
 <http://purl.obolibrary.org/obo/FBdv_00007095>	"20th day after eclosion."	
@@ -210,7 +201,6 @@
 <http://purl.obolibrary.org/obo/FBdv_00007130>	"55th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005341>	"Stage of the third larval instar during which the larva wanders out of the food and climbs. Under optimum conditions at 25'C, this occurs approximately 24 hours after the start of the third instar larval stage."	
 <http://purl.obolibrary.org/obo/FBdv_00005353>	"Dark green 'yellow body' appears between the anterior ends of the two Malpighian tubule segments, mid-dorsally at the anterior of the abdomen. Duration at 25 degrees C: approximately 13 hours, 45 minutes. (138.7-152.4 hours after egg laying; 18.7-32.4 hours after puparium formation)."	
-<http://purl.obolibrary.org/obo/GO_0016301>	"Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule."	"Reactome:R-HSA-6788855 Reactome:R-HSA-6788867"
 <http://purl.obolibrary.org/obo/FBdv_00005342>	"The prepupal stage begins at puparium formation and ends when larval/pupal apolysis is complete, as indicated by the completion of imaginal head sac eversion and the expulsion of the oral armature of the larva. Duration at 25 degrees C: approximately 12 hours. (120-132.2 hours after egg laying; 0-12.2 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_0010003>	"63rd day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005282>	"Oogenesis stage during which only 5-6 nurse cell nuclei remain at the anterior of the oocyte. The oocyte nucleus is in late prometaphase:the bivalents arrange themselves in on the equatorial plane of the spindle; homologous centromeres are pulled towards the poles."	
@@ -219,6 +209,7 @@
 <http://purl.obolibrary.org/obo/FBdv_0010002>	"62nd day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007103>	"28th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005320>		
+<http://purl.obolibrary.org/obo/BFO_0000002>		
 <http://purl.obolibrary.org/obo/FBdv_00007117>	"42nd day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_root_00000000>		
 <http://purl.obolibrary.org/obo/FBdv_00005296>	"The fourth mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo."	
@@ -239,26 +230,22 @@
 <http://purl.obolibrary.org/obo/FBdv_00007021>	"The substage of the wandering third instar larval stage when the larva has cleared its gut contents."	
 <http://purl.obolibrary.org/obo/GO_0009987>	"Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level."	
 <http://purl.obolibrary.org/obo/FBdv_00005364>	"Tarsal bristles darken and claws become black. Duration at 25 degrees C: approximately 3 hours, 20 minutes. (198.6-201.9 hours after egg laying; 78.6-81.9 hours after puparium formation)."	
-<http://purl.obolibrary.org/obo/BFO_0000002>	"An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en	
 <http://purl.obolibrary.org/obo/FBdv_00005356>	"Eye color darkens to deep amber, then becomes pale pink. Duration at 25 degrees C: approximately 18 hours. (176.6-194.5 hours after egg laying; 56.6-74.5 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_00007000>	"The developmental process by which male germ line stem cells self renew or give rise to successive cell types resulting in the development of a spermatozoon."	"GO:0007283"
-<http://purl.obolibrary.org/obo/BFO_0000016>		
 <http://purl.obolibrary.org/obo/FBdv_00005327>	"Germ band retraction. Stage 12 begins when germ-band retraction starts and ends when this process is complete so that the prospective anal plate occupies the posterior pole. During this stage the posterior and anterior midgut primordia meet and fuse and the tracheal pits fuse to form the tracheal tree. Duration at 25 degrees C: approximately 120 minutes (440-560 minutes after egg laying)."	
-<http://purl.obolibrary.org/obo/GO_0003674>	"A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs."	
 <http://purl.obolibrary.org/obo/FBdv_00007119>	"44th day after eclosion."	
+<http://purl.obolibrary.org/obo/BFO_0000004>		
 <http://purl.obolibrary.org/obo/FBdv_00005336>	"The stage of the Drosophila life-cycle from hatching to the beginning of puparium formation."	
 <http://purl.obolibrary.org/obo/FBdv_00007093>	"18th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005324>	"Stage 10 begins with the appearance of the stomodeal invagination, slightly ventral to the anterior pole. Periodic furrows appear in the embryonic epidermis around the middle of the stage. The germ band continues to extend, reaching its maximum extent of 75% egg length towards the end of the stage. The end of the stage is marked by the beginning of invagination of the tracheal placodes. Duration at 25 degrees : approximately 60 minutes (260-320 minutes after egg laying)."	
 <http://purl.obolibrary.org/obo/FBdv_00005332>	"Stage 15 begins with the appearance of the second midgut constriction. During this stage the 1st and 3rd midgut constrictions form, dorsal closure is completed, and epidermal segmentation is accomplished. This stage ends when the intersegmental grooves can be distinguished at mid-dorsal level. Duration at 25 degrees C: approximately 100 minutes (680-780 minutes after egg laying)."	
 <http://purl.obolibrary.org/obo/FBdv_00007026>	"Life stage from the end of adult stage A3, when tanning is complete, to death."	
-<http://purl.obolibrary.org/obo/GO_0003824>	"Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic."	"Wikipedia:Enzyme"
-<http://purl.obolibrary.org/obo/BFO_0000020>	"b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en	
 <http://purl.obolibrary.org/obo/FBdv_00005368>	"Stage which starts when the operculum opens and ends when eclosion is completed. Duration at 25 degrees C: approximately 24 minutes. (219.6-220 hours after egg laying; 99.6-100 hours after puparium formation)."	
 <http://purl.obolibrary.org/obo/FBdv_00007125>	"50th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00007109>	"34th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00004886>	"The complete process of formation and maturation of an ovum or female gemate from a primordial female germ cell."	"GO:0048477"
 <http://purl.obolibrary.org/obo/FBdv_00007080>	"5th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005294>	"The second mitotic cell cycle of embryogenesis. This occurs synchronously across the embryo."	
+<http://purl.obolibrary.org/obo/BFO_0000003>		
 <http://purl.obolibrary.org/obo/FBdv_00007120>	"45th day after eclosion."	
 <http://purl.obolibrary.org/obo/FBdv_00005277>	"Formation of specialized endochorion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochorion lacking the pillars seen in the rest of the follicle."	
-<http://purl.obolibrary.org/obo/BFO_0000040>	"An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en	
