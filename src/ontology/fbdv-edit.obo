@@ -18,13 +18,13 @@ namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 import: http://purl.obolibrary.org/obo/fbdv/imports/merged_import.owl
 import: http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl
 ontology: fbdv
-property_value: http://purl.org/dc/elements/1.1/creator "http://orcid.org/0000-0002-1373-1705" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "http://orcid.org/0000-0002-7073-9172" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-5948-3092" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0002-0027-0858" xsd:string
-property_value: http://purl.org/dc/elements/1.1/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Drosophila Developmental Ontology" xsd:string
+property_value: http://purl.org/dc/terms/creator "http://orcid.org/0000-0002-1373-1705" xsd:string
+property_value: http://purl.org/dc/terms/creator "http://orcid.org/0000-0002-7073-9172" xsd:string
+property_value: http://purl.org/dc/terms/creator "https://orcid.org/0000-0001-5948-3092" xsd:string
+property_value: http://purl.org/dc/terms/creator "https://orcid.org/0000-0002-0027-0858" xsd:string
+property_value: http://purl.org/dc/terms/description "An ontology of Drosophila melanogaster developmental stages." xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: http://purl.org/dc/terms/title "Drosophila Developmental Ontology" xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
