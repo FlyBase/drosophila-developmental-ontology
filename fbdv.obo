@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2024-10-17
-date: 17:10:2024 11:23
+data-version: fbdv/releases/2024-12-04
+date: 04:12:2024 16:48
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -16,22 +16,21 @@ subsetdef: goslim_yeast "Yeast GO slim"
 subsetdef: gosubset_prok "Prokaryotic GO subset"
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
-idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: fbdv.obo
-property_value: dc:creator "http://orcid.org/0000-0002-1373-1705" xsd:string
-property_value: dc:creator "http://orcid.org/0000-0002-7073-9172" xsd:string
-property_value: dc:creator "https://orcid.org/0000-0001-5948-3092" xsd:string
-property_value: dc:creator "https://orcid.org/0000-0002-0027-0858" xsd:string
-property_value: dc:description "An ontology of Drosophila melanogaster developmental stages." xsd:string
-property_value: dc:title "Drosophila Developmental Ontology" xsd:string
 property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2024-10-17" xsd:string
+property_value: owl:versionInfo "2024-12-04" xsd:string
+property_value: terms:creator "http://orcid.org/0000-0002-1373-1705" xsd:string
+property_value: terms:creator "http://orcid.org/0000-0002-7073-9172" xsd:string
+property_value: terms:creator "https://orcid.org/0000-0001-5948-3092" xsd:string
+property_value: terms:creator "https://orcid.org/0000-0002-0027-0858" xsd:string
+property_value: terms:description "An ontology of Drosophila melanogaster developmental stages." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: terms:title "Drosophila Developmental Ontology" xsd:string
 
 [Term]
 id: FBdv:00000000
