@@ -5,7 +5,7 @@
 - Annotation(<dc:creator> "https://orcid.org/0000-0002-0027-0858")
 - Annotation(<dc:description> "An ontology of Drosophila melanogaster developmental stages.")
 - Annotation(<dc:title> "Drosophila Developmental Ontology")
-- Annotation(<oboInOwl:date> "04:12:2024 16:48")
+- Annotation(<oboInOwl:date> "04:12:2024 17:03")
 - Annotation(<owl:versionInfo> "2024-12-04")
 - OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>) VersionIRI(<http://purl.obolibrary.org/obo/fbdv/fbdv-simple/fbdv/releases/2024-12-04/fbdv-simple.owl/fbdv/fbdv-simple.owl>))
 
