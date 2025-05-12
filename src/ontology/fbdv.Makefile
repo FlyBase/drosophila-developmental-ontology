@@ -70,40 +70,13 @@ reports/obo_qc_%.txt:
 ######################################################
 ### Overwriting some default artefacts ###
 ######################################################
-# remove excess defs, labels and comments from obo files
-
-# Simple is overwritten to strip out duplicate names and definitions.
-$(ONT)-simple.obo: $(ONT)-simple.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'namespace[:][ ]external' > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
 
 # We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbdv.owl) are annotated.
 $(ONT).obo: $(ONT)-simple.owl
-	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
-	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'namespace[:][ ]external' > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
-$(ONT)-base.obo: $(ONT)-base.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
-$(ONT)-non-classified.obo: $(ONT)-non-classified.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
-$(ONT)-full.obo: $(ONT)-full.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/comment[:].*\ncomment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
+	$(ROBOT) annotate --input $< \
+		          --ontology-iri $(URIBASE)/$@ \
+		          --version-iri $(ONTBASE)/releases/$(TODAY) \
+		 convert --check false -f obo $(OBO_FORMAT_OPTIONS) --output $@
 
 
 #####################################################################################
