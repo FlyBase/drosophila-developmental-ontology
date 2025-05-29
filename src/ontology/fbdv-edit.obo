@@ -16,7 +16,6 @@ subsetdef: gosubset_prok "Prokaryotic GO subset"
 default-namespace: FlyBase_development_CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
 import: http://purl.obolibrary.org/obo/fbdv/imports/merged_import.owl
-import: http://purl.obolibrary.org/obo/fbdv/patterns/definitions.owl
 ontology: fbdv
 property_value: http://purl.org/dc/terms/creator "http://orcid.org/0000-0002-1373-1705" xsd:string
 property_value: http://purl.org/dc/terms/creator "http://orcid.org/0000-0002-7073-9172" xsd:string
@@ -36,7 +35,7 @@ name: Drosophila life
 alt_id: FBdv_root:00000000
 def: "The life of an individual of the species Drosophila melanogaster, from fertilization to death." [FBC:DOS]
 synonym: "Drosophila life cycle" EXACT []
-is_a: BFO:0000003 ! occurrent
+is_a: BFO:0000003
 
 [Term]
 id: FBdv:00000054
@@ -71,7 +70,7 @@ id: FBdv:00005259
 name: developmental stage
 alt_id: FBdv:00007010
 def: "A temporal subdivision of a developmental process." [FBC:DOS]
-is_a: BFO:0000003 ! occurrent
+is_a: BFO:0000003
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
 property_value: http://purl.org/dc/terms/date "2009-10-01T05:56:56Z" xsd:string
 
@@ -1339,7 +1338,7 @@ property_value: http://purl.org/dc/terms/date "2009-10-01T05:59:22Z" xsd:string
 id: FBdv:00007013
 name: age
 def: "Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion." [FBC:DOS]
-is_a: BFO:0000003 ! occurrent
+is_a: BFO:0000003
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
 property_value: http://purl.org/dc/terms/date "2010-09-29T12:25:36Z" xsd:string
 
@@ -1443,7 +1442,7 @@ id: FBdv:00007024
 name: biological process
 def: "The execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module." [GO:0008150]
 xref: GO:0008150
-is_a: BFO:0000003 ! occurrent
+is_a: BFO:0000003
 
 [Term]
 id: FBdv:00007025
