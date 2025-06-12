@@ -3,19 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-DATE   ?= $(shell date +%Y-%m-%d)
-
-# Using .SECONDEXPANSION to include custom FlyBase files in $(ASSETS). Also rsyncing $(IMPORTS) and $(REPORT_FILES).
-.SECONDEXPANSION:
-.PHONY: prepare_release
-prepare_release: $$(ASSETS) release_reports
-	rsync -R $(ASSETS) $(RELEASEDIR) &&\
-	rm -f $(CLEANFILES) &&\
-	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
-
-MAIN_FILES := $(MAIN_FILES) fly_development.obo
-CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
-
 ######################################################
 ### Code for generating additional FlyBase reports ###
 ######################################################
@@ -106,8 +93,13 @@ fly_development.obo: fbdv-simple.obo tmp/fbdv-obj.obo flybase_removals.txt flyba
 		remove --term http://purl.obolibrary.org/obo/RO_0002090 --select "self" --trim true \
 		query --update ../sparql/force-obo.ru \
 		convert -f obo --check false -o $@.tmp.obo
-	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v property_value: | grep -v ^owl-axioms | grep -v FlyBase_miscellaneous_CV | sed s'/^default-namespace: FlyBase_development_CV/default-namespace: FlyBase development CV/' | grep -v ^expand_expression_to | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(TODAY)' > $@
 	rm $@.tmp.obo
 	$(ROBOT) convert --input $@ -f obo --output $@
 	sed -i 's/^xref[:][ ]OBO_REL[:]\(.*\)/xref_analog: OBO_REL:\1/' $@
 	#sed -i '/^inverse_of[:][ ]ends_at_start_of[ ]\![ ]immediately[ ]precedes/c\inverse_of: ends_at_start_of ! ends_at_start_of' $@
+
+# Make sure the flybase version is included in $(ASSETS)
+# and generated as needed
+MAIN_FILES += fly_development.obo
+all_assets: fly_development.obo
