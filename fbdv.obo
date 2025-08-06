@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbdv/releases/2025-05-29
-date: 29:05:2025 09:00
+data-version: fbdv/releases/2025-08-06
+date: 06:08:2025 11:56
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -23,7 +23,7 @@ property_value: IAO:0000700 FBdv:00000000
 property_value: IAO:0000700 FBdv:00005259
 property_value: IAO:0000700 FBdv:00007013
 property_value: IAO:0000700 FBdv:00007024
-property_value: owl:versionInfo "2025-05-29" xsd:string
+property_value: owl:versionInfo "2025-08-06" xsd:string
 property_value: terms:creator "http://orcid.org/0000-0002-1373-1705" xsd:string
 property_value: terms:creator "http://orcid.org/0000-0002-7073-9172" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0001-5948-3092" xsd:string
