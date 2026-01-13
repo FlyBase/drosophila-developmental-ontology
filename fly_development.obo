@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2025-10-16
-date: 16:10:2025 07:56
+data-version: 2026-01-13
+date: 13:01:2026 09:41
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
