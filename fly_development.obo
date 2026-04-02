@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2026-01-13
-date: 13:01:2026 09:41
+data-version: 2026-04-02
+date: 02:04:2026 09:12
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -16,6 +16,8 @@ subsetdef: goslim_yeast "Yeast GO slim"
 subsetdef: gosubset_prok "Prokaryotic GO subset"
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: terms http://purl.org/dc/terms/ 
 ontology: fbdv/fbdv-simple
 
 [Term]
