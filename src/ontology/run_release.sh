@@ -6,7 +6,7 @@ set -e
 #sh run.sh make pre_release
 
 # 2. Proper release.
-sh run.sh make prepare_release
+sh run.sh make clean prepare_release
 # To use auto-generated definitions, copy pre_release code from FBcv and use
 #sh run.sh make SRC=fbdv-edit-release.owl IMP=false PAT=false prepare_release
 
