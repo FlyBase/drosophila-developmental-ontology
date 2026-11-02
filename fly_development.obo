@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2026-09-30
-date: 30:09:2026 15:41
+data-version: 2026-11-02
+date: 02:11:2026 12:35
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
@@ -1394,6 +1394,7 @@ def: "Life stage from the end of adult stage A3, when tanning is complete, to de
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006012 ! adult stage A3
 relationship: immediately_preceded_by FBdv:00007025 ! immature adult stage
+relationship: substage_of FBdv:00005369 ! adult stage
 
 [Term]
 id: FBdv:00007075
@@ -1414,7 +1415,7 @@ def: "1st day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 810.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007075 ! day 0 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007077
@@ -1423,7 +1424,7 @@ def: "2nd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 820.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007076 ! day 1 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007078
@@ -1432,7 +1433,7 @@ def: "3rd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 830.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007077 ! day 2 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007079
@@ -1441,7 +1442,7 @@ def: "4th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 840.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007078 ! day 3 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007080
@@ -1450,7 +1451,7 @@ def: "5th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 850.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007079 ! day 4 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007081
@@ -1459,7 +1460,7 @@ def: "6th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 860.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007080 ! day 5 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007082
@@ -1468,7 +1469,7 @@ def: "7th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 870.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007081 ! day 6 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007083
@@ -1477,7 +1478,7 @@ def: "8th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 880.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007082 ! day 7 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007084
@@ -1486,7 +1487,7 @@ def: "9th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 890.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007083 ! day 8 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007085
@@ -1495,7 +1496,7 @@ def: "10th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 900.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007084 ! day 9 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007086
@@ -1504,7 +1505,7 @@ def: "11th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 910.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007085 ! day 10 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007087
@@ -1513,7 +1514,7 @@ def: "12th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 920.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007086 ! day 11 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007088
@@ -1522,7 +1523,7 @@ def: "13th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 930.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007087 ! day 12 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007089
@@ -1531,7 +1532,7 @@ def: "14th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 940.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007088 ! day 13 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007090
@@ -1540,7 +1541,7 @@ def: "15th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 950.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007089 ! day 14 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007091
@@ -1549,7 +1550,7 @@ def: "16th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 960.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007090 ! day 15 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007092
@@ -1558,7 +1559,7 @@ def: "17th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 970.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007091 ! day 16 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007093
@@ -1567,7 +1568,7 @@ def: "18th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 980.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007092 ! day 17 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007094
@@ -1576,7 +1577,7 @@ def: "19th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 990.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007093 ! day 18 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007095
@@ -1585,7 +1586,7 @@ def: "20th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1000.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007094 ! day 19 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007096
@@ -1594,7 +1595,7 @@ def: "21st day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1010.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007095 ! day 20 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007097
@@ -1603,7 +1604,7 @@ def: "22nd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1020.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007096 ! day 21 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007098
@@ -1612,7 +1613,7 @@ def: "23rd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1030.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007097 ! day 22 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007099
@@ -1621,7 +1622,7 @@ def: "24th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1040.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007098 ! day 23 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007100
@@ -1630,7 +1631,7 @@ def: "25th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1050.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007099 ! day 24 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007101
@@ -1639,7 +1640,7 @@ def: "26th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1060.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007100 ! day 25 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007102
@@ -1648,7 +1649,7 @@ def: "27th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1070.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007101 ! day 26 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007103
@@ -1657,7 +1658,7 @@ def: "28th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1080.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007102 ! day 27 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007104
@@ -1666,7 +1667,7 @@ def: "29th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1090.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007103 ! day 28 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007105
@@ -1675,7 +1676,7 @@ def: "30th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1100.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007104 ! day 29 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007106
@@ -1684,7 +1685,7 @@ def: "31st day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1110.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007105 ! day 30 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007107
@@ -1693,7 +1694,7 @@ def: "32nd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1120.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007106 ! day 31 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007108
@@ -1702,7 +1703,7 @@ def: "33rd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1130.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007107 ! day 32 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007109
@@ -1711,7 +1712,7 @@ def: "34th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1140.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007108 ! day 33 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007110
@@ -1720,7 +1721,7 @@ def: "35th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1150.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007109 ! day 34 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007111
@@ -1729,7 +1730,7 @@ def: "36th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1160.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007110 ! day 35 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007112
@@ -1738,7 +1739,7 @@ def: "37th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1170.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007111 ! day 36 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007113
@@ -1747,7 +1748,7 @@ def: "38th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1180.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007112 ! day 37 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007114
@@ -1756,7 +1757,7 @@ def: "39th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1190.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007113 ! day 38 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007115
@@ -1765,7 +1766,7 @@ def: "40th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1200.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007114 ! day 39 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007116
@@ -1774,7 +1775,7 @@ def: "41st day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1210.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007115 ! day 40 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007117
@@ -1783,7 +1784,7 @@ def: "42nd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1220.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007116 ! day 41 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007118
@@ -1792,7 +1793,7 @@ def: "43rd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1230.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007117 ! day 42 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007119
@@ -1801,7 +1802,7 @@ def: "44th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1240.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007118 ! day 43 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007120
@@ -1810,7 +1811,7 @@ def: "45th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1250.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007119 ! day 44 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007121
@@ -1819,7 +1820,7 @@ def: "46th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1260.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007120 ! day 45 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007122
@@ -1828,7 +1829,7 @@ def: "47th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1270.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007121 ! day 46 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007123
@@ -1837,7 +1838,7 @@ def: "48th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1280.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007122 ! day 47 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007124
@@ -1846,7 +1847,7 @@ def: "49th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1290.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007123 ! day 48 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007125
@@ -1855,7 +1856,7 @@ def: "50th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1300.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007124 ! day 49 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007126
@@ -1864,7 +1865,7 @@ def: "51st day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1310.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007125 ! day 50 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007127
@@ -1873,7 +1874,7 @@ def: "52nd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1320.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007126 ! day 51 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007128
@@ -1882,7 +1883,7 @@ def: "53rd day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1330.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007127 ! day 52 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007129
@@ -1891,7 +1892,7 @@ def: "54th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1340.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007128 ! day 53 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007130
@@ -1900,7 +1901,7 @@ def: "55th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1350.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007129 ! day 54 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007131
@@ -1909,7 +1910,7 @@ def: "56th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1360.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007130 ! day 55 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007132
@@ -1918,7 +1919,7 @@ def: "57th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1370.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007131 ! day 56 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007133
@@ -1927,7 +1928,7 @@ def: "58th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1380.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007132 ! day 57 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007134
@@ -1936,7 +1937,7 @@ def: "59th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1390.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007133 ! day 58 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00007135
@@ -1945,7 +1946,7 @@ def: "60th day after eclosion." [FBC:DOS]
 comment: Temporal ordering number - 1400.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007134 ! day 59 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:00014201
@@ -1964,7 +1965,7 @@ def: "61st day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1410.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:00007135 ! day 60 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010002
@@ -1973,7 +1974,7 @@ def: "62nd day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1420.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010001 ! day 61 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010003
@@ -1982,7 +1983,7 @@ def: "63rd day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1430.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010002 ! day 62 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010004
@@ -1991,7 +1992,7 @@ def: "64th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1440.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010003 ! day 63 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010005
@@ -2000,7 +2001,7 @@ def: "65th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1450.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010004 ! day 64 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010006
@@ -2009,7 +2010,7 @@ def: "66th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1460.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010005 ! day 65 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010007
@@ -2018,7 +2019,7 @@ def: "67th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1470.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010006 ! day 66 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010008
@@ -2027,7 +2028,7 @@ def: "68th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1480.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010007 ! day 67 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010009
@@ -2036,7 +2037,7 @@ def: "69th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1490.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010008 ! day 68 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Term]
 id: FBdv:0010010
@@ -2045,7 +2046,7 @@ def: "70th day after eclosion." [FBC:DPG]
 comment: Temporal ordering number - 1500.
 is_a: FBdv:00007014 ! adult age in days
 relationship: immediately_preceded_by FBdv:0010009 ! day 69 of adulthood
-relationship: substage_of FBdv:00005369 ! adult stage
+relationship: substage_of FBdv:00007026 ! mature adult stage
 
 [Typedef]
 id: happens_during
