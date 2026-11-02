@@ -1462,6 +1462,7 @@ id: FBdv:00007026
 name: mature adult stage
 def: "Life stage from the end of adult stage A3, when tanning is complete, to death." [FBC:DOS]
 is_a: FBdv:00007012 ! life stage
+relationship: FBdv:00018001 FBdv:00005369 ! substage of adult stage
 relationship: RO:0002087 FBdv:00006012 ! immediately preceded by adult stage A3
 relationship: RO:0002087 FBdv:00007025 ! immediately preceded by immature adult stage
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
